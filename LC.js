@@ -30,6 +30,37 @@ class Counter {
 }
 
 const counter = Counter(10);
-counter.increment()
-counter.increment()
-counter.increment()
+// counter.increment()
+// counter.increment()
+// counter.increment()
+
+// 2621. Sleep
+
+/**
+ * @param {number} millis
+ * @return {Promise}
+ */
+async function sleep(millis) {
+    
+}
+
+
+
+// 1. Two Sum
+
+function twoSum(nums, target) {
+    for (let i = 0; i < nums.length; i++) {
+        for (let j = i + 1; j < nums.length; j++) {
+            if (nums[i] + nums[j] === target) {
+                return [i,j]
+            }
+        }
+    }
+}
+    //Paramaters: array of integers, and a target integer
+    
+    //Result: array of two integers which identify the indexes of the array values that add up to the target
+
+    //Examples: Input: nums = [3,2,4], target = 6 Output: [1,2]
+
+    //Pseudocode: use nested loops to compare each value in the array to all other values to see if they add up to the target, then when they do, return the index of both values. Complexity will be 0(n)^2
