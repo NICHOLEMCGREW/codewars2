@@ -4004,7 +4004,7 @@ function hammingDistance(stringA, stringB) {
   }
 }
 
-console.log(hammingDistance('rover', 'river'))
+// console.log(hammingDistance('rover', 'river'))
 
 
 function isAnagram(stringA, stringB) {
@@ -4020,4 +4020,13 @@ function isAnagram(stringA, stringB) {
   }
   }
 }
-console.log(isAnagram('silent', 'listen'))
+// console.log(isAnagram('silent', 'listen'))
+
+function longestWord(text) {
+  text = text.split(' ').sort()
+  for (let i = 0; i < text.length; i++) {
+    return text[i]
+  }
+}
+
+console.log(longestWord('Top Shelf Web Development Training on Scotch'))

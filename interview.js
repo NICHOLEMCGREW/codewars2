@@ -152,3 +152,17 @@ function isAnagram(stringA, stringB) {
   }
   console.log(isAnagram('silent', 'listen'))
 
+  /* CHALLENGE
+Given a string of text, write an algorithm that returns the text received in a reversed format. 
+E.g reverseString('algorithms') // should return 'smhtirogla'
+*/
+
+function longestWord(text) {
+    text = text.split(' ').sort()
+    for (let i = 0; i < text.length; i++) {
+      return text[i]
+    }
+  }
+  
+  console.log(longestWord('Top Shelf Web Development Training on Scotch'))
+
