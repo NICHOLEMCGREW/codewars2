@@ -166,3 +166,16 @@ function longestWord(text) {
   
   console.log(longestWord('Top Shelf Web Development Training on Scotch'))
 
+/* CHALLENGE
+Given a string of text, find and return the most recurring character. 
+e.g maxRecurringChar('aabacada') // will return 'a'
+*/
+
+function maxRecurringChar(text) {
+    return text.split('').reduce((acc, char) => {
+      let len = text.split(char).length - 1;
+      return len > acc[1] ? [char, len] : acc
+    }, ['',0])[0]
+  }
+  
+  console.log(maxRecurringChar('aabacada'))

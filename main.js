@@ -4029,4 +4029,13 @@ function longestWord(text) {
   }
 }
 
-console.log(longestWord('Top Shelf Web Development Training on Scotch'))
+// console.log(longestWord('Top Shelf Web Development Training on Scotch'))
+
+function maxRecurringChar(text) {
+  return text.split('').reduce((acc, char) => {
+    let len = text.split(char).length - 1;
+    return len > acc[1] ? [char, len] : acc
+  }, ['',0])[0]
+}
+
+console.log(maxRecurringChar('aabacada'))
