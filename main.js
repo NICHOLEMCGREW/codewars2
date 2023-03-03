@@ -4050,4 +4050,14 @@ arrays.forEach(array => {
 return [...new Set([...jointArr])]
 }
 
-console.log(mergeArrays([1,2,3,3,3], [1,4,5,2]))
+// console.log(mergeArrays([1,2,3,3,3], [1,4,5,2]))
+
+
+function palindromeChecker(text) {
+  if (text.split('').reverse().join('') == text) {
+    return true
+  } else {
+    return false
+  }
+}
+console.log(palindromeChecker('racecar'))

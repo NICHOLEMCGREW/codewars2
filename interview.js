@@ -197,3 +197,18 @@ function mergeArrays(...arrays) {
     }
     
     console.log(mergeArrays([1,2,3,3,3], [1,4,5,2]))
+
+    /* CHALLENGE
+Given a string of text, return true or false indicating whether or not the text is a palindrome.
+e.g palindromeChecker('racecar') // will return true
+*/
+
+function palindromeChecker(text) {
+    if (text.split('').reverse().join('') == text) {
+      return true
+    } else {
+      return false
+    }
+  }
+  console.log(palindromeChecker('racecar'))
+
