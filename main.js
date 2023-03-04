@@ -4038,4 +4038,16 @@ function maxRecurringChar(text) {
   }, ['',0])[0]
 }
 
-console.log(maxRecurringChar('aabacada'))
+// console.log(maxRecurringChar('aabacada'))
+
+function mergeArrays(...arrays) {
+let jointArr = []
+
+arrays.forEach(array => {
+  jointArr = [...jointArr, ...array]
+})
+
+return [...new Set([...jointArr])]
+}
+
+console.log(mergeArrays([1,2,3,3,3], [1,4,5,2]))

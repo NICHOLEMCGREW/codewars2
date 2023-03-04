@@ -179,3 +179,21 @@ function maxRecurringChar(text) {
   }
   
   console.log(maxRecurringChar('aabacada'))
+
+  /*
+ Given two or more arrays, write a function that combines
+ their elements into one array without any repetition. 
+ E.g mergeArrays([1,2,3,3,3], [1,4,5,2]) // should return [1,2,3,4,5]
+*/
+
+function mergeArrays(...arrays) {
+    let jointArr = []
+    
+    arrays.forEach(array => {
+      jointArr = [...jointArr, ...array]
+    })
+    
+    return [...new Set([...jointArr])]
+    }
+    
+    console.log(mergeArrays([1,2,3,3,3], [1,4,5,2]))
