@@ -3974,6 +3974,18 @@ function fibonacci(n) {
     return fibonacci(n - 1) + fibonacci(n - 2)
 }
 
-console.log(fibonacci(20))
+// console.log(fibonacci(20))
 
+function fizzBuzz(n) {
+  for (let i = 0; i <= n; i++) {
+    if (i % 15 == 0) {
+      console.log("fizzbuzz")
+    } else if (i % 3 == 0) {
+      console.log("fizz")
+    } else if (i % 5 == 0) {
+      console.log("buzz")
+    }
+  }
+}
 
+console.log(fizzBuzz(30))
