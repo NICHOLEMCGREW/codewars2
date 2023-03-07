@@ -128,3 +128,27 @@ function hammingDistance(stringA, stringB) {
   }
   
   console.log(hammingDistance('rover', 'river'))
+
+  /* CHALLENGE
+Given a two strings, write an algorithm to check if they are anagrams
+of each other. Return true if the pass the test and false if they
+don't. E.g
+    isAnagram('silent', 'listen') // should return true
+*/
+
+
+function isAnagram(stringA, stringB) {
+    a = stringA.split('').sort() 
+    b = stringB.split('').sort()
+    for (let i = 0; i < a.length; i++) {
+      if (a.length === b.length) {
+      if (a[i] === b[i]) {
+        return true;
+      } else {
+        return false
+      }
+    }
+    }
+  }
+  console.log(isAnagram('silent', 'listen'))
+

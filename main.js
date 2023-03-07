@@ -4005,3 +4005,19 @@ function hammingDistance(stringA, stringB) {
 }
 
 console.log(hammingDistance('rover', 'river'))
+
+
+function isAnagram(stringA, stringB) {
+  a = stringA.split('').sort() 
+  b = stringB.split('').sort()
+  for (let i = 0; i < a.length; i++) {
+    if (a.length === b.length) {
+    if (a[i] === b[i]) {
+      return true;
+    } else {
+      return false
+    }
+  }
+  }
+}
+console.log(isAnagram('silent', 'listen'))
