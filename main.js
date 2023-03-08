@@ -3988,4 +3988,20 @@ function fizzBuzz(n) {
   }
 }
 
-console.log(fizzBuzz(30))
+// console.log(fizzBuzz(30))
+
+function hammingDistance(stringA, stringB) {
+  let result = 0
+
+  if (stringA.length == stringB.length) {
+
+      for (let i = 0; i < stringA.length; i++) {
+          if (stringA[i].toLowerCase() != stringB[i].toLowerCase()) {
+              result++
+          }
+      }
+      return result
+  }
+}
+
+console.log(hammingDistance('rover', 'river'))
