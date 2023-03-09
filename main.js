@@ -3911,4 +3911,15 @@ function alphabetPosition(text) {
   const words = text.toLowerCase().replace(/[^a-z]/g,"");
   return [...words].map(v=> v.charCodeAt() - 96).join(' ');
 }
-console.log(alphabetPosition("The sunset sets at twelve o' clock."))
+// console.log(alphabetPosition("The sunset sets at twelve o' clock."))
+
+
+// Reverse words
+function reverseWords(str) {
+  str = str.split(' ');
+  for (let i = 0; i < str.length; i++) {
+     str[i] = str[i].split('').reverse().join('')
+  }
+  return str.join(' ')
+}
+console.log(reverseWords('The quick brown fox jumps over the lazy dog.'))
