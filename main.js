@@ -3904,4 +3904,11 @@ function duplicateCount(text){
 
   return dups;
 }
-console.log(duplicateCount("aabbcde"))
+// console.log(duplicateCount("aabbcde"))
+
+// Replace With Alphabet Position
+function alphabetPosition(text) {
+  const words = text.toLowerCase().replace(/[^a-z]/g,"");
+  return [...words].map(v=> v.charCodeAt() - 96).join(' ');
+}
+console.log(alphabetPosition("The sunset sets at twelve o' clock."))
