@@ -3723,3 +3723,48 @@ function sortArray(array) {
 
 // console.log(sortArray([5, 3, 2, 8, 1, 4]))
 
+// Array.diff
+
+function arrayDiff(a, b) {
+ return a.filter(val => !b.includes(val))  
+}
+// console.log(arrayDiff([1,2,2], [2]))
+
+// Sum of two lowest positive integers
+function sumTwoSmallestNumbers(numbers) {  
+  numbers.sort((a,b) => a - b)
+  return numbers[0] + numbers[1]
+}
+
+// Take a Ten Minutes Walk
+function isValidWalk(walk) {
+  let ns = 0, we = 0;
+  for (let dir of walk) {
+    if (dir == 'n') ns += 1;
+    if (dir == 's') ns -= 1;
+    if (dir == 'w') we += 1;
+    if (dir == 'e') we -= 1;
+  }
+  return walk.length == 10 && ns === 0 && we === 0;
+}
+
+
+// Find the unique number
+function findUniq(arr) {
+  let repeated = arr.filter((item, index) => arr.indexOf(item) !== index)
+  return arr.filter((item) => item !== repeated[0])[0]
+}
+
+// console.log(findUniq([ 1, 0, 0 ]))
+
+// Remove the minimum
+function removeSmallest(numbers) {
+  let copy = numbers.slice(0)
+  let min = numbers.indexOf(Math.min(...numbers))
+  copy.splice(min, 1)
+  return copy;
+}
+
+console.log(removeSmallest([1, 1, 2, 3, 4, 5]))
+
+
