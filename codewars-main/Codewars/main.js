@@ -3590,9 +3590,9 @@ function rowSumOddNumbers(n) {
 	return Math.pow(n,3)
 }
 
-//PARAMETERS: 
+//PARAMETERS: an array containing ones and zeros, could be varying length
 
-//RESULTS: 
+//RESULTS: an integer equivalent of the binary value represented in the array
 
 //EXAMPLES: Test.assertEquals(binaryArrayToNumber([0,0,0,1]), 1);
   //     Test.assertEquals(binaryArrayToNumber([0,0,1,0]), 2);
@@ -3600,10 +3600,10 @@ function rowSumOddNumbers(n) {
   //     Test.assertEquals(binaryArrayToNumber([0,1,1,0]), 6);
   // });
 
-//PSEUDOCODE: 
+//PSEUDOCODE: take the array and join the elements together into a string and then convert string and return the integer equivalent. 
 
 
 // Ones and Zeros
 const binaryArrayToNumber = arr => {
-  // your code
+  parseInt(arr.join(''),2)
 };
