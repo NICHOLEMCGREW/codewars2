@@ -3713,4 +3713,12 @@ function minMax(arr){
  return [arr[0],arr.pop()]
 }
 
-console.log(minMax([1, 2, 3, 4, 5, 2]))
+// console.log(minMax([1, 2, 3, 4, 5, 2]))
+
+// Sort the odd
+function sortArray(array) {
+  let oddSort = array.filter(e => e % 2).sort((a,b) => a - b)
+  return array.map(e => e % 2 ? oddSort.shift() : e)
+}
+
+console.log(sortArray([5, 3, 2, 8, 1, 4]))
