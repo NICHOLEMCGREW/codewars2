@@ -3667,28 +3667,28 @@ const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
 
 // Create Phone Number
 function createPhoneNumber(numbers){
-  
+  numbers.splice(3, 0, ") ")
+  numbers.splice(7, 0, "-")
+  return '(' + numbers.join('')
 }
 
 // console.log(createPhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]))
 
-
+function createPhoneNumber(numbers){
+ return numbers.reduce((phoneNum, arr) => phoneNum.replace('x', arr), '(xxx) xxx-xxxx') 
+}
 // Sum of positive
 
-// function positiveSum(arr) {
-//   let posNums = [];
-//   let posTotal = 0;
-//   for (let i = 0; i < arr.length; i++) {
-//     if (arr[i] > 0) {
-//       posNums.push(arr[i]) 
-//       posTotal = posNums.reduce((acc, curr) => acc + curr, 0)
-//     }
-//   }
-//   return posTotal
-// }
-
 function positiveSum(arr) {
-  
+ let posNums = []
+ let posTotal = 0
+ for (let i = 0; i < arr.length; i++) {
+  if (arr[i] > 0) {
+    posNums.push(arr[i])
+  posTotal = posNums.reduce((acc, curr) => acc + curr, 0)
+  }
+ }
+ return posTotal
 }
 // console.log(positiveSum([1,-2,3,4,5]))
 
@@ -3721,4 +3721,5 @@ function sortArray(array) {
   return array.map(e => e % 2 ? oddSort.shift() : e)
 }
 
-console.log(sortArray([5, 3, 2, 8, 1, 4]))
+// console.log(sortArray([5, 3, 2, 8, 1, 4]))
+
