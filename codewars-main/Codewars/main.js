@@ -3645,4 +3645,44 @@ var number=function(array){
 function removeUrlAnchor(url){
   return url.split('#')[0]
 }
-console.log(removeUrlAnchor('www.codewars.com#about'))
+// console.log(removeUrlAnchor('www.codewars.com#about'))
+
+
+// Arrays practice
+
+const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
+// nums.push(6)
+// nums.unshift(0)
+// nums.pop()
+// nums.shift()
+// nums.splice(3)
+// nums.slice(1, 4)
+// nums.filter(n => n%2==0)
+// nums.map(n => n*2)
+// let indexOf = nums.indexOf(4)
+// let lastIndexOf = nums.lastIndexOf(9)
+
+// console.log(indexOf)
+
+
+// Create Phone Number
+function createPhoneNumber(numbers){
+  
+}
+
+// console.log(createPhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]))
+
+
+// Sum of positive
+function positiveSum(arr) {
+  let posNums = [];
+  let posTotal = 0;
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > 0) {
+      posNums.push(arr[i]) 
+      posTotal = posNums.reduce((acc, curr) => acc + curr, 0)
+    }
+  }
+  return posTotal
+}
+console.log(positiveSum([1,-2,3,4,5]))
