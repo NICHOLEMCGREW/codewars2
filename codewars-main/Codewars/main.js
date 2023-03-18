@@ -3640,3 +3640,9 @@ function oddOrEven(array) {
 var number=function(array){
   return array.map((alpha, index) => `${index + 1}: ${alpha}`)
 }
+
+// Remove anchor from URL
+function removeUrlAnchor(url){
+  return url.split('#')[0]
+}
+console.log(removeUrlAnchor('www.codewars.com#about'))
