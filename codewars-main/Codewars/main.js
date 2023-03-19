@@ -3560,3 +3560,18 @@ function humanReadable (seconds) {
   minutes = minutes.toString().padStart(2,'0')
   return `${hours}:${minutes}:${seconds}`
 }
+
+//PARAMETERS: an array of positive integers, whole numbers greater than 0, the array has a min of 4 integers
+
+//RESULTS: sum of the two lowest ints in the array, a single number.
+
+//EXAMPLES: (sumTwoSmallestNumbers([5, 8, 12, 19, 22]), 13 , "Sum should be 13")
+
+//PSEUDOCODE: sort the array from smallest to largest, capture the two smallest array members and sum.
+
+// Sum of two lowest positive integers
+
+function sumTwoSmallestNumbers(numbers) {  
+  let arr = numbers.sort((a, b) => a - b)
+  return arr[0] + arr[1]
+}
