@@ -3607,3 +3607,36 @@ function rowSumOddNumbers(n) {
 const binaryArrayToNumber = arr => {
   parseInt(arr.join(''),2)
 };
+
+
+
+//PARAMETERS: an array of integers, or an empty array
+
+//RESULTS: whether the sum of the array of elements is even or odd, displayed as the word "even" or "odd"
+
+//EXAMPLES:  assert.strictEqual(oddOrEven([0]), 'even')
+    // assert.strictEqual(oddOrEven([1]), 'odd')
+    // assert.strictEqual(oddOrEven([]), 'even')
+
+//PSEUDOCODE: use reduce method to sum the array of elements and then check whether it is odd or even using a modulus, then return the appropriate string value. 
+
+// Odd or Even?
+function oddOrEven(array) {
+  array.reduce((sum, current) => sum + current, 0) %2 ? 'odd' : 'even'
+}
+
+
+//PARAMETERS: an array of varying length containing string values
+
+//RESULTS: an array of strings containing the original values with the line number and a colon + space in front
+
+//EXAMPLES:  assert.deepEqual(number([]), [], 'Empty array should return empty array');
+    // assert.deepEqual(number(["a", "b", "c"]), ["1: a", "2: b", "3: c"], 'Return the correct line numbers');   
+
+//PSEUDOCODE: iterate over each array value prepend the line number (starting with one), and add a colon and a space between the line number and the value
+
+// Testing 1-2-3
+
+var number=function(array){
+  return array.map((alpha, index) => `${index + 1}: ${alpha}`)
+}
