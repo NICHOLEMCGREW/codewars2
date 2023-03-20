@@ -3434,3 +3434,12 @@ function getTheVowels2(word) {
 }
 
 const getTheVowels = (word, vowels = 'aeiou') => word.split('').reduce((prev, curr) => prev + (curr == vowels[prev % vowels.length]),0)
+
+
+// Convert string to camel case
+
+function toCamelCase(str){
+ str = str.split('_').join(' ').replace(/[^a-zA-Z0-9]+(.)/g, (m, chr) => chr.toUpperCase())
+  return str
+}
+console.log(toCamelCase("the_stealth_warrior"))
