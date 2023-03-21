@@ -3542,3 +3542,21 @@ function moveZeros(arr) {
   }
   return ([...catchall, ...zeros])
 }
+
+//Parameters - an integer that is non-negative indicating a count of secods, which are the basic unit on our clock. the max number of seconds will be 359999 or less.
+//Returns - a clock value containg hours, minutes, seconds, with the specific format of HH:MM:SS, with values 9 and below having a leading zero. 
+//Example - humanReadable(0), '00:00:00', 'humanReadable(0)');(humanReadable(59), '00:00:59', 'humanReadable(59)');(humanReadable(60), '00:01:00', 'humanReadable(60)');
+
+//Take in integer and divide by 60 the appropriate amount of times and assign the result to hours, minutes, and secods. Pad leading zeros where needed, and print hours, minutes, seconds with a colon between them.
+
+// Human Readable Time
+
+function humanReadable (seconds) {
+  let hours = Math.floor(seconds/3600)
+  seconds = seconds - hours*3600
+  hours = hours.toString().padStart(2,'0')
+  let minutes = Math.floor(seconds/60)
+  seconds = (seconds - minutes*60).toString().padStart(2,'0')
+  minutes = minutes.toString().padStart(2,'0')
+  return `${hours}:${minutes}:${seconds}`
+}
