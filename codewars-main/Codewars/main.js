@@ -3402,3 +3402,35 @@ function uncensor2(infected, discovered) {
   const arr = [...discovered]
   return [...infected].map(el => el === '*' ? arr.shift() : el).join('')
 }
+
+// Consecutive Vowels in a String
+// function getTheVowels(word) {
+//   let vowelCount = 0;
+//   let vowels = ['a', 'e', 'i', 'o', 'u'];
+//   const letters = word.split('');
+//   for (let char of word) {
+//     if (vowels.includes(char)) {
+//       vowelCount++
+//     }
+//   }
+//   return vowelCount
+// }
+
+function getTheVowels2(word) {
+  let vowels = 'aeiou',
+      vowelsIndex = 0,
+      result = 0
+  for (let index = 0; index < word.length; index++) {
+    if (word[index] == vowels[vowelsIndex]) {
+      result++
+      if (vowelsIndex == 4) {
+        vowelsIndex = 0
+      } else {
+        vowelsIndex++
+      }
+    }
+  }
+  return result
+}
+
+const getTheVowels = (word, vowels = 'aeiou') => word.split('').reduce((prev, curr) => prev + (curr == vowels[prev % vowels.length]),0)
