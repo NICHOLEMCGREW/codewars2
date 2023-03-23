@@ -2327,9 +2327,9 @@ function pipeFix(numbers){
 
 // Find the force of gravity between two objects
 
-solution = (arr_val, arr_unit) =>
-(c => 6.67e-11 * arr_val[0] * arr_val[1] * c[arr_unit[0]] * c[arr_unit[1]]/ (arr_val[2] * c[arr_unit[2]]) ** 2)
-({kg: 1, g: 1e-3, mg: 1e-6, μg: 1e-9, lb: .453592, m: 1, cm: 1e-2, mm: 1e-3, μm: 1e-6, ft: .3048})
+// solution = (arr_val, arr_unit) =>
+// (c => 6.67e-11 * arr_val[0] * arr_val[1] * c[arr_unit[0]] * c[arr_unit[1]]/ (arr_val[2] * c[arr_unit[2]]) ** 2)
+// ({kg: 1, g: 1e-3, mg: 1e-6, μg: 1e-9, lb: .453592, m: 1, cm: 1e-2, mm: 1e-3, μm: 1e-6, ft: .3048})
 
 
 // Drink about
@@ -3438,8 +3438,69 @@ const getTheVowels = (word, vowels = 'aeiou') => word.split('').reduce((prev, cu
 
 // Convert string to camel case
 
-function toCamelCase(str){
- str = str.split('_').join(' ').replace(/[^a-zA-Z0-9]+(.)/g, (m, chr) => chr.toUpperCase())
-  return str
+// function toCamelCase(str){
+//  str = str.split('_').join(' ').replace(/[^a-zA-Z0-9]+(.)/g, (m, chr) => chr.toUpperCase())
+//   return str
+// }
+// // console.log(toCamelCase("the_stealth_warrior"))
+
+// // Grouping in string
+// function isConsecutive(str) {
+//   const numbers = str.split(/\D+/).filter(Boolean).map(Number);
+
+// console.log(str)
+//   for (let i = 1; i <= numbers.length; i++) {
+//     const currentNum = numbers[i].toString();
+//     const prevNum = numbers[i - 1].toString()
+
+//    if (
+//     currentNum.length === prevNum.length &&
+//     currentNum !== prevNum &&
+//     parseInt(currentNum, 10) !== parseInt(prevNum, 10) + 1
+//    ) {
+//     return false;
+//    }
+//   }
+//   return true;
+//   }
+
+
+const isConsecutive2 = (str) => {
+  const numbers = str.split(/\D+/);
+
+  for (let i = 0; i <= numbers.length; i++) {
+    if (numbers[i] !== numbers[i - 1] && numbers[i] !== numbers[i + 1]) {
+      return false;
+    }
+  }
+
+  return true;
 }
-console.log(toCamelCase("the_stealth_warrior"))
+
+const isConsecutive = (str) => {
+  // str = str.split(/\D+/);
+
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] +1 === str[i] || str[i] +1 === str[i + 1]) {
+      return true;
+  }
+}
+return false;
+}
+// console.log(isConsecutive("001234400522"))
+
+
+// Split Strings
+function solution(str){
+  let i = 0;
+  let result = []
+  if (str.length % 2 !== 0) {
+    str += "_"
+  }
+  while (i < str.length) {
+    result.push(str[i] + str[i+1])
+    i += 2
+  }
+  return result
+}
+console.log(solution("abcdef"))
