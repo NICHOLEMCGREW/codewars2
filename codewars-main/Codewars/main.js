@@ -3381,3 +3381,24 @@ function cutIt2(arr){
 
 const cutIt3 = arr =>
   arr.map(val => val.slice(0, Math.min(...arr.map(val => val.length))));
+
+  
+// Ce*s*r*d Strings
+function uncensor(infected, discovered) {
+  let result = '',
+    discoveredIndex = 0
+  for (let infectedIndex = 0; infectedIndex < infected.length; infectedIndex++) {
+    if (infected[infectedIndex] == '*') {
+      result += discovered[discoveredIndex]
+      discoveredIndex++
+    } else {
+      result += infected[infectedIndex]
+    }
+  }
+  return result
+}
+
+function uncensor2(infected, discovered) {
+  const arr = [...discovered]
+  return [...infected].map(el => el === '*' ? arr.shift() : el).join('')
+}
