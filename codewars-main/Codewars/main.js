@@ -3214,3 +3214,8 @@ function excludingVatPrice(price){
 
 //  Return Two Highest Values in List
 twoHighest = arr => [...new Set(arr.sort((a,b) => b - a))].slice(0, 2)
+
+// Be Concise I - The Ternary Operator
+function describeAge(age) {
+  return "You're a(n) " + (age < 13 ? "kid" : age < 18 ? "teenager" : age < 65 ? "adult" : "elderly")
+}
