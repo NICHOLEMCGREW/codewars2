@@ -3378,3 +3378,6 @@ function cutIt2(arr){
   const minLength = Math.min(...arr.map(x => x.length));
   return arr.map(x => x.slice(0, minLength));
 }
+
+const cutIt3 = arr =>
+  arr.map(val => val.slice(0, Math.min(...arr.map(val => val.length))));
