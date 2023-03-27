@@ -3239,4 +3239,19 @@ function datingRange(age){
   let range = `${min}-${max}`
   return range
 }
-console.log(datingRange(17))
+// console.log(datingRange(17))
+
+// Days in the year
+function yearDays(year) {
+  const lastTwo = String(year).slice(-2)
+  let days = 365
+  if (((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0)) {
+    return `${year} has ${days + 1} days`;
+  } else {
+    return `${year} has ${days} days`;
+  }
+}
+console.log(yearDays(-1000))
+
+  
+  
