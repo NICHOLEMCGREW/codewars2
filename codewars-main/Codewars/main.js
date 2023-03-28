@@ -3227,3 +3227,16 @@ if(!candidate.minSalary || !job.maxSalary)
 throw error
 return candidate.minSalary *.9 <= maxSalary
 }
+
+// Age Range Compatibility Equation
+function datingRange(age){
+  let min = Math.floor(age / 2 + 7)
+  let max = Math.floor((age - 7)*2)
+  if(age <= 14) {
+    min = Math.floor(age - 0.10 * age)
+    max = Math.floor(age + 0.10 * age)
+  }
+  let range = `${min}-${max}`
+  return range
+}
+console.log(datingRange(17))
