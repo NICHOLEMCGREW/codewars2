@@ -3219,3 +3219,11 @@ twoHighest = arr => [...new Set(arr.sort((a,b) => b - a))].slice(0, 2)
 function describeAge(age) {
   return "You're a(n) " + (age < 13 ? "kid" : age < 18 ? "teenager" : age < 65 ? "adult" : "elderly")
 }
+
+
+// Job Matching #1
+function match(candidate, job) {
+if(!candidate.minSalary || !job.maxSalary)
+throw error
+return candidate.minSalary *.9 <= maxSalary
+}
