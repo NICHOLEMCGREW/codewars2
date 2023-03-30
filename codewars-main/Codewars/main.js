@@ -3207,4 +3207,7 @@ function excludingVatPrice(price){
     return +VAT.toFixed(2)
   }
 }
-console.log(excludingVatPrice(230))
+// console.log(excludingVatPrice(230))
+
+// Freudian translator
+ toFreud = string => !string ? "" : string.split(' ').map((word) => 'sex').join(' ');
