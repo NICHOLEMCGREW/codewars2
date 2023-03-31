@@ -3195,4 +3195,16 @@ function uniTotal (string) {
   }
   return sum
   }
-  console.log(uniTotal('aa'))
+  // console.log(uniTotal('aa'))
+
+  // Calculate Price Excluding VAT
+  //return price without vat
+function excludingVatPrice(price){
+  let VAT = (price - (price/(1 + .15))* .15)
+  if (price == null) {
+    return -1;
+  } else {
+    return +VAT.toFixed(2)
+  }
+}
+console.log(excludingVatPrice(230))
