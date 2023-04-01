@@ -3186,3 +3186,13 @@ var Ghost = function() {
 
 // Geometry Basics: Circle Circumference in 2D
 circleCircumference = circle => 2 * Math.PI * circle.radius
+
+// ASCII Total
+function uniTotal (string) {
+  let sum = 0;
+  for (let i = 0; i < string.length; i++) {
+    sum += string.charCodeAt(i)
+  }
+  return sum
+  }
+  console.log(uniTotal('aa'))
