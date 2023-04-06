@@ -3106,3 +3106,19 @@ function whoseMove(lastPlayer, win) {
 
 // pick a set of first elements
 first = (arr, n) => n == undefined ? arr.slice(0,1) : arr.slice(0,n)
+
+
+
+// Pythagorean Triple
+function isPythagoreanTriple(integers) {
+  integers = integers.sort((a, b) => a -b)
+  let a = integers[0] * integers[0]
+  let b = integers[1] * integers[1]
+  let c = integers[2] * integers[2]
+  if(a + b == c) {
+    return true
+  } else {
+    return false
+  }
+}
+console.log(isPythagoreanTriple([5, 12, 13]))
