@@ -3080,4 +3080,17 @@ if (oscar === 88) {
 function aspectRatio(x,y){
   return [Math.ceil(16 / 9 * y), y]
   }
-console.log(aspectRatio(640, 480))
+// console.log(aspectRatio(640, 480))
+
+// Classy Classes
+class Person {
+  constructor(name, age) {
+    this.name = name
+    this.age = age
+  }
+  get Info() {
+    return `${this.name}s age is ${this.age}`
+  }
+}
+
+let john = new Person('john', 34)
