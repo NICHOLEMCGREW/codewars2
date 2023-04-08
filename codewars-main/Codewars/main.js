@@ -3067,3 +3067,9 @@ if (oscar === 88) {
   return "Leo got one already!"
 }
 }
+
+// Up and down, the string grows
+
+STRANGE_STRING = `No grow, actual length: ${original} ⇒ ${toUpper}`
+const toUpper = STRANGE_STRING.toUpperCase().toLowerCase().length
+const original = STRANGE_STRING.length
