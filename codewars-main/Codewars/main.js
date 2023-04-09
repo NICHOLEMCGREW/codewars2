@@ -2991,3 +2991,8 @@ function countWords(str) {
 const TempleStrings = function(obj, feature) {
   return `${obj} are ${feature}`
 }
+
+// Take an Arrow to the knee, Functionally
+var ArrowFunc = function(arr) {
+  return arr.map( arr => String.fromCharCode(arr)).join(''); //Complete this function
+}
