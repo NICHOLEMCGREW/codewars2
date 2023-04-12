@@ -3009,4 +3009,16 @@ all = (arr, fun) => arr.every(fun)
 function isLockNessMonster(s) {
   return (s.includes("tree fiddy") || s.includes("three fifty") || s.includes("3.50")) 
 }
-console.log(isLockNessMonster("Your girlscout cookies are ready to ship. Your total comes to tree fiddy"))
+// console.log(isLockNessMonster("Your girlscout cookies are ready to ship. Your total comes to tree fiddy"))
+
+// UEFA EURO 2016
+function uefaEuro2016(teams, scores){
+  if (scores[0] > scores[1]) {
+    return `At match ${teams[0]} - ${teams[1]}, ${teams[0]} won!`
+  } else if(scores[1] > scores[0]){
+    return `At match ${teams[0]} - ${teams[1]}, ${teams[1]} won!`
+  } else {
+    return `At match ${teams[0]} - ${teams[1]}, teams played draw.`
+  }
+}
+console.log(uefaEuro2016(['Belgium', 'Italy'], [0, 2]))
