@@ -3052,7 +3052,18 @@ function flickSwitch(arr){
   })
 }
 
-// function flickSwitch(arr) {
-//   arr.forEach((element) => element = true)
-// }
-console.log(flickSwitch(["codewars", "flick", "code", "wars"]))
+// console.log(flickSwitch(["codewars", "flick", "code", "wars"]))
+
+// Leonardo Dicaprio and Oscars
+
+function leo(oscar){
+if (oscar === 88) {
+  return "Leo finally won the oscar! Leo is happy"
+} else if (oscar === 86) {
+  return "Not even for Wolf of wallstreet?!" 
+} else if (oscar < 88) {
+  return "When will you give Leo an Oscar?"
+} else if (oscar > 88) {
+  return "Leo got one already!"
+}
+}
