@@ -3039,4 +3039,20 @@ function changeMe(moneyIn){
 function quote (fighter) {
   return fighter.toLowerCase() === 'george saint pierre' ? "I am not impressed by your performance." : "I'd like to take this chance to apologize.. To absolutely NOBODY!"
 };
-console.log(quote('George Saint Pierre'))
+// console.log(quote('George Saint Pierre'))
+
+// Flick Switch
+function flickSwitch(arr){
+  let on = true
+  return arr.map((item) => {
+    if (item === 'flick') {
+      on = !on;
+    }
+    return on;
+  })
+}
+
+// function flickSwitch(arr) {
+//   arr.forEach((element) => element = true)
+// }
+console.log(flickSwitch(["codewars", "flick", "code", "wars"]))
