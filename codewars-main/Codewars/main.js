@@ -3004,3 +3004,9 @@ htmlspecialchars = formData => formData.replace(/[<>"&]/g,replacerFuction => ({'
 
 // Enumerable Magic #1 - True for All?
 all = (arr, fun) => arr.every(fun)
+
+// A Strange Trip to the Market
+function isLockNessMonster(s) {
+  return (s.includes("tree fiddy") || s.includes("three fifty") || s.includes("3.50")) 
+}
+console.log(isLockNessMonster("Your girlscout cookies are ready to ship. Your total comes to tree fiddy"))
