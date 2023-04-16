@@ -2975,4 +2975,9 @@ const cannonsReady = (gunners) => {
 function add(a, b){
 	return a == b
 }
-console.log(add(1, '1'))
+
+// Polish alphabet
+correctPolishLetters = string => string.replace(/[ąćęłńóśź]/g, replacer => 'acelnoszz'['ąćęłńóśź'.indexOf(replacer)])
+
+  
+  
