@@ -2979,5 +2979,10 @@ function add(a, b){
 // Polish alphabet
 correctPolishLetters = string => string.replace(/[ąćęłńóśź]/g, replacer => 'acelnoszz'['ąćęłńóśź'.indexOf(replacer)])
 
-  
+// Count words
+function countWords(str) {
+  return (str.match(/[^\s]+/g) || []).length;
+}
+
+console.log(countWords("Hello, World!"))
   
