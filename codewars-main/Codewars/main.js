@@ -2964,3 +2964,9 @@ duckDuckGoose = (players, goose) => players[(goose - 1) % players.length].name
 
 // Is it a number?
 isDigit = s => s == parseFloat(s)
+
+
+// Pirates!! Are the Cannons ready!??
+const cannonsReady = (gunners) => {
+  return Object.values(gunners).includes('nay') ? 'Shiver me timbers!' : 'Fire!'
+}
