@@ -2960,3 +2960,7 @@ function joinStrings(string1, string2){
 
 // Duck Duck Goose
 duckDuckGoose = (players, goose) => players[(goose - 1) % players.length].name
+
+
+// Is it a number?
+isDigit = s => s == parseFloat(s)
