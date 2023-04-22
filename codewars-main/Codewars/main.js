@@ -2956,4 +2956,7 @@ String.prototype.digit = function() {
 function joinStrings(string1, string2){
   return `${string1.toString()} ${string2.toString()}`
 }
-console.log(joinStrings('hello', 'string2'))
+// console.log(joinStrings('hello', 'string2'))
+
+// Duck Duck Goose
+duckDuckGoose = (players, goose) => players[(goose - 1) % players.length].name
