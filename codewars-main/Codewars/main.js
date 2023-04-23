@@ -2941,3 +2941,7 @@ function numberToPower(number, power){
 
 // validate code with simple regex
 validateCode = code => /^[123]/.test(code)
+
+// get ascii value of character
+
+getASCII = c => c.charCodeAt(0)
