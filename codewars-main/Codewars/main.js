@@ -2945,3 +2945,11 @@ validateCode = code => /^[123]/.test(code)
 // get ascii value of character
 
 getASCII = c => c.charCodeAt(0)
+
+// Regexp Basics - is it a digit?
+
+String.prototype.digit = function() {
+  return /^\d$/.test(this);
+}
+
+digit = () => /[0-9]/.test()
