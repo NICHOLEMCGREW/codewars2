@@ -2938,3 +2938,6 @@ function numberToPower(number, power){
   return result
 }
 // console.log(numberToPower(4, 2))
+
+// validate code with simple regex
+validateCode = code => /^[123]/.test(code)
