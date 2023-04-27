@@ -2920,3 +2920,11 @@ function calculateTip(amount, rating) {
 
 calculateTip = (amount, rating) => (tipScale => tipScale < 0 ?  'Rating not recognised' : Math.ceil(amount * tipScale * .05))
 (['terrible', 'poor', 'good', 'great', 'excellent'].indexOf(rating.toLowerCase()))
+
+
+// Sleigh Authentication
+function Sleigh() {}
+
+Sleigh.prototype.authenticate = function(name, password) {
+  return name == "Santa Claus" && password == "Ho Ho Ho!";
+};
