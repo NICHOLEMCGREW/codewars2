@@ -2903,4 +2903,20 @@ var websites = new Array(1000).fill('codewars')
 function getNumberFromString(s) {
  return s.replace(/\D/g, "");
 }
-console.log(getNumberFromString("this5 is number: 7"))
+// console.log(getNumberFromString("this5 is number: 7"))
+
+// Tip Calculator
+function calculateTip(amount, rating) {
+  switch(rating.toLowerCase()) {
+    case 'terrible': return 0;
+    case 'poor': return Math.ceil(amount * 0.05);
+    case 'good': return Math.ceil(amount * 0.1);
+    case 'great': return Math.ceil(amount * 0.15);
+    case 'excellent': return Math.ceil(amount * 0.20);
+    default: return 'Rating not recognised';
+  }
+}
+
+
+calculateTip = (amount, rating) => (tipScale => tipScale < 0 ?  'Rating not recognised' : Math.ceil(amount * tipScale * .05))
+(['terrible', 'poor', 'good', 'great', 'excellent'].indexOf(rating.toLowerCase()))
