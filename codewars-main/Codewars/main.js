@@ -2897,3 +2897,10 @@ function whoIsPaying(name){
 // Kata Example Twist
 // add the value "codewars" to the websites array 1,000 times
 var websites = new Array(1000).fill('codewars')
+
+
+// Get number from string
+function getNumberFromString(s) {
+ return s.replace(/\D/g, "");
+}
+console.log(getNumberFromString("this5 is number: 7"))
