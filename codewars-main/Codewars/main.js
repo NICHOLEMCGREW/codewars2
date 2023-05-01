@@ -2892,4 +2892,8 @@ function whoIsPaying(name){
   }
   return arr;
 }
-console.log(whoIsPaying("Mexico"))
+// console.log(whoIsPaying("Mexico"))
+
+// Kata Example Twist
+// add the value "codewars" to the websites array 1,000 times
+var websites = new Array(1000).fill('codewars')
