@@ -2876,8 +2876,20 @@ function shortenToDate(longDate) {
 // Grasshopper - Combine strings
 
 combineNames = (stra, strb) => stra.concat(" ",strb)
-console.log(combineNames('James', 'Stevens'))
+// console.log(combineNames('James', 'Stevens'))
 
 
 // Training JS #6: Basic data types--Boolean and conditional statements if..else
 trueOrFalse = val => val ? 'true' : 'false'
+
+// Who is going to pay for the wall?
+function whoIsPaying(name){
+  let arr = []
+  if (name.length <= 2) {
+    arr.push(name);
+  } else {
+    arr.push(name, name[0] + name[1]) 
+  }
+  return arr;
+}
+console.log(whoIsPaying("Mexico"))
