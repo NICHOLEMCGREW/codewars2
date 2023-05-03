@@ -2877,3 +2877,7 @@ function shortenToDate(longDate) {
 
 combineNames = (stra, strb) => stra.concat(" ",strb)
 console.log(combineNames('James', 'Stevens'))
+
+
+// Training JS #6: Basic data types--Boolean and conditional statements if..else
+trueOrFalse = val => val ? 'true' : 'false'
