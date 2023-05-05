@@ -2871,3 +2871,9 @@ function shortenToDate(longDate) {
   let index = longDate.lastIndexOf(" ");
   return longDate = longDate.substring(0, index);
 }
+
+
+// Grasshopper - Combine strings
+
+combineNames = (stra, strb) => stra.concat(" ",strb)
+console.log(combineNames('James', 'Stevens'))
