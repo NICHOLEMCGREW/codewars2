@@ -2864,3 +2864,10 @@ function nextId(ids){
     return i;
   }
 }
+
+
+// Remove the time
+function shortenToDate(longDate) {
+  let index = longDate.lastIndexOf(" ");
+  return longDate = longDate.substring(0, index);
+}
