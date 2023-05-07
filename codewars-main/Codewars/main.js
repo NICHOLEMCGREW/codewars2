@@ -2812,3 +2812,11 @@ function contamination(text, char){
 function twoDecimalPlaces(n) {
   return +n.toFixed(2)
 }
+
+// Exclamation marks series #2: Remove all exclamation marks from the end of sentence
+function remove (string) {  
+  return string.replace(/!+$/, '')
+}
+// console.log(remove('Hi!'))
+
+
