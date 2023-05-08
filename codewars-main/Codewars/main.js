@@ -2855,4 +2855,12 @@ function remove(s,n){
  }
  return s
 }
-console.log(remove("Hi!!!",1))
+// console.log(remove("Hi!!!",1))
+
+// Smallest unused ID
+function nextId(ids){
+  for (let i = 0; i <= ids.length; i++) {
+    if (!ids.includes(i))
+    return i;
+  }
+}
