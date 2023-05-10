@@ -2842,3 +2842,7 @@ function lowercaseCount(str){
   }
   return count;
 }
+
+
+// Simple validation of a username with regex
+validateUsr = username => /^[a-z\d_]{4,16}$/.test(username)
