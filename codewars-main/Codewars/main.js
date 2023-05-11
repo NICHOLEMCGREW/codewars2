@@ -2829,4 +2829,16 @@ function differenceInAges(ages){
   newArr.push(Math.max(...ages) - Math.min(...ages))
   return newArr;
 }
-console.log(differenceInAges([82, 15, 6, 38, 35]))
+// console.log(differenceInAges([82, 15, 6, 38, 35]))
+
+// Regex count lowercase letters
+
+function lowercaseCount(str){
+  let count = 0;
+  for (const char of str) {
+    if (char.match(/[a-z]/)) {
+      count += 1;
+    }
+  }
+  return count;
+}
