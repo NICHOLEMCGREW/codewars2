@@ -2820,3 +2820,13 @@ function remove (string) {
 // console.log(remove('Hi!'))
 
 
+// Find the Difference in Age between Oldest and Youngest Family Members
+
+function differenceInAges(ages){
+  let newArr= []
+  newArr.push(Math.min(...ages))
+  newArr.push(Math.max(...ages))
+  newArr.push(Math.max(...ages) - Math.min(...ages))
+  return newArr;
+}
+console.log(differenceInAges([82, 15, 6, 38, 35]))
