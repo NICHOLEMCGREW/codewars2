@@ -2805,4 +2805,10 @@ function contamination(text, char){
   }
   return result
 }
-console.log(contamination("abc","z"))
+// console.log(contamination("abc","z"))
+
+// Formatting decimal places #0
+
+function twoDecimalPlaces(n) {
+  return +n.toFixed(2)
+}
