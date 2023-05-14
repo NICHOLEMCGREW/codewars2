@@ -2790,4 +2790,7 @@ function neutralise(s1, s2) {
   }
 return newStr.join('').toString()
 }
-console.log(neutralise("--++--", "++--++"))
+// console.log(neutralise("--++--", "++--++"))
+
+// Find Nearest square number
+nearestSq = n => Math.pow(Math.round(Math.sqrt(n)), 2)
