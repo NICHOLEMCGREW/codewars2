@@ -2794,3 +2794,15 @@ return newStr.join('').toString()
 
 // Find Nearest square number
 nearestSq = n => Math.pow(Math.round(Math.sqrt(n)), 2)
+
+// Contamination #1 -String-
+function contamination(text, char){
+  let result = ''
+  if (text == '' || char == '') {
+    result = ''
+  } else if (text.length > 0 || char.length > 0) {
+    result = char.repeat(text.length) 
+  }
+  return result
+}
+console.log(contamination("abc","z"))
