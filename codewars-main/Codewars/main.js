@@ -2778,3 +2778,16 @@ if (sign == '+') {
   return "unknown value"
 }
 }
+
+
+// Neutralisation
+function neutralise(s1, s2) {
+  let newStr = []
+  for (let i = 0; i < s1.length; i++) {
+    if (s1[i] == '+' && s2[i] == '+') newStr.push('+') 
+    if (s1[i] == '-' && s2[i] == '-') newStr.push('-') 
+    if (s1[i] == '-' && s2[i] == '+' || s1[i] == '+' && s2[i] == '-') newStr.push('0') 
+  }
+return newStr.join('').toString()
+}
+console.log(neutralise("--++--", "++--++"))
