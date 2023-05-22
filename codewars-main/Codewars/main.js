@@ -2759,6 +2759,22 @@ function sumMul(n,m){
     return +Math.pow(2 * A / Math.PI, 2).toFixed(2)
   }
 
-  circumfrence = 4*A = 2*pi*R
-  Radius = 4*A/(2*pi) = 2*A/pi
-  area = 
+  // circumfrence = 4*A = 2*pi*R
+  // Radius = 4*A/(2*pi) = 2*A/pi
+  // area = 
+
+  
+// simple calculator
+function calculator(a,b,sign){
+if (sign == '+') {
+  return a + b;
+} else if (sign == '-') {
+  return a - b;
+} else if (sign == '*') {
+  return a * b;
+} else if (sign == '/') {
+  return a /b;
+} else {
+  return "unknown value"
+}
+}
