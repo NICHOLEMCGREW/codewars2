@@ -3369,3 +3369,12 @@ const firstToLast = (str,c) => str.indexOf(c) < 0 ? -1 : str.lastIndexOf(c) - st
 function secondSymbol(s, symbol) {
   return s.indexOf(symbol, s.indexOf(symbol) + 1);
 }
+
+// Training JS #16: Methods of String object--slice(), substring() and substr()
+
+const cutIt = arr => arr.map(element => element.slice(0, Math.min(...arr.map(element => element.length))))
+
+function cutIt2(arr){
+  const minLength = Math.min(...arr.map(x => x.length));
+  return arr.map(x => x.slice(0, minLength));
+}
