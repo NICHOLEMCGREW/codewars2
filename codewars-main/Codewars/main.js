@@ -2749,3 +2749,7 @@ function sumMul(n,m){
       return false;
     }
   };
+
+  // Surface Area and Volume of a Box
+
+  getSize = (width, height, depth) => [2 * (width * height + width * depth + height * depth), width * height * depth]
