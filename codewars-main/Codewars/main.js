@@ -2738,4 +2738,14 @@ function sumMul(n,m){
       return newArr;
     }
   }
-  console.log(printArray(["h","o","l","a"]))
+  // console.log(printArray(["h","o","l","a"]))
+
+  // Find out whether the shape is a cube
+
+  const cubeChecker = function(volume, side){
+    if (volume > 0 && side**3 == volume) {
+      return true;
+    } else {
+      return false;
+    }
+  };
