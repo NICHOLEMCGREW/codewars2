@@ -2729,4 +2729,13 @@ function sumMul(n,m){
   }
   return total;
   }
-  console.log(sumMul(2,9))
+  // console.log(sumMul(2,9))
+
+  // Printing Array elements with Comma delimiters
+  function printArray(array){
+    for (let i = 0; i < array.length; i++) {
+      let newArr = array.join(',')
+      return newArr;
+    }
+  }
+  console.log(printArray(["h","o","l","a"]))
