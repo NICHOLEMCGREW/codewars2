@@ -2687,3 +2687,7 @@ function spEng(sentence){
 
   // How many stairs will Suzuki climb in 20 years?
  stairsIn20 = s => 20 * s.reduce((prev1, curr1) => prev1 + curr1.reduce((prev2, curr2) => prev2 + curr2, 0), 0)
+
+ 
+// Price of Mangoes
+mango = (quantity, price) => price *(quantity - Math.floor(quantity / 3))
