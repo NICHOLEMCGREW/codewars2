@@ -2676,3 +2676,11 @@ function spEng(sentence){
   sentence = sentence.toLowerCase();
   return sentence.includes('english');
   }
+
+  // Grasshopper - Messi Goals
+
+  let laLigaGoals = 43;
+  let championsLeagueGoals = 10;
+  let copaDelReyGoals = 5;
+
+  let totalGoals = laLigaGoals + championsLeagueGoals + copaDelReyGoals;
