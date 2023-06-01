@@ -2646,7 +2646,7 @@ var Ball = function(ballType) {
 // L1: Bartender, drinks!
 function getDrinkByProfession(param){
   param = param.toLowerCase();
-  
+
   switch(param) {
     case "jabroni": return "Patron Tequila";
     case "school counselor": return "Anything with Alcohol";
@@ -2657,3 +2657,16 @@ function getDrinkByProfession(param){
     default: return "Beer";
   }
 }
+
+// No Loops 2 - You only need one
+function check(a,x){
+    if (typeof a == 'string') {
+      a = a.toLowerCase();
+    }
+    if (a.includes(x)) {
+      return true;
+    } else {
+      return false;
+    }
+};
+console.log(check([80,117,115,104,45,85,112,115], 45))
