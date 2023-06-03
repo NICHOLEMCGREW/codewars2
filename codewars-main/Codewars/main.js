@@ -2634,9 +2634,11 @@ function apple(x){
 
 // Find the Remainder
 function remainder(n, m){
-  if (n > m) {
-    return n % m
-  } else {
-    return m % n
-  }
+ return n > m ? a % b : b % a;
 }
+
+
+// Regular Ball Super Ball
+var Ball = function(ballType) {
+  this.ballType = ballType || 'regular'
+};
