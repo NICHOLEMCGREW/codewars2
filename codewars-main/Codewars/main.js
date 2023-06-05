@@ -2620,4 +2620,14 @@ function arrayMadness(a, b) {
     return false
   }
 }
-console.log(arrayMadness([5,3,2,4,1],[15]))
+// console.log(arrayMadness([5,3,2,4,1],[15]))
+
+// Alan Partridge II - Apple Turnover
+
+function apple(x){
+ if (x ** 2 > 1000) {
+  return "It's hotter than the sun!!"
+ } else {
+  return "Help yourself to a honeycomb Yorkie for the glovebox."
+ }
+}
