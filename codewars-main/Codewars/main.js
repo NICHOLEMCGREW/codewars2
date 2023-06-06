@@ -2605,4 +2605,19 @@ function  calculateAge(birthYear, currentYear) {
   
 // Simple Fun #1: Seats in Theater
 seatsInTheater = (nCols, nRows, col, row) => (nCols - col + 1) * (nRows - row)
-console.log(seatsInTheater(16,11,5,3))
+// console.log(seatsInTheater(16,11,5,3))
+
+// SpeedCode #2 - Array Madness
+function arrayMadness(a, b) {
+  let aSum = a.reduce((acc, curr) => acc + curr ** 2, 0)
+  console.log(aSum)
+  let bSum = b.reduce((acc, curr) => acc + curr ** 3, 0)
+  console.log(bSum)
+
+  if (aSum > bSum) {
+    return true 
+  } else {
+    return false
+  }
+}
+console.log(arrayMadness([5,3,2,4,1],[15]))
