@@ -2457,3 +2457,23 @@ function ensureQuestion(s) {
 function stringClean(s){
   return s.replace(/[0-9]/g, '')
 }
+
+// What's the real floor?
+
+function getRealFloor(n) {
+n = n - 1
+if (n == 0) return 0;
+if (n < 0 ) return n;
+if (n == 13) n = n - 2;
+// else if (n == 13) n = 12;
+return n
+}
+
+function getRealFloor(n) {
+  if (n == 1) return n - 1
+  if (n > 13) return n - 2
+  if (n == 0) return 0
+  if (n < 0) return n
+  return n - 1;
+}
+console.log(getRealFloor(14))
