@@ -2600,4 +2600,9 @@ function  calculateAge(birthYear, currentYear) {
     }
     return combined;
    }
-   console.log(tripleTrouble("aaa","bbb","ccc"))
+  //  console.log(tripleTrouble("aaa","bbb","ccc"))
+
+  
+// Simple Fun #1: Seats in Theater
+seatsInTheater = (nCols, nRows, col, row) => (nCols - col + 1) * (nRows - row)
+console.log(seatsInTheater(16,11,5,3))
