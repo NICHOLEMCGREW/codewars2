@@ -2585,6 +2585,19 @@ function  calculateAge(birthYear, currentYear) {
       }
      return ref[c]
   }
-  console.log(getChar(55))
+  // console.log(getChar(55))
 
-  const getChar = String.fromCharCode;
+  // const getChar = String.fromCharCode;
+
+  // Triple Trouble
+
+  function tripleTrouble(one, two, three){
+    let combined = ''
+    for (let i = 0; i < one.length; i++) {
+       combined += one[i]
+       combined += two[i]
+       combined += three[i]
+    }
+    return combined;
+   }
+   console.log(tripleTrouble("aaa","bbb","ccc"))
