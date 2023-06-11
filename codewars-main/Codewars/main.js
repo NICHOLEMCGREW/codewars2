@@ -2493,4 +2493,28 @@ function generateRange(min, max, step){
     (value, index) => min + index * step
   )
 }
-console.log(generateRange(2, 10, 2))
+// console.log(generateRange(2, 10, 2))
+
+// Training JS #5: Basic data types--Object
+// function animal(obj){
+//   const animal = {
+//     // name: 'dog',
+//     // legs: 4,
+//     // color: 'white'
+//   }
+//   let call = `This ${color} ${name} has ${legs} legs.`
+//   return call
+// }
+
+// animal({name:"dog",legs:4,color:"white"})
+
+
+// Enumerable Magic - Does My List Include This?
+
+function include(arr, item){
+  if (arr.includes(item)) {
+    return true;
+  } else {
+    return false;
+  }
+}
