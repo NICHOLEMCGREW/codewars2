@@ -2534,3 +2534,15 @@ function howManyLightsabersDoYouOwn(name) {
 function hexToDec(hexString){
   return parseInt(hexString)
 }
+
+// How old will I be in 2099?
+
+function  calculateAge(birthYear, currentYear) {
+  const diff = currentYear - birthYear
+  if (birthYear === currentYear) return "You were born this very year!"
+  if (diff === 1) return "You are 1 year old."
+  if (diff > 1) return `You are ${diff} years old.`
+  if (diff === -1) return "You will be born in 1 year."
+  return `You will be born in ${diff * -1} years.`
+  }
+  
