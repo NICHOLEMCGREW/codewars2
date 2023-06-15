@@ -2528,3 +2528,9 @@ function howManyLightsabersDoYouOwn(name) {
     return 0;
   }
 }
+
+// Hex to Decima
+
+function hexToDec(hexString){
+  return parseInt(hexString)
+}
