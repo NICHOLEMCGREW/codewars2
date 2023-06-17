@@ -2483,4 +2483,14 @@ function getRealFloor(n) {
 const findAverage = function (nums) {
   return nums.reduce((acc, curr) => acc + curr, 0) / nums.length 
 }
-console.log(findAverage([1, 3, 5, 7]))
+// console.log(findAverage([1, 3, 5, 7]))
+
+// Generate range of integers
+
+function generateRange(min, max, step){
+  return Array.from(
+    { length: (max - min) / step + 1},
+    (value, index) => min + index * step
+  )
+}
+console.log(generateRange(2, 10, 2))
