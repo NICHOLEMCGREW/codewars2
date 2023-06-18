@@ -2451,3 +2451,9 @@ function ensureQuestion(s) {
     return s + '?'
   }
 }
+
+// String cleaning
+
+function stringClean(s){
+  return s.replace(/[0-9]/g, '')
+}
