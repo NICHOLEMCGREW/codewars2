@@ -2440,4 +2440,14 @@ function hello(name) {
   if (!name) return 'Hello, World!'
     return `Hello, ${name[0].toUpperCase() + name.slice(1).toLowerCase()}!`
 }
-console.log(hello('jOhN'))
+// console.log(hello('jOhN'))
+
+// Ensure question
+
+function ensureQuestion(s) {
+  if (s.includes('?')) {
+    return s;
+  } else {
+    return s + '?'
+  }
+}
