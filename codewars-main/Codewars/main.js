@@ -2385,4 +2385,17 @@ function combat(health, damage) {
   return health < damage ? 0 : health - damage
 }
 
-console.log(combat(0, 5))
+// console.log(combat(0, 5))
+
+
+// To square(root) or not to square(root)
+
+function squareOrSquareRoot(array) {
+  return array.map(number => {
+    if (Number.isInteger(Math.pow(number, .5))) {
+      return Math.pow(number, .5)
+    } else {
+      return Math.pow(number, 2);
+    }
+  })  
+}
