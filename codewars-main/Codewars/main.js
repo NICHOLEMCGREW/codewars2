@@ -2378,3 +2378,11 @@ function xor(a, b) {
 function mouthSize(animal) {
   return animal.toLowerCase() == 'alligator' ? 'small' : 'wide';
 }
+
+// Grasshopper - Terminal game combat function
+
+function combat(health, damage) {
+  return health < damage ? 0 : health - damage
+}
+
+console.log(combat(0, 5))
