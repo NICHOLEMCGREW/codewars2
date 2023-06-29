@@ -2361,4 +2361,14 @@ Math.max(a + b + c, a * b * c, (a + b) * c, a * (b + c))
 function nameShuffler(str){
   return str.split(' ').reverse().join(' ')
 }
-console.log(nameShuffler('john McClane'))
+// console.log(nameShuffler('john McClane'))
+
+// Exclusive "or" (xor) Logical Operator
+
+function xor(a, b) {
+  if (a == false && b == true || a == true && b == false) {
+    return true;
+  } else {
+    return false;
+  }
+}
