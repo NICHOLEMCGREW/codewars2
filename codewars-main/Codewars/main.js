@@ -2354,3 +2354,11 @@ function iceBrickVolume(radius, bottleLength, rimLength) {
 
 const expressionMatter = (a, b, c) =>
 Math.max(a + b + c, a * b * c, (a + b) * c, a * (b + c))
+
+
+// Name Shuffler
+
+function nameShuffler(str){
+  return str.split(' ').reverse().join(' ')
+}
+console.log(nameShuffler('john McClane'))
