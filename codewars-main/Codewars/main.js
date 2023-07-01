@@ -2349,3 +2349,8 @@ function iceBrickVolume(radius, bottleLength, rimLength) {
   const side = Math.sqrt(hypSqrd) / 2;
   return side ** 2 * height * 2;
 }
+
+// Expressions Matter
+
+const expressionMatter = (a, b, c) =>
+Math.max(a + b + c, a * b * c, (a + b) * c, a * (b + c))
