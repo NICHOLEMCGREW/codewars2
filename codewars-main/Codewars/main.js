@@ -2340,4 +2340,12 @@ function peopleWithAgeDrink(old) {
   age < 21 ? "drink beer" : "drink whisky"
 };
 
-console.log(peopleWithAgeDrink(20))
+// console.log(peopleWithAgeDrink(20))
+
+// For Twins: 2. Math operations
+function iceBrickVolume(radius, bottleLength, rimLength) {
+  const height = bottleLength - rimLength;
+  const hypSqrd = (radius * 2) ** 2;
+  const side = Math.sqrt(hypSqrd) / 2;
+  return side ** 2 * height * 2;
+}
