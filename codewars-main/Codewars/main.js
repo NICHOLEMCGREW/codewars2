@@ -701,7 +701,7 @@ function quadrant(x, y) {
     }
 } 
 
-console.log(quadrant(1, 2))
+// console.log(quadrant(1, 2))
 
 // Check same case
 
@@ -715,5 +715,33 @@ function sameCase(a, b) {
     }
 }
 
-console.log(sameCase("B", "B"))
+// console.log(sameCase("B", "B"))
 
+// Quarter of the year
+
+const quarterOf = (month) => {
+switch(month) {
+    case 1:
+    case 2:
+    case 3:
+        return 1;
+        break;
+    case 4:
+    case 5:
+    case 6:
+        return 2;
+        break;
+    case 7:
+    case 8:
+    case 9:
+        return 3;
+        break;
+    case 10:
+    case 11:
+    case 12:
+        return 4;
+        break;
+}
+}
+
+console.log(quarterOf(5))
