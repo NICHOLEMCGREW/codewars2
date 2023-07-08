@@ -2266,4 +2266,61 @@ function solution(a, b){
 function shortcut (string) {
   return string.replace(/[aeiou]/gi,'')
 }
-console.log(shortcut('hello'))
+// console.log(shortcut('hello'))
+
+
+
+var a = [1,4,7], count = a[a.length - 1];
+var missing = [];
+for ( var i = 1; i <= count; i++ ) {
+	if (a.indexOf(i) == -1) {
+		missing.push(i);
+	}
+}
+// console.log(missing.toString());
+
+
+var a = [5],
+  count = 5;
+var missing = new Array();
+
+for (var i = 1; i <= count; i++) {
+  if (a.indexOf(i) == -1) {
+    missing.push(i);
+  }
+}
+// console.log(missing);
+
+function missingArray(params) {
+  var arr =[1,3,5,8,9];
+  var missing = []; 
+  let newArr = arr.concat(missing)
+  for (let i = 0; i < arr[arr.length-1]; i++) {
+    if(!(arr.includes(i))){
+      missing.push(i);
+      }
+      return missing;
+  }
+}
+
+// console.log(missingArray());
+
+let array1 = [10, 20, 30, 40, 50];
+let result = [];
+  
+// Copy items from array1 to result using push()
+for (let i = 0; i < array1.length; i++) {
+    result.push(array1[i]);
+}
+  
+// console.log(result);
+
+// Lario and Muigi Pipe Problem
+function pipeFix(numbers){
+  const newNums = [];
+  for (let i = numbers[0]; i <= numbers[numbers.length - 1]; i++) {
+    newNums.push(i)
+  }
+  return newNums
+}
+console.log(pipeFix([1,2,3,5,6,8,9]))
