@@ -1411,7 +1411,6 @@ function litres(time) {
 // vowel remover
 
 function shortcut (string) {
-  let vowels = ['a', 'e', 'i', 'o', 'u']
   return string.split('').filter(item => !vowels.includes(item)).join('')
 }
 
@@ -2260,4 +2259,11 @@ function solution(a, b){
  return a.length < b.length ? a+b+a : b+a+b
 }
 
-console.log(solution('45', '1'))
+// console.log(solution('45', '1'))
+
+// Vowel remover
+
+function shortcut (string) {
+  return string.replace(/[aeiou]/gi,'')
+}
+console.log(shortcut('hello'))
