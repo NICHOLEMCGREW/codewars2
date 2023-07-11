@@ -2251,4 +2251,13 @@ function well(x){
     return 'Fail!'
   }
 }
-console.log(well(['bad', 'bad', 'good']))
+
+
+
+// Short Long Short
+
+function solution(a, b){
+ return a.length < b.length ? a+b+a : b+a+b
+}
+
+console.log(solution('45', '1'))
