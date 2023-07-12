@@ -744,4 +744,17 @@ switch(month) {
 }
 }
 
-console.log(quarterOf(5))
+// console.log(quarterOf(5))
+
+// Multiplication table for number
+
+function multiTable(number) {
+    const rows = []
+    for (let i = 1; i <= 10; i++) {
+        rows.push(`${i} * ${number} = ${i * number}`);
+    }
+    return rows.join('\n')
+  }
+  console.log(multiTable(5))
+
+multiTable = number => [...Array(10)].map((_,index) => `${index + 1} * ${number} = ${(index + 1) * number}`).join('\n');
