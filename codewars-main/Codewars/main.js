@@ -755,6 +755,25 @@ function multiTable(number) {
     }
     return rows.join('\n')
   }
-  console.log(multiTable(5))
+//   console.log(multiTable(5))
 
 multiTable = number => [...Array(10)].map((_,index) => `${index + 1} * ${number} = ${(index + 1) * number}`).join('\n');
+
+// Who ate the cookie?
+
+function whoAteTheCookie(x) {
+    if (typeof x === 'string') {
+        return "`Who ate the last cookie? It was Zach";
+    } else if (typeof x === float) {
+        return "`Who ate the last cookie? It was Monica";
+    } else {
+    } return "`Who ate the last cookie? It was the dog";
+}
+
+// console.log(whoAteTheCookie('joe'))
+
+cookie = x => `Who ate the last cookie? It was ${{string:'Zach', number:'Monica'}[typeof x] || 'the dog'}!`
+
+function cookie(x) {
+    return `Who ate the last cookie? It was ${{string:'Zach', number:'Monica'}[typeof x] || 'the dog'}!`
+}
