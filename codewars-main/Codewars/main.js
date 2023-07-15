@@ -2222,4 +2222,14 @@ function fixTheMeerkat(arr) {
   return arr.reverse()
  }
 
- console.log(fixTheMeerkat(["tails", "body", "heads"]))
+//  console.log(fixTheMeerkat(["tails", "body", "heads"]))
+
+// Super Duper Easy
+
+function problem(x){
+  if (typeof(x)== 'string') {
+    return 'Error'
+  } else {
+    return x * 50 + 6
+  }
+}
