@@ -2211,7 +2211,15 @@ function stringy(size) {
   return string
 }
 
-console.log(stringy('string'))
+// console.log(stringy('string'))
 
 // stringy = (size) => size.toString(1)
 // console.log(stringy('string'))
+
+// My head is at the wrong end!
+
+function fixTheMeerkat(arr) {
+  return arr.reverse()
+ }
+
+ console.log(fixTheMeerkat(["tails", "body", "heads"]))
