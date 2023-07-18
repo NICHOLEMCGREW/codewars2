@@ -777,3 +777,33 @@ cookie = x => `Who ate the last cookie? It was ${{string:'Zach', number:'Monica'
 function cookie(x) {
     return `Who ate the last cookie? It was ${{string:'Zach', number:'Monica'}[typeof x] || 'the dog'}!`
 }
+
+
+// Welcome!
+
+    greet = language => 
+    (hello => hello[language] || 'Welcome')
+    ({
+        english: 'Welcome',
+        czech: 'Vitejte',
+        danish: 'Velkomst',
+        dutch: 'Welkom',
+        estonian: 'Tere tulemast',
+        finnish: 'Tervetuloa',
+        flemish: 'Welgekomen',
+        french: 'Bienvenue',
+        german: 'Willkommen',
+        irish: 'Failte',
+        italian: 'Benvenuto',
+        latvian: 'Gaidits',
+        lithuanian: 'Laukiamas',
+        polish: 'Witamy',
+        spanish: 'Bienvenido',
+        swedish: 'Valkommen',
+        welsh: 'Croeso' 
+    })
+
+        console.log(greet('czech'))
+
+
+    
