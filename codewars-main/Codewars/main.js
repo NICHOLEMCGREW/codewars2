@@ -806,4 +806,12 @@ function cookie(x) {
         console.log(greet('czech'))
 
 
+
+// Grasshopper - Function syntax debugging
+
+function main (verb, noun) {
+  return verb + noun
+}
+
+
     
