@@ -2195,6 +2195,23 @@ isValid = formula => !(formula.includes(1) && formula.includes(2))
 // Grasshopper - Terminal game move function
 
 function move (position, roll) {
-  return position + roll + roll
+  return position + roll * 2
 }
-console.log(move(0, 4))
+
+// Stringy Strings
+function stringy(size) {
+  let string = '';
+  for (let i = 0; i < size; i++) {
+   if (i % 2 == 0) {
+    string += '1'
+   } else {
+    string += '0'
+   }
+  }
+  return string
+}
+
+console.log(stringy('string'))
+
+// stringy = (size) => size.toString(1)
+// console.log(stringy('string'))
