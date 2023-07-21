@@ -814,4 +814,13 @@ function main (verb, noun) {
 }
 
 
-    
+// Volume of a Cuboid
+
+// The volume of a cuboid = Length × Width × Height Cubic units.
+
+class Kata {
+    static getVolumeOfCuboid(length, width, height) {
+      const volume = length * width * height;
+      return volume;
+    }
+  }
