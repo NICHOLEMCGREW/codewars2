@@ -803,7 +803,7 @@ function cookie(x) {
         welsh: 'Croeso' 
     })
 
-        console.log(greet('czech'))
+        // console.log(greet('czech'))
 
 
 
@@ -824,3 +824,15 @@ class Kata {
       return volume;
     }
   }
+
+//   No zeros for heros
+
+function noBoringZeros(n) {
+    let newArr = n.toString().split('');
+    while(newArr[newArr.length - 1] === '0') {
+        newArr.pop()
+    }
+    return +newArr.join('')
+  }
+
+  console.log(noBoringZeros(455600))
