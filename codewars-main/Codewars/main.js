@@ -835,4 +835,12 @@ function noBoringZeros(n) {
     return +newArr.join('')
   }
 
-  console.log(noBoringZeros(455600))
+//   console.log(noBoringZeros(455600))
+
+
+//   Reverse List Order
+
+  function reverseList(list) {
+    return list.reverse()
+  }
+  console.log(reverseList([4,5,6]))
