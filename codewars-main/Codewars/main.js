@@ -843,4 +843,8 @@ function noBoringZeros(n) {
   function reverseList(list) {
     return list.reverse()
   }
-  console.log(reverseList([4,5,6]))
+//   console.log(reverseList([4,5,6]))
+
+//   Training JS #18: Methods of String object--concat() split() and its good friend join()
+
+splitAndMerge = (string, separator) => string.split(' ').map(element => element.split('').join(separator)).join(' ')
