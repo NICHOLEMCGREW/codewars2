@@ -848,3 +848,12 @@ function noBoringZeros(n) {
 //   Training JS #18: Methods of String object--concat() split() and its good friend join()
 
 splitAndMerge = (string, separator) => string.split(' ').map(element => element.split('').join(separator)).join(' ')
+
+
+// Potenciation
+
+function power(x,y){
+    return x ** y
+  }
+
+  console.log(power(4, 3 ))
