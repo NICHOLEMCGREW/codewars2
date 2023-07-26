@@ -856,4 +856,16 @@ function power(x,y){
     return x ** y
   }
 
-  console.log(power(4, 3 ))
+//   console.log(power(4, 3 ))
+
+  
+
+  // Find the Integral
+
+  function integrate(coefficient, exponent) {
+    let addOne = exponent + 1;
+    let divideOne = coefficient / addOne;
+    return `${divideOne}x^${addOne}`
+  }
+
+  console.log(integrate(3,2))
