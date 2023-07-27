@@ -868,4 +868,18 @@ function power(x,y){
     return `${divideOne}x^${addOne}`
   }
 
-  console.log(integrate(3,2))
+//   console.log(integrate(3,2))
+
+// String repeat
+
+function repeatStr(n, s) {
+    let retpeatedStr = "";
+    while (n > 0) {
+        retpeatedStr += s;
+        n--;
+    }
+    return retpeatedStr;
+  }
+  console.log(repeatStr(3, "*"))
+
+  
