@@ -2190,4 +2190,11 @@ isValid = formula => !(formula.includes(1) && formula.includes(2))
                   &&  (formula.includes(7) || formula.includes(8))  
 
 
-console.log(isValid([1,3,7]))
+// console.log(isValid([1,3,7]))
+
+// Grasshopper - Terminal game move function
+
+function move (position, roll) {
+  return position + roll + roll
+}
+console.log(move(0, 4))
