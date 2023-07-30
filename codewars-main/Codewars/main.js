@@ -2172,5 +2172,12 @@ function getAge(inputString){
       }
       return arr;
     }
-console.log(between(1, 4))
-  
+// console.log(between(1, 4))
+
+
+// Sort and Star
+
+function twoSort(s) {
+  return s.sort()[0].split('').join('***')
+}
+console.log(twoSort(["bitcoin", "take", "over", "the", "world", "maybe", "who", "knows", "perhaps"]))
