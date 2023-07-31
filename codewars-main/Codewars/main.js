@@ -880,6 +880,9 @@ function repeatStr(n, s) {
     }
     return retpeatedStr;
   }
-  console.log(repeatStr(3, "*"))
+//   console.log(repeatStr(3, "*"))
 
-  
+
+// easy logs
+
+logs = (x, a, b) => Math.log(a * b) / Math.log(x)
