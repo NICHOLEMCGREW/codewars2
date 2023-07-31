@@ -886,3 +886,12 @@ function repeatStr(n, s) {
 // easy logs
 
 logs = (x, a, b) => Math.log(a * b) / Math.log(x)
+
+// Miles per gallon to kilometers per liter
+
+function converter (mpg) {
+    let kpl = Number((mpg * 0.354006).toFixed(2))
+    return kpl
+  }
+
+  console.log(converter(46711))
