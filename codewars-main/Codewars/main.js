@@ -894,4 +894,20 @@ function converter (mpg) {
     return kpl
   }
 
-  console.log(converter(46711))
+//   console.log(converter(46711))
+
+// Add Length
+
+function addLength(str) {
+    const words = str.split(' ');
+    return words.map(words => `${words} ${words.length}`);
+    }
+
+    console.log(addLength('hello'))
+
+    function nameLength(str) {
+        const words = str.split(" ");
+        return words.map(words => `${words} ${words.length}`);
+    }
+    
+    console.log(nameLength("hawaii pizza"));
