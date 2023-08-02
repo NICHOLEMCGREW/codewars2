@@ -903,11 +903,39 @@ function addLength(str) {
     return words.map(words => `${words} ${words.length}`);
     }
 
-    console.log(addLength('hello'))
+    // console.log(addLength('hello'))
 
     function nameLength(str) {
         const words = str.split(" ");
         return words.map(words => `${words} ${words.length}`);
     }
     
-    console.log(nameLength("hawaii pizza"));
+    // console.log(nameLength("hawaii pizza"));
+
+    // Multiple of index
+
+    // multipleOfIndex = array => array.filter((element, index) => element % index == 0 && array.length >= 0)
+
+    // function multipleOfIndex(array) {
+    //    return array.filter((element, index) => element % index === 0)
+    //   }
+
+    // multipleOfIndex=(array) => array.filter((x,i)=>(i!==0)&&(x%i == 0))
+
+
+    // function multipleOfIndex(array) {
+    //     let res = [];
+    //     for (let i = 0; i < array.length; i++) {
+    //         if (array[i] % i == 0) {
+    //             res.push(array[i]);
+    //         } else if (array[i] == 0) {
+    //             res.push(0)
+    //         }
+    //     }
+    //     return res;
+    //   }
+    
+    function multipleOfIndex(array) {
+        return array.filter((x,i) => x == 0 || x % i === 0)
+      }
+    console.log(multipleOfIndex([0, 2, 3, 6, 9])) 
