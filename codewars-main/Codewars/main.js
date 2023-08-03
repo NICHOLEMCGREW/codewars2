@@ -934,8 +934,16 @@ function addLength(str) {
     //     }
     //     return res;
     //   }
-    
+
     function multipleOfIndex(array) {
         return array.filter((x,i) => x == 0 || x % i === 0)
       }
-    console.log(multipleOfIndex([0, 2, 3, 6, 9])) 
+    // console.log(multipleOfIndex([0, 2, 3, 6, 9])) 
+
+    // Removing Elements
+
+         function removeEveryOther(arr){
+          return arr.filter((item, index) => index % 2 === 0)
+        }
+        
+        console.log(removeEveryOther(["Keep", "Remove", "Keep", "Remove", "Keep"]))
