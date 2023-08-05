@@ -952,4 +952,24 @@ function addLength(str) {
 
         position = letter => `Position of alphabet: ${letter.charCodeAt() - 96}`
 
-            console.log(position('a'))
+            // console.log(position('a'))
+
+            // Log without dates 
+
+            // function checkLogs(log) {
+            //     for (let i = 0; i <= log.length; i++) {
+            //         if (log[i] == '23:59:59') {
+            //             return 1
+            //         }
+            //     }
+            //   }
+
+            //   console.log(checkLogs(["00:00:00", "00:01:11", "02:15:59", "23:59:58", "23:59:59"]))
+
+            //   console.log(Date.parse("02:15:59"))
+
+            
+// The falling speed of petals
+
+sakuraFall = v => v > 0 ? 400 / v : 0
+  console.log(sakuraFall(10))
