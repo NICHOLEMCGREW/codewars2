@@ -946,4 +946,10 @@ function addLength(str) {
           return arr.filter((item, index) => index % 2 === 0)
         }
         
-        console.log(removeEveryOther(["Keep", "Remove", "Keep", "Remove", "Keep"]))
+        // console.log(removeEveryOther(["Keep", "Remove", "Keep", "Remove", "Keep"]))
+
+        // Find the position!
+
+        position = letter => `Position of alphabet: ${letter.charCodeAt() - 96}`
+
+            console.log(position('a'))
