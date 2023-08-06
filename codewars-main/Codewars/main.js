@@ -972,4 +972,19 @@ function addLength(str) {
 // The falling speed of petals
 
 sakuraFall = v => v > 0 ? 400 / v : 0
-  console.log(sakuraFall(10))
+//   console.log(sakuraFall(10))
+
+//   Find Multiples of a Number
+
+function findMultiples(integer, limit) {
+    let multiples = []
+    for (let i = integer; i <= limit; i += integer) {
+        multiples.push(i)
+    }
+    return multiples;
+  }
+  
+console.log(findMultiples(5, 25))
+
+
+  
