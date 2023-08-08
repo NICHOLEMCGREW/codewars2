@@ -2161,4 +2161,16 @@ function getAge(inputString){
         return bVolume - aVolume
       }
     }
-    console.log(findDifference([3, 2, 5], [1, 4, 4]))
+    // console.log(findDifference([3, 2, 5], [1, 4, 4]))
+
+    // What is between?
+
+    function between(a, b) {
+      let arr = [];
+      for (let i = a; i <= b; i++) {
+        arr.push(i)
+      }
+      return arr;
+    }
+console.log(between(1, 4))
+  
