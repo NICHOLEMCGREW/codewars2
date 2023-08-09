@@ -1113,4 +1113,52 @@ function maxlen(l1, l2) {
         return count == 0
     }
     
-    console.log(validParentheses("()"))
+    // console.log(validParentheses("()"))
+
+    
+// Find your caterer
+
+// function findCaterer(budget, people){
+//     let package;
+//     let basic = 15 * people
+//     let economy = 20 * people
+//     let premium = (30 * people)
+//     if (premium && people >= 60) {
+//         premium = ((30 * people) * .80)
+        
+//     } 
+//   }
+//   console.log(findCaterer(200, 5))
+
+  
+//   function findCaterer(budget, people){
+//     let cost = budget/people
+//     let premDiscount = ((30 * people) * .20)
+//     if (cost <= 15) {
+//         return 1;
+//     } else if (cost < 30 && people <= 60) {
+//         return 2;
+//     } else if (people > 60 || cost == 24) {
+//         cost = cost - premDiscount
+//         return 3 ;
+//     } else if ((budget == 0 || people == 0)) {
+//         return -1;
+//     }
+//     }
+//     console.log(findCaterer(200, 5))
+
+//     let caterer1 =  15 * 60 
+//     let caterer2 = 20 * 60 
+//     let caterer3 = 30 * 60 
+
+
+// Highest and Lowest
+
+  function highAndLow(numbers) {
+    let num = numbers.split(' ');
+    let max = Math.max.apply(null, num);
+    let min = Math.min.apply(null, num);
+    let result = (`${max} ${min}`)
+    return result
+  }
+  numbersOutput("1 2 3 4 5");
