@@ -1050,4 +1050,67 @@ function oddCount(n){
     return Math.floor(n / 2);
   }
 
-  console.log(oddCount(15023))
+//   console.log(oddCount(15023))
+
+//   Three sticks
+
+function maxlen(l1, l2) {
+    // let maxl1 = l1 % 3
+    // let maxl2 = l2 % 3
+    // let l1Len = Math.max(l1 / l2)
+    // let l2Len = Math.max(l2 / l1)  
+    // if (maxl1 >= l2 || maxl2 >= l1) {
+    //     return Math.max(maxl1, maxl2)
+    //  } 
+    let max = Math.max(l1 % l2, l2 % l1, l1 % 3, l2 % 3)
+    let result;
+    if (l1 * 3 <= max || l2 * 3 <= max) {
+       
+    }
+    return max
+  }
+
+  
+  
+  // function maxlen(l1, l2) {
+      //     let l1Len = Math.max(l1 % l2)
+      //     let l2Len = Math.max(l2 % l1)
+      //     if (l1Len > l2Len) {
+          //         return l1Len
+          //     } else {
+              //         return l2Len
+              //     }   
+              //   }
+              
+    function maxlen(l1, l2) {
+        let min = Math.min(l1, l2)
+        let max = Math.max(l1, l2)
+        console.log(min)
+        console.log(max)
+        if (max / 3 >= min) {
+            console.log(max / 3)
+        } else {
+            console.log(min)
+        }
+
+  }
+    // console.log(maxlen(5, 17))
+
+    // Valid Parentheses
+
+    function validParentheses(parenStr) {
+        let count = 0;
+        for (i = 0; i < parenStr.length; i++) {
+            if (parenStr[i] == '(') {
+                count++
+            } else {
+                count--
+            }
+            if (count < 0) {
+                return false
+            }
+        }
+        return count == 0
+    }
+    
+    console.log(validParentheses("()"))
