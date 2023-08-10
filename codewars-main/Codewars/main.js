@@ -1161,4 +1161,63 @@ function maxlen(l1, l2) {
     let result = (`${max} ${min}`)
     return result
   }
-  numbersOutput("1 2 3 4 5");
+//   numbersOutput("1 2 3 4 5");
+
+//   Is n divisible by (...)
+
+// function isDivisible(n){
+//     let ;
+//     let arr = n.toString().split(',');
+//     for (let i = 0; i <= arr; i++) {
+//         console.log(arr)
+//         if (arr[i] % numbers == 0) {
+//             return true
+//         } else {
+//             return false
+//         }
+//     }
+//   }
+
+//   console.log(isDivisible(12,3,4))
+
+// function isDivisible() {
+//     const argumentsArray = Array.from(arguments)
+
+//     const 
+//     // for (let i = 0; i < arguments.length; i++) {
+//         // console.log(arguments)
+//         console.log(arguments[0])
+//         // console.log(arguments[i])
+//         console.log(argumentsArray)
+//         console.log(argumentsArray[0])
+//         }
+//     // }
+
+
+// console.log(isDivisible(3,3,4))
+
+// let arr2 = [12,3,4];
+// arr2.every((value)=> { 
+//     console.log((value % arr2[0] == 0)); 
+// });
+
+// const arr5 = [12, 2, 3, 4, 5, 6, 7, 8, 9];
+
+// const even = arr5.filter(number => {
+//   if(arr5[0] % number === 0) {
+//     return
+//   };
+// });
+
+// console.log(even)
+
+
+// Square(n) Sum
+function squareSum(numbers){
+    let square = numbers.reduce((acc, curVal) => {
+        return acc + curVal ** 2;
+    }, 0);
+    return square
+}
+console.log(squareSum([1,2]))
+
