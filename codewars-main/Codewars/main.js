@@ -2149,4 +2149,16 @@ function getAge(inputString){
       }
       return arr;
     }
-    console.log(powersOfTwo(1))
+    
+    // Difference of Volumes of Cuboids
+    
+    function findDifference(a, b) {
+      let aVolume = a.reduce((x, z) => x * z)
+      let bVolume = b.reduce((x, z) => x * z)
+      if (aVolume > bVolume) {
+        return aVolume - bVolume
+      } else {
+        return bVolume - aVolume
+      }
+    }
+    console.log(findDifference([3, 2, 5], [1, 4, 4]))
