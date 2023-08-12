@@ -2139,4 +2139,14 @@ function getAge(inputString){
     function divisibleBy(numbers, divisor){
       return numbers.filter(number => number % divisor === 0)
     }
-    console.log(divisibleBy([1,2,3,4,5,6], 2))
+    // console.log(divisibleBy([1,2,3,4,5,6], 2))
+
+    // Powers of 2
+    function powersOfTwo(n){
+      let arr = []
+      for (let i = 0; i <= n; i++) {
+        arr.push(Math.pow(2, i))
+      }
+      return arr;
+    }
+    console.log(powersOfTwo(1))
