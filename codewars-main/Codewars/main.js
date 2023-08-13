@@ -2048,4 +2048,18 @@ function checkForFactor (base, factor) {
   return base % factor === 0;
 }
 
-console.log(checkForFactor(10,2))
+// console.log(checkForFactor(10,2))
+
+// Correct the mistakes of the character recognition software
+
+function correct(string) {
+  return string.replace(/5/g, 'S').replace(/0/g, 'O').replace(/1/g, 'I')
+}
+
+console.log(correct("L0ND0N"))
+
+// let originalString = "The color of the sky changes throughout the day.";
+
+// let newString = originalString.replace("color", "colour");
+
+// console.log(newString);
