@@ -1219,5 +1219,18 @@ function squareSum(numbers){
     }, 0);
     return square
 }
-console.log(squareSum([1,2]))
+// console.log(squareSum([1,2]))
 
+// Welcome to the City
+
+let name = []
+let city;
+let state;
+
+function sayHello( name, city, state ) {
+    return `Hello, ${name.join(' ')}! Welcome to ${city}, ${state}!`
+}
+
+console.log(sayHello([nichole mcgrew], yukon, oklahoma))
+
+sayHello2 = (name, city, state) => `Hello, ${name.join(' ')}! Welcome to ${city}, ${state}!`
