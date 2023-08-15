@@ -1231,6 +1231,12 @@ function sayHello( name, city, state ) {
     return `Hello, ${name.join(' ')}! Welcome to ${city}, ${state}!`
 }
 
-console.log(sayHello([nichole mcgrew], yukon, oklahoma))
+// console.log(sayHello([nichole mcgrew], yukon, oklahoma))
 
 sayHello2 = (name, city, state) => `Hello, ${name.join(' ')}! Welcome to ${city}, ${state}!`
+
+// Total pressure calculation
+
+solution= (molarMass1, molarMass2, givenMass1, givenMass2, volume, temp) => {
+    return (givenMass1/molarMass1 + givenMass2/molarMass2) * 0.082 * (temp + 273.15) / volume;
+  }
