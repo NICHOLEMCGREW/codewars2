@@ -1240,3 +1240,25 @@ sayHello2 = (name, city, state) => `Hello, ${name.join(' ')}! Welcome to ${city}
 solution= (molarMass1, molarMass2, givenMass1, givenMass2, volume, temp) => {
     return (givenMass1/molarMass1 + givenMass2/molarMass2) * 0.082 * (temp + 273.15) / volume;
   }
+
+  
+// Two numbers are positive
+
+    function twoArePositive(a, b, c) {
+        let count = 0;
+      if (a > 0) {
+        count ++;
+      } if (b > 0) {
+        count ++
+      } if (c > 0) {
+        count ++
+      } if (count == 2) {
+        return true
+      } else {
+        return false;
+      }
+    }
+
+console.log(twoArePositive(2, 4, -3))
+
+const twoArePositive = (...a) => a.filter(b => b > 0).length === 2;
