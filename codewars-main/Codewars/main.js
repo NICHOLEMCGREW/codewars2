@@ -1259,6 +1259,15 @@ solution= (molarMass1, molarMass2, givenMass1, givenMass2, volume, temp) => {
       }
     }
 
-console.log(twoArePositive(2, 4, -3))
+// console.log(twoArePositive(2, 4, -3))
 
-const twoArePositive = (...a) => a.filter(b => b > 0).length === 2;
+// const twoArePositive = (...a) => a.filter(b => b > 0).length === 2;
+
+// Square Every Digit
+
+function squareDigits(num){
+        let digits = num.toString().split('');
+        return (+digits.map((n) => n * n).join(''))
+  }
+
+  console.log(squareDigits(3212))
