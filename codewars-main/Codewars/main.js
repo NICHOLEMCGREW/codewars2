@@ -1270,4 +1270,10 @@ function squareDigits(num){
         return (+digits.map((n) => n * n).join(''))
   }
 
-  console.log(squareDigits(3212))
+//   console.log(squareDigits(3212))
+
+// Name on billboard
+
+function billboard(name, price = 30){
+ return name.length(price)
+}
