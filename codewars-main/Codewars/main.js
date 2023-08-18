@@ -1275,5 +1275,13 @@ function squareDigits(num){
 // Name on billboard
 
 function billboard(name, price = 30){
- return name.length(price)
+    let answer = price
+  for(var i = 0; i < name.length - 1; i++){
+    answer += price
+  }
+  return answer 
 }
+
+// console.log(billboard('nichole'))
+
+
