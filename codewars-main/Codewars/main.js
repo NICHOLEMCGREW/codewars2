@@ -1285,3 +1285,11 @@ function billboard(name, price = 30){
 // console.log(billboard('nichole'))
 
 
+// Disemvowel Trolls
+
+function disemvowel(str) {
+    let newStr = str.replace(/[aeiou]/gi, '')
+    return newStr;
+  }
+
+  console.log(disemvowel("This website is for losers LOL!"))
