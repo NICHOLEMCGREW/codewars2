@@ -2027,9 +2027,17 @@ function cockroachSpeed(s) {
 // Keep up the hoop
 
 function hoopCount (n) {
-  if (n >= 10) {
-    return  "Great, now move on to tricks"
-  } else {
-    return "Keep at it until you get it"
+    return (n < 10) ? "Great, now move on to tricks" : "Keep at it until you get it"
   }
+
+  // Find the first non-consecutive number
+
+  function firstNonConsecutive(arr) {
+    for (let i = 1; i < arr.length; i++) {
+        if (arr[i - 1] + 1 !== arr[i]) return arr[i];
+    }
+    return null;
 }
+  
+
+console.log(firstNonConsecutive([1,2,3,4,6,7,8]))
