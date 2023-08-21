@@ -1292,4 +1292,13 @@ function disemvowel(str) {
     return newStr;
   }
 
-  console.log(disemvowel("This website is for losers LOL!"))
+//   console.log(disemvowel("This website is for losers LOL!"))
+
+
+// Double Char
+
+  function doubleChar(str) {
+    return str.split('').map( x => x + x ).join('');
+  }
+  
+  console.log(doubleChar("abcd"))
