@@ -1301,4 +1301,17 @@ function disemvowel(str) {
     return str.split('').map( x => x + x ).join('');
   }
   
-  console.log(doubleChar("abcd"))
+//   console.log(doubleChar("abcd"))
+
+// Remove duplicates from list
+
+function distinct(a) {
+    let result = [];
+
+    for (let num of a) {
+        if (!result.includes(num)) {
+            result.push(num)
+        }
+    }
+    return result;
+  }
