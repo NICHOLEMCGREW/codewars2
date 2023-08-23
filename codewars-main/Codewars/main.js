@@ -1301,7 +1301,7 @@ function disemvowel(str) {
     return str.split('').map( x => x + x ).join('');
   }
   
-//   console.log(doubleChar("abcd"))
+  // console.log(doubleChar("abcd"))
 
 // Remove duplicates from list
 
@@ -1315,3 +1315,37 @@ function distinct(a) {
     }
     return result;
   }
+
+
+  // Stringy Strings
+
+  function stringy(size) {
+    let string = ''
+    for (let i = 0; i < size; i++) {
+      if (i % 2 == 0) {
+        string += '1';
+      } else {
+        string += '0';
+      }
+    }   
+    return string;
+  }
+
+  // console.log(stringy(6))
+
+  // Remove First and Last Character Part Two
+
+  function array5(string) {
+    let newStr = string.split(',')
+    for (let i = 0; i < newStr.length; i++) {
+      if (newStr.length < 3 && Number.isNaN(string) === false) {
+        return null;
+      } else {
+        newStr.shift()
+        newStr.pop()
+        return newStr.join(' ')
+      }
+    }
+  }
+
+  console.log(array5('1,2,3'))
