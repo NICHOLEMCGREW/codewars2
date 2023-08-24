@@ -1348,4 +1348,40 @@ function distinct(a) {
     }
   }
 
-  console.log(array5('1,2,3'))
+  // console.log(array5('1,2,3'))
+
+  function removeStr(arr) {
+    return arr.split(',').splice(1,-1).join(" ") || null;
+  }
+
+  // Printing Array elements with Comma delimiters
+
+  function printArray(array){
+    for (let i = 0; i < array.length; i++) {
+      let newArr = array.join('').split('""')
+      console.log(array[i])
+      return newArr;
+    }
+  }
+
+  // console.log(printArray(["h","o","l","a"]))
+
+  
+// Counting sheep...
+
+function countSheeps(arrayOfSheep) {
+  let count = 0;
+  for (let i = 0; i < arrayOfSheep.length; i++) {
+    if (arrayOfSheep[i] == true) {
+      count++
+    }
+  }
+  return count;
+}
+
+// console.log(countSheeps([true,  true,  true,  false,
+//   true,  true,  true,  true ,
+//   true,  false, true,  false,
+//   true,  false, false, true ,
+//   true,  true,  true,  true ,
+//   false, false, true,  true ]))
