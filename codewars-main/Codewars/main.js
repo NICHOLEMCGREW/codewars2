@@ -1385,3 +1385,12 @@ function countSheeps(arrayOfSheep) {
 //   true,  false, false, true ,
 //   true,  true,  true,  true ,
 //   false, false, true,  true ]))
+
+// Find the smallest integer in the array
+
+class SmallestIntegerFinder {
+  findSmallestInt(args) {
+    let min = Math.min(...args)
+    return min;
+  }
+}
