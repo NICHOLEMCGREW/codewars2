@@ -1394,3 +1394,16 @@ class SmallestIntegerFinder {
     return min;
   }
 }
+
+
+// Keep Hydrated!
+
+function litres(time) {
+  let drink = Math.floor(.5 * time)
+  if (drink < 1) {
+    return 0;
+  }
+  return drink;
+}
+
+console.log(litres(1.4))
