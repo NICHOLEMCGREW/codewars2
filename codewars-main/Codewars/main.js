@@ -2014,4 +2014,12 @@ function enough(cap, on, wait) {
   return (on + wait) - cap
 }
 
-console.log(enough(58, 58, 76))
+// console.log(enough(58, 58, 76))
+
+// Beginner Series #4 Cockroach
+
+function cockroachSpeed(s) {
+  return Math.round(Math.floor(s * 27.777778))
+}
+
+console.log(cockroachSpeed(1.08))
