@@ -1451,3 +1451,13 @@ function multiTable(number) {
   }
   return array.join('\n')
 }
+
+// Holiday VIII - Duty Free
+
+function dutyFree(normPrice, discount, hol){
+  let discounted = discount / 100 * normPrice
+  return Math.floor(hol / discounted)
+}
+
+console.log(dutyFree(12, 50, 1000))
+
