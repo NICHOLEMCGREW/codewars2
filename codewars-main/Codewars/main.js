@@ -1459,5 +1459,24 @@ function dutyFree(normPrice, discount, hol){
   return Math.floor(hol / discounted)
 }
 
-console.log(dutyFree(12, 50, 1000))
+// console.log(dutyFree(12, 50, 1000))
 
+// Dollars and Cents
+
+function formatMoney(amount){
+  return '$' + amount.toFixed(2)
+}
+
+// Convert to Binary
+
+toBinary = (n) => +n.toString(2)
+
+// console.log(toBinary(2))
+
+// NBA full 48 minutes average
+
+function pointsPer48(ppg, mpg) {
+  return +(ppg/mpg*48).toFixed(1) || 0
+}
+
+console.log(pointsPer48(12, 20)) //28
