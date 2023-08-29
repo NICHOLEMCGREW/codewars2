@@ -1433,3 +1433,10 @@ function addFive(num) {
   return total
 }
 
+// Reversing Words in a String
+
+function reverse(string){
+  return string.split(' ').reverse().join(' ')
+}
+
+console.log(reverse('I am an expert at this'))
