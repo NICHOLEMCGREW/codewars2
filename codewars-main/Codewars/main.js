@@ -1406,4 +1406,13 @@ function litres(time) {
   return drink;
 }
 
-console.log(litres(1.4))
+// console.log(litres(1.4))
+
+// vowel remover
+
+function shortcut (string) {
+  let vowels = ['a', 'e', 'i', 'o', 'u']
+  return string.split('').filter(item => !vowels.includes(item)).join('')
+}
+
+// console.log(shortcut('hello'))
