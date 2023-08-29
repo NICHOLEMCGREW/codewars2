@@ -1439,4 +1439,15 @@ function reverse(string){
   return string.split(' ').reverse().join(' ')
 }
 
-console.log(reverse('I am an expert at this'))
+// console.log(reverse('I am an expert at this'))
+
+
+// multiplication table
+
+function multiTable(number) {
+  let array = []
+  for (let i = 1; i <= 10; i++) {
+    array.push(`${i} * ${number} = ${number * i}`)
+  }
+  return array.join('\n')
+}
