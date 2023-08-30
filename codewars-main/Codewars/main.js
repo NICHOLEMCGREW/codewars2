@@ -1479,4 +1479,46 @@ function pointsPer48(ppg, mpg) {
   return +(ppg/mpg*48).toFixed(1) || 0
 }
 
-console.log(pointsPer48(12, 20)) //28
+// console.log(pointsPer48(12, 20)) //28
+
+// heads or tails
+
+const headsOrTails = _=> Math.random() < .5 ? 'heads' : 'tails'
+
+// sort
+let sorted = arr.sort((a, b) => a-b)
+
+//forEach
+let bestColors = ['green', 'blue', 'yello', 'black']
+// bestColors.forEach((x, i) => console.log(x))
+
+// Exes and Ohs
+
+function XO(str) {
+  let xCount = 0;
+  let oCount = 0;
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] == 'X'.toLowerCase()) {
+      xCount++
+    } else if (str[i] == 'o'.toLowerCase()) {
+      oCount++
+    }
+    return oCount
+  }
+}
+
+// console.log(XO('xxOo'))
+
+// How much water do I need?
+
+function howMuchWater(water, load, clothes){
+  if (clothes > 2*load) {
+    return 'Too much clothes'
+  } else if (clothes < load) {
+    return 'Not enough clothes'
+  } else {
+    return +((water )*1.1**(clothes - load)).toFixed(2)
+  }
+}
+
+console.log(howMuchWater(10,10,21))
