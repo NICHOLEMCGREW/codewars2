@@ -1521,4 +1521,12 @@ function howMuchWater(water, load, clothes){
   }
 }
 
-console.log(howMuchWater(10,10,21))
+// console.log(howMuchWater(10,10,21))
+
+
+// Take the Derivative
+
+function derive(coefficient,exponent) {
+  let multi = coefficient * exponent
+  return `${multi}x^${exponent - 1}`
+}
