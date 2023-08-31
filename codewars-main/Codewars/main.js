@@ -971,7 +971,7 @@ function addLength(str) {
             
 // The falling speed of petals
 
-sakuraFall = v => v > 0 ? 400 / v : 0
+// sakuraFall = v => v > 0 ? 400 / v : 0
 //   console.log(sakuraFall(10))
 
 //   Find Multiples of a Number
@@ -1530,3 +1530,41 @@ function derive(coefficient,exponent) {
   let multi = coefficient * exponent
   return `${multi}x^${exponent - 1}`
 }
+
+
+// Holiday VI - Shark Pontoon
+
+// function shark(pontoonDistance, sharkDistance, youSpeed, sharkSpeed, dolphin){
+//   sharkSpeed = (dolphin) && sharkSpeed/2
+//   let attackDistance = sharkDistance - pontoonDistance
+//   let closingSpeed = (sharkSpeed > youSpeed) ? sharkSpeed - youSpeed :
+//   let safetyTime = pontoonDistance / youSpeed
+//   let sharkTime = attackDistance / closingSpeed
+//   return safetyTime < sharkTime ? "Alive!" : "Shark Bait!"
+// }
+
+// console.log(shark(12, 50, 4, 8, true))
+
+// The falling speed of petals
+
+function sakuraFall(v) {
+  if (v < 0) {
+    return 0
+  } else {
+    return 400/v
+  }
+}
+
+
+sakuraFall = v => v > 0 ? 400/v : 0
+console.log(sakuraFall(-1))
+
+
+
+
+
+
+
+
+
+
