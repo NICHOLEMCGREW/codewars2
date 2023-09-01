@@ -2000,4 +2000,9 @@ function monkeyCount(n) {
         return current === 'yellow' ? 'red' : current === 'green' ? 'yellow' : 'green';
       }
 
-      console.log(updateLight("green"))
+      // console.log(updateLight("green"))
+
+      
+// L1: Set Alarm
+
+const setAlarm = (employed, vacation) => employed && !vacation;
