@@ -2006,3 +2006,12 @@ function monkeyCount(n) {
 // L1: Set Alarm
 
 const setAlarm = (employed, vacation) => employed && !vacation;
+
+// Will there be enough space?
+
+function enough(cap, on, wait) {
+  if (cap - (on + wait) >= 0) return 0;
+  return (on + wait) - cap
+}
+
+console.log(enough(58, 58, 76))
