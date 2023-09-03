@@ -1992,4 +1992,12 @@ function monkeyCount(n) {
       return `£${salary}`
       }
 
-      console.log(bonusTime(10000, true))
+      // console.log(bonusTime(10000, true))
+
+      // Thinkful - Logic Drills: Traffic light
+
+      function updateLight(current) {
+        return current === 'yellow' ? 'red' : current === 'green' ? 'yellow' : 'green';
+      }
+
+      console.log(updateLight("green"))
