@@ -1978,11 +1978,18 @@ function monkeyCount(n) {
   // The Feast of Many Beasts
 
   function feast(beast, dish) {
-      if (beast[0] == dish[0] && beast.slice(-1) == dish.slice(-1)) {
-        return true
-      } else {
-        return false
-      }
+    return beast[0] === dish[0] && beast.slice(-1) === dish.slice(-1);
     }
 
-    console.log(feast("great blue heron", "garlic naan"))
+    // console.log(feast("great blue heron", "garlic naan"))
+
+    // Do I get a bonus?
+
+    function bonusTime(salary, bonus) {
+      if (bonus) {
+        salary = salary * 10
+      }
+      return `£${salary}`
+      }
+
+      console.log(bonusTime(10000, true))
