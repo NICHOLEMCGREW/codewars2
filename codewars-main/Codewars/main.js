@@ -1580,26 +1580,49 @@ function getMiddle(s) {
 
 // Sum of Digits / Digital Root
 
-function digitalRoot(n) {
-  if (n < 10)
-    return n;
-  let res = n;
-  while (res >= 10) {
-    res = 0;
+// function digitalRoot(n) {
+//   if (n < 10)
+//     return n;
+//   let res = n;
+//   while (res >= 10) {
+//     res = 0;
 
-    while (n > 0) {
-      res += n % 10;
-      n = Math.floor(n / 10);
-  }
-  n = res;
-  } 
-  return res;
-}
+//     while (n > 0) {
+//       res += n % 10;
+//       n = Math.floor(n / 10);
+//   }
+//   n = res;
+//   } 
+//   return res;
+// }
 
-console.log(digitalRoot(15))
+// console.log(digitalRoot(15))
 
 // let arr = String(n).split("").map((n) => {
 //   const sum = arr.reduce(function(result, item) {
 //     return result + item;
 //   }, 0)
 //   return sum
+
+// Mumbling
+
+function accum(s) {
+	let result = '',
+      arr = s.toLowerCase().split('')
+  for (let i = 0; i < arr.length; i++) {
+    result += arr[i].toUpperCase()
+    for (let j = i; j > 0; j--) {
+      result += arr[i]
+    }
+    if (i < arr.length - 1) { 
+      result += '-'
+    }
+  }
+  return result;
+}
+
+console.log(accum('Zpr'))
+
+const accum = s =>
+s.toLowerCase().split('').map((element, index) =>
+element.toUpperCase() + element.repeat(index)).join('-') 
