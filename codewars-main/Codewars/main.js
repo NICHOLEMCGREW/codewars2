@@ -1539,7 +1539,7 @@ function shark(pontoonDistance, sharkDistance, youSpeed, sharkSpeed, dolphin){
   return (sharkDistance/sharkSpeed) < (pontoonDistance/youSpeed) ? "Shark Bait!" : "Alive!"
 }
 
-console.log(shark(7, 146, 3, 13, false))
+// console.log(shark(7, 146, 3, 13, false))
 
 // The falling speed of petals
 
@@ -1565,7 +1565,15 @@ function parseF(s) {
 // console.log(parseF("1"))
 
 
+// Get the Middle Character
 
+function getMiddle(s) {
+  const i = Math.floor(s.length / 2)
+  let result = s[i]
+  if(s.length % 2 === 0 && i > 0) {
+    result = s[i-1] + result
+  }
+  return result
+}
 
-
-
+console.log(getMiddle("testting"))
