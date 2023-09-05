@@ -1557,11 +1557,16 @@ function sakuraFall(v) {
 
 
 sakuraFall = v => v > 0 ? 400/v : 0
-console.log(sakuraFall(-1))
+// console.log(sakuraFall(-1))
+
+// Parse float
 
 
+function parseF(s) {
+ return isNaN(parseFloat(s)) ? null : parseFloat(s)
+}
 
-
+console.log(parseF("1"))
 
 
 
