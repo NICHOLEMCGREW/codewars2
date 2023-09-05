@@ -1534,16 +1534,12 @@ function derive(coefficient,exponent) {
 
 // Holiday VI - Shark Pontoon
 
-// function shark(pontoonDistance, sharkDistance, youSpeed, sharkSpeed, dolphin){
-//   sharkSpeed = (dolphin) && sharkSpeed/2
-//   let attackDistance = sharkDistance - pontoonDistance
-//   let closingSpeed = (sharkSpeed > youSpeed) ? sharkSpeed - youSpeed :
-//   let safetyTime = pontoonDistance / youSpeed
-//   let sharkTime = attackDistance / closingSpeed
-//   return safetyTime < sharkTime ? "Alive!" : "Shark Bait!"
-// }
+function shark(pontoonDistance, sharkDistance, youSpeed, sharkSpeed, dolphin){
+  sharkSpeed = (dolphin) ? sharkSpeed/2 : sharkSpeed
+  return (sharkDistance/sharkSpeed) < (pontoonDistance/youSpeed) ? "Shark Bait!" : "Alive!"
+}
 
-// console.log(shark(12, 50, 4, 8, true))
+console.log(shark(7, 146, 3, 13, false))
 
 // The falling speed of petals
 
@@ -1566,7 +1562,7 @@ function parseF(s) {
  return isNaN(parseFloat(s)) ? null : parseFloat(s)
 }
 
-console.log(parseF("1"))
+// console.log(parseF("1"))
 
 
 
