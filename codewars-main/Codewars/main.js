@@ -1576,4 +1576,30 @@ function getMiddle(s) {
   return result
 }
 
-console.log(getMiddle("testting"))
+// console.log(getMiddle("testting"))
+
+// Sum of Digits / Digital Root
+
+function digitalRoot(n) {
+  if (n < 10)
+    return n;
+  let res = n;
+  while (res >= 10) {
+    res = 0;
+
+    while (n > 0) {
+      res += n % 10;
+      n = Math.floor(n / 10);
+  }
+  n = res;
+  } 
+  return res;
+}
+
+console.log(digitalRoot(15))
+
+// let arr = String(n).split("").map((n) => {
+//   const sum = arr.reduce(function(result, item) {
+//     return result + item;
+//   }, 0)
+//   return sum
