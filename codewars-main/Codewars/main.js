@@ -1606,23 +1606,40 @@ function getMiddle(s) {
 
 // Mumbling
 
-function accum(s) {
-	let result = '',
-      arr = s.toLowerCase().split('')
-  for (let i = 0; i < arr.length; i++) {
-    result += arr[i].toUpperCase()
-    for (let j = i; j > 0; j--) {
-      result += arr[i]
-    }
-    if (i < arr.length - 1) { 
-      result += '-'
-    }
-  }
-  return result;
-}
+// function accum(s) {
+// 	let result = '',
+//       arr = s.toLowerCase().split('')
+//   for (let i = 0; i < arr.length; i++) {
+//     result += arr[i].toUpperCase()
+//     for (let j = i; j > 0; j--) {
+//       result += arr[i]
+//     }
+//     if (i < arr.length - 1) { 
+//       result += '-'
+//     }
+//   }
+//   return result;
+// }
 
-console.log(accum('Zpr'))
+// console.log(accum('Zpr'))
 
 const accum = s =>
 s.toLowerCase().split('').map((element, index) =>
 element.toUpperCase() + element.repeat(index)).join('-') 
+
+// Convert number to reversed array of digits
+
+function digitize(n) {
+  return Array.from(String(n), Number).reverse()
+}
+
+// console.log(digitize(35231))
+
+
+// Abbreviate a Two Word Name
+
+
+function abbrevName(name){
+  let nameArray = name.split(" ");
+  return (nameArray[0][0] + "." + nameArray[1][0]).toUpperCase();
+}
