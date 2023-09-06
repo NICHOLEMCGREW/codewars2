@@ -1643,3 +1643,21 @@ function abbrevName(name){
   let nameArray = name.split(" ");
   return (nameArray[0][0] + "." + nameArray[1][0]).toUpperCase();
 }
+
+// Returning Strings
+
+function greet(name){
+  return `Hello, ${name} how are you doing today?`
+}
+
+// A Needle in the Haystack
+
+function findNeedle(haystack) {
+  for (let i = 0; i < haystack.length; i++) {
+    if (haystack[i] == 'needle') {
+      return `found the needle at position ${i}`
+    }
+  }
+}
+
+console.log(findNeedle(['3', '123124234', undefined, 'needle', 'world', 'hay', 2, '3', true, false]))
