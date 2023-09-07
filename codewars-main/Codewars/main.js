@@ -1692,4 +1692,12 @@ function solution(number) {
   return sum
 }
 
-console.log(solution(9))
+// console.log(solution(9))
+
+// Isograms
+
+function isIsogram(str){
+  return str.toLowerCase().split('').filter((item, pos, arr)=> arr.indexOf(item) == pos).length == str.length;
+}
+
+console.log(isIsogram("isogram"))
