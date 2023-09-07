@@ -1237,9 +1237,9 @@ sayHello2 = (name, city, state) => `Hello, ${name.join(' ')}! Welcome to ${city}
 
 // Total pressure calculation
 
-solution= (molarMass1, molarMass2, givenMass1, givenMass2, volume, temp) => {
-    return (givenMass1/molarMass1 + givenMass2/molarMass2) * 0.082 * (temp + 273.15) / volume;
-  }
+// solution= (molarMass1, molarMass2, givenMass1, givenMass2, volume, temp) => {
+//     return (givenMass1/molarMass1 + givenMass2/molarMass2) * 0.082 * (temp + 273.15) / volume;
+//   }
 
   
 // Two numbers are positive
@@ -1667,5 +1667,29 @@ function findNeedle(haystack) {
 function maps(x){
  return x.map(function(x) { return x * 2})
 }
-console.log(maps([1, 2, 3]))
+// console.log(maps([1, 2, 3]))
 
+// Multiples of 3 or 5
+
+// function solution(number){
+//   // let multiples = []
+//   for (let i = 0; i < number.length; i++) {
+//     if (number % 3 == 0) { 
+//       console.log('fizz')
+//     }
+//   }
+// }
+
+// console.log(solution(9));
+
+function solution(number) {
+  let sum = 0;
+  for (let i = 0; i < number; i++) {
+    if (i % 3 === 0 || i % 5 === 0) {
+      sum += i;
+    }
+  }
+  return sum
+}
+
+console.log(solution(9))
