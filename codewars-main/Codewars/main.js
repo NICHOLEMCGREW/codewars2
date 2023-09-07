@@ -1700,4 +1700,17 @@ function isIsogram(str){
   return str.toLowerCase().split('').filter((item, pos, arr)=> arr.indexOf(item) == pos).length == str.length;
 }
 
-console.log(isIsogram("isogram"))
+// console.log(isIsogram("isogram"))
+
+// Exes and Ohs
+
+function XO(str) {
+  let equal = 0;
+  str.split``.forEach(c => {
+    ('x' === c.toLowerCase()) && equal++;
+    ('o' === c.toLowerCase()) && equal--;
+  });
+  return equal === 0
+}
+
+console.log(XO('xxxo'))
