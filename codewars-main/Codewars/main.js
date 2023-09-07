@@ -1660,4 +1660,12 @@ function findNeedle(haystack) {
   }
 }
 
-console.log(findNeedle(['3', '123124234', undefined, 'needle', 'world', 'hay', 2, '3', true, false]))
+// console.log(findNeedle(['3', '123124234', undefined, 'needle', 'world', 'hay', 2, '3', true, false]))
+
+// Beginner - Lost Without a Map
+
+function maps(x){
+ return x.map(function(x) { return x * 2})
+}
+console.log(maps([1, 2, 3]))
+
