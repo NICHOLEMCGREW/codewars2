@@ -1762,4 +1762,18 @@ function areYouPlayingBanjo(name) {
   }
 }
 
-console.log(areYouPlayingBanjo('Richole'))
+// console.log(areYouPlayingBanjo('Richole'))
+
+// How good are you really?
+
+function betterThanAverage(classPoints, yourPoints) {
+  let avg = classPoints.reduce((acc, curr) => acc + curr, 0) 
+  / classPoints.length
+  if (yourPoints > avg) {
+    return true;
+  } else {
+    return false
+  }
+}
+
+console.log(betterThanAverage([3, 3], 5))
