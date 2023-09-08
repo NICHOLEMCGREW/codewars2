@@ -1737,4 +1737,15 @@ function booleanToString(b){
   }
 }
 
-console.log.log(booleanToString(true))
+// console.log.log(booleanToString(true))
+
+// Beginner Series #2 Clock
+
+function past(h, m, s){
+  h = h * 60 * 60 *1000
+  m = m * 60000
+  s = s * 1000
+  return h + m + s
+}
+
+console.log(past(0,1,1))
