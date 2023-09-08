@@ -1713,4 +1713,28 @@ function XO(str) {
   return equal === 0
 }
 
-console.log(XO('xxxo'))
+// console.log(XO('xxxo'))
+
+// Opposites Attract
+
+function lovefunc(flower1, flower2){
+  if(flower1 % 2 === 0 && flower2 % 2 !== 0 || flower2 % 2 === 0 && flower1 % 2 !== 0) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+// console.log(lovefunc(1,4))
+
+// Convert a Boolean to a String
+
+function booleanToString(b){
+  if (b == true) {
+    return 'true'
+  } else {
+    return 'false'
+  }
+}
+
+console.log.log(booleanToString(true))
