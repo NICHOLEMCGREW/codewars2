@@ -1748,4 +1748,18 @@ function past(h, m, s){
   return h + m + s
 }
 
-console.log(past(0,1,1))
+// console.log(past(0,1,1))
+
+// Are You Playing Banjo?
+
+function areYouPlayingBanjo(name) {
+  for (let i = 0; i < name.length; i++) {
+    if (name[0] == 'r' || name[0] == 'R') {
+      return `${name} plays banjo`;
+    } else {
+      return `${name} does not play banjo`;
+    }
+  }
+}
+
+console.log(areYouPlayingBanjo('Richole'))
