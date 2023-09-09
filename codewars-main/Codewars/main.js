@@ -1787,4 +1787,13 @@ function sum (numbers) {
     return 0
   }
 };
-console.log(sum([1, 5.2, 4, 0, -1]))
+// console.log(sum([1, 5.2, 4, 0, -1]))
+
+
+// Invert values
+
+function invert(array) {
+  return array.map((x) => x * -1)
+}
+
+console.log(invert([1,2,3,4,5]))
