@@ -1860,4 +1860,16 @@ function hero(bullets, dragons){
   function smash (words) {
     return words.join(' ')
  };
- console.log(["hello", "world"])
+//  console.log(["hello", "world"])
+
+// Count by X
+
+function countBy(x, n) {
+  let z = [];
+  for (let i = 1; i <= n; i++) {
+      z.push(i * x)
+  }
+  return z;
+}
+
+console.log(countBy(2,5))
