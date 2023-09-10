@@ -1835,4 +1835,18 @@ function hero(bullets, dragons){
     return fuelLeft * mpg >= distanceToPump
   };
 
-  console.log(zeroFuel(50, 25, 2))
+  // console.log(zeroFuel(50, 25, 2))
+
+  // DNA to RNA Conversion
+
+  function DNAtoRNA(dna) {
+    let convert = String(dna).split('').map((dna) => {
+      if (dna == 'T') {
+        return 'U'
+      } else {
+        return dna
+      }
+    })
+    return convert.join('')
+  }
+  // console.log(DNAtoRNA("GACCGCCGCC"))
