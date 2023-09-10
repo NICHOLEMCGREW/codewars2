@@ -1872,4 +1872,11 @@ function countBy(x, n) {
   return z;
 }
 
-console.log(countBy(2,5))
+// console.log(countBy(2,5))
+
+// Convert a string to an array
+
+function stringToArray(string){
+return Array.from(string.split(' '))
+}
+console.log(stringToArray("I love arrays they are my favorite"))
