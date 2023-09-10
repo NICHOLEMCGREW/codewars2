@@ -1823,4 +1823,16 @@ function hero(bullets, dragons){
     return false
   }
   }
-  console.log(hero(10, 5))
+  // console.log(hero(10, 5))
+
+  function hero(bullets, dragons){
+    return bullets >= dragons * 2
+  }
+
+  // Will you make it?
+
+  const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+    return fuelLeft * mpg >= distanceToPump
+  };
+
+  console.log(zeroFuel(50, 25, 2))
