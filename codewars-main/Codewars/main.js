@@ -1850,3 +1850,14 @@ function hero(bullets, dragons){
     return convert.join('')
   }
   // console.log(DNAtoRNA("GACCGCCGCC"))
+
+  function DNAtoRNA(dna){
+    return dna.replace(/T/g, 'U');
+  }
+
+  // Sentence Smash
+
+  function smash (words) {
+    return words.join(' ')
+ };
+ console.log(["hello", "world"])
