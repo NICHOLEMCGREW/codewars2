@@ -1796,4 +1796,20 @@ function invert(array) {
   return array.map((x) => x * -1)
 }
 
-console.log(invert([1,2,3,4,5]))
+// console.log(invert([1,2,3,4,5]))
+
+
+// Fake Binary
+
+function fakeBin(x){
+  let bin = String(x).split('').map((x) => {
+    if (x < 5) {
+      return '0'
+    } else {
+      return '1'
+    }
+  })
+  return bin.join('')
+}
+
+console.log(fakeBin('45385593107843568'))
