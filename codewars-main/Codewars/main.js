@@ -1949,4 +1949,17 @@ function greet (name, owner) {
   return name === owner ? 'Hello boss' : 'Hello guest';
 }
 
-console.log(greet('Daniel', 'Daniel'))
+// console.log(greet('Daniel', 'Daniel'))
+
+
+// Count the Monkeys!
+
+function monkeyCount(n) {
+  let arr = [];
+    for (let i = 1; i <= n; i++) {
+       arr.push(i)
+    }
+    return arr;
+  }
+
+  console.log(monkeyCount(5))
