@@ -1879,4 +1879,19 @@ function countBy(x, n) {
 function stringToArray(string){
 return Array.from(string.split(' '))
 }
-console.log(stringToArray("I love arrays they are my favorite"))
+// console.log(stringToArray("I love arrays they are my favorite"))
+
+
+// Rock Paper Scissors!
+
+const rps = (p1, p2) => {
+  if (p1 == 'scissors' && p2 == 'paper' || p1 == 'paper' && p2 == 'rock' || p1 == 'rock' && p2 == 'scissors') {
+    return "Player 1 won!"
+  } else if (p1 == p2){
+    return "Draw!"
+  } else {
+    return "Player 2 won!"
+  } 
+};
+
+console.log(rps('rock', 'scissors'))
