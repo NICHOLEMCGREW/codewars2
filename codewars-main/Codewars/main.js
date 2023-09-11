@@ -1894,4 +1894,15 @@ const rps = (p1, p2) => {
   } 
 };
 
-console.log(rps('rock', 'scissors'))
+// console.log(rps('rock', 'scissors'))
+
+
+// Get the mean of an array
+
+function getAverage(marks){
+  marks = marks.reduce((acc, curr) => acc + curr)
+  / marks.length
+  return Math.round(Math.floor(marks))
+}
+
+console.log(getAverage([1,1,1,1,1,1,1,2]))
