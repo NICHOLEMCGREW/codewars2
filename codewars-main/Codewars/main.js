@@ -1942,3 +1942,11 @@ function getGrade (s1, s2, s3) {
     return 'F'
   }
 }
+
+// Grasshopper - Personalized Message
+
+function greet (name, owner) {
+  return name === owner ? 'Hello boss' : 'Hello guest';
+}
+
+console.log(greet('Daniel', 'Daniel'))
