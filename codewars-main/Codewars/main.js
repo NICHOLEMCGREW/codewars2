@@ -1962,4 +1962,15 @@ function monkeyCount(n) {
     return arr;
   }
 
-  console.log(monkeyCount(5))
+  // console.log(monkeyCount(5))
+
+  // Transportation on vacation
+
+  function rentalCarCost(d) {
+    let total = d * 40;
+    if (d >= 7) return total = total - 50
+    if (d >= 3) return total - 20
+    return total
+    }
+
+  console.log(rentalCarCost(7))
