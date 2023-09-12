@@ -1973,4 +1973,16 @@ function monkeyCount(n) {
     return total
     }
 
-  console.log(rentalCarCost(7))
+  // console.log(rentalCarCost(7))
+
+  // The Feast of Many Beasts
+
+  function feast(beast, dish) {
+      if (beast[0] == dish[0] && beast.slice(-1) == dish.slice(-1)) {
+        return true
+      } else {
+        return false
+      }
+    }
+
+    console.log(feast("great blue heron", "garlic naan"))
