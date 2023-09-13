@@ -2040,4 +2040,16 @@ function hoopCount (n) {
 }
   
 
-console.log(firstNonConsecutive([1,2,3,4,6,7,8]))
+// console.log(firstNonConsecutive([1,2,3,4,6,7,8]))
+
+// Grasshopper - Check for factor
+
+function checkForFactor (base, factor) {
+  if (base % factor === 0) {
+    return true
+  } else {
+    return false
+  }
+}
+
+console.log(checkForFactor(10,2))
