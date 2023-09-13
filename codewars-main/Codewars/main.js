@@ -2056,10 +2056,24 @@ function correct(string) {
   return string.replace(/5/g, 'S').replace(/0/g, 'O').replace(/1/g, 'I')
 }
 
-console.log(correct("L0ND0N"))
+// console.log(correct("L0ND0N"))
 
 // let originalString = "The color of the sky changes throughout the day.";
 
 // let newString = originalString.replace("color", "colour");
 
 // console.log(newString);
+
+// All Star Code Challenge #18
+
+function strCount(str, letter){  
+  let count = 0, i = 0;
+  for (i; i < str.length; i++) {
+    if (str[i] == letter) {
+      count++
+    } 
+  }
+  return count
+}
+
+console.log(strCount('Hello', 'l'))
