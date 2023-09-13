@@ -2045,11 +2045,7 @@ function hoopCount (n) {
 // Grasshopper - Check for factor
 
 function checkForFactor (base, factor) {
-  if (base % factor === 0) {
-    return true
-  } else {
-    return false
-  }
+  return base % factor === 0;
 }
 
 console.log(checkForFactor(10,2))
