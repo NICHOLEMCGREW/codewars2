@@ -2067,13 +2067,23 @@ function correct(string) {
 // All Star Code Challenge #18
 
 function strCount(str, letter){  
-  let count = 0, i = 0;
-  for (i; i < str.length; i++) {
-    if (str[i] == letter) {
-      count++
-    } 
-  }
-  return count
+  // let count = 0, i = 0;
+  // for (i; i < str.length; i++) {
+  //   if (str[i] == letter) {
+  //     count++
+  //   } 
+  // }
+  // return count
+
+  return str.split(letter).length - 1
 }
 
-console.log(strCount('Hello', 'l'))
+// console.log(strCount('Hello', 'l'))
+
+// Parse nice int from char problem
+
+function getAge(inputString){
+  return Number(inputString[0])
+  }
+
+  console.log(getAge("4 years old"))
