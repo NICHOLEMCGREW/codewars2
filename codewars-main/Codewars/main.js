@@ -2125,4 +2125,12 @@ function getAge(inputString){
     }
     }
 
-    console.log(switchItUp(1))
+    // console.log(switchItUp(1))
+
+    // Switch it Up!
+    function isPalindrome(x) {
+      return x.split('').reverse().join('').toLowerCase() === x.toLowerCase() ? true : false
+    }
+
+    // console.log(isPalindrome("aba"))
+
