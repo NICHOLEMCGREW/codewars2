@@ -2669,7 +2669,7 @@ function check(a,x){
       return false;
     }
 };
-console.log(check([80,117,115,104,45,85,112,115], 45))
+// console.log(check([80,117,115,104,45,85,112,115], 45))
 
 // Do you speak "English"?
 function spEng(sentence){
@@ -2716,3 +2716,17 @@ function exponent(a,b){
 function subt(a,b){
   return a - b
 }
+
+// Sum of Multiples
+
+function sumMul(n,m){
+  if (n >= m) return 'INVALID';
+  let total = 0;
+  let i = n;
+  while (i < m) {
+    total += i;
+    i += n;
+  }
+  return total;
+  }
+  console.log(sumMul(2,9))
