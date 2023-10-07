@@ -2897,3 +2897,9 @@ function whoIsPaying(name){
 // Kata Example Twist
 // add the value "codewars" to the websites array 1,000 times
 var websites = new Array(1000).fill('codewars')
+
+
+// Are arrow functions odd?
+function odds(values){
+  return values.filter( v => v%2 );
+}
