@@ -2952,4 +2952,8 @@ String.prototype.digit = function() {
   return /^\d$/.test(this);
 }
 
-digit = () => /[0-9]/.test()
+// ES6 string addition
+function joinStrings(string1, string2){
+  return `${string1.toString()} ${string2.toString()}`
+}
+console.log(joinStrings('hello', 'string2'))
