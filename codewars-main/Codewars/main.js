@@ -2970,3 +2970,8 @@ isDigit = s => s == parseFloat(s)
 const cannonsReady = (gunners) => {
   return Object.values(gunners).includes('nay') ? 'Shiver me timbers!' : 'Fire!'
 }
+
+// Simple Comparison?
+function add(a, b){
+	return a == b
+}
