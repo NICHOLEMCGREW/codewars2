@@ -2998,6 +2998,9 @@ var ArrowFunc = function(arr) {
 }
 
 // Safen User Input Part I - htmlspecialchars
-htmlspecialchars = formData => formData.replace(/[<>"&]/g,replacerFuction =>({'<': '&lt;', '>': '&gt;', '"': '&quot', '&': '&amp;'})[replacerFuction])
 
 htmlspecialchars = formData => formData.replace(/[<>"&]/g,replacerFuction => ({'<': '&lt;', '>': '&gt;', '"': '&quot;', '&': '&amp;'})[replacerFuction])
+
+
+// Enumerable Magic #1 - True for All?
+all = (arr, fun) => arr.every(fun)
