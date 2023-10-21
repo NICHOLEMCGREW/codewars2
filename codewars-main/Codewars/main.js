@@ -2996,3 +2996,8 @@ const TempleStrings = function(obj, feature) {
 var ArrowFunc = function(arr) {
   return arr.map( arr => String.fromCharCode(arr)).join(''); //Complete this function
 }
+
+// Safen User Input Part I - htmlspecialchars
+htmlspecialchars = formData => formData.replace(/[<>"&]/g,replacerFuction =>({'<': '&lt;', '>': '&gt;', '"': '&quot', '&': '&amp;'})[replacerFuction])
+
+htmlspecialchars = formData => formData.replace(/[<>"&]/g,replacerFuction => ({'<': '&lt;', '>': '&gt;', '"': '&quot;', '&': '&amp;'})[replacerFuction])
