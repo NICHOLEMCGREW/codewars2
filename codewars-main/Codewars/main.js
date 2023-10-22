@@ -3070,6 +3070,14 @@ if (oscar === 88) {
 
 // Up and down, the string grows
 
-STRANGE_STRING = `No grow, actual length: ${original} ⇒ ${toUpper}`
-const toUpper = STRANGE_STRING.toUpperCase().toLowerCase().length
-const original = STRANGE_STRING.length
+// STRANGE_STRING = `No grow, actual length: ${original} ⇒ ${toUpper}`
+// const toUpper = STRANGE_STRING.toUpperCase().toLowerCase().length
+// const original = STRANGE_STRING.length
+
+// 
+// Aspect Ratio Cropping - Part 1
+
+function aspectRatio(x,y){
+  return [Math.ceil(16 / 9 * y), y]
+  }
+console.log(aspectRatio(640, 480))
