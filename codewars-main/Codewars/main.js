@@ -3138,6 +3138,9 @@ function isOpposite(s1,s2){
   }
   return str === s2;
   }
-  console.log(isOpposite("WPdgaAIz","wPdgAAiz"))
+  // console.log(isOpposite("WPdgaAIz","wPdgAAiz"))
 
-  
+  // Chuck Norris VII - True or False? (Beginner)
+  function ifChuckSaysSo(){
+    return !true
+  }
