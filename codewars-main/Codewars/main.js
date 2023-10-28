@@ -3154,3 +3154,9 @@ function isOpposite(s1,s2){
     if (score >= 0.7) return "C"
     if (score >= 0.6) return "D"
   }
+
+  // Grasshopper - Order of operations
+
+  function orderOperations () {
+    return (2 + 2) * (2 + 2) * 2
+  }
