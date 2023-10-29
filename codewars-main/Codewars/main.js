@@ -3160,3 +3160,14 @@ function isOpposite(s1,s2){
   function orderOperations () {
     return (2 + 2) * (2 + 2) * 2
   }
+
+  
+// Fuel Calculator: Total Cost
+
+function fuelPrice(litres, pricePerLitre) {
+  for (let i = 2; i <= 10; i += 2)
+    if (litres >= i)
+      pricePerLitre -= .05
+    return +(litres * pricePerLitre).toFixed(2)
+}
+console.log(fuelPrice(8, 2.5))
