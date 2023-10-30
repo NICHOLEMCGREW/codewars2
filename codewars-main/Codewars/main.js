@@ -3170,4 +3170,10 @@ function fuelPrice(litres, pricePerLitre) {
       pricePerLitre -= .05
     return +(litres * pricePerLitre).toFixed(2)
 }
-console.log(fuelPrice(8, 2.5))
+// console.log(fuelPrice(8, 2.5))
+
+// Training JS #29: methods of arrayObject---concat() and join()
+function bigToSmall(arr){
+  return [].concat(...arr).sort((a, b) => b - a).join('>');
+ }
+ console.log(bigToSmall([[1,2],[3,4],[5,6]]))
