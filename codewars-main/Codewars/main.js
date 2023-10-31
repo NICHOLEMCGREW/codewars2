@@ -3183,3 +3183,6 @@ function bigToSmall(arr){
 var Ghost = function() {
   this.color = ['white', 'yellow', 'red', 'purple'][Math.floor(Math.random() * 4)]
 };
+
+// Geometry Basics: Circle Circumference in 2D
+circleCircumference = circle => 2 * Math.PI * circle.radius
