@@ -3176,4 +3176,10 @@ function fuelPrice(litres, pricePerLitre) {
 function bigToSmall(arr){
   return [].concat(...arr).sort((a, b) => b - a).join('>');
  }
- console.log(bigToSmall([[1,2],[3,4],[5,6]]))
+//  console.log(bigToSmall([[1,2],[3,4],[5,6]]))
+
+// Color Ghost
+
+var Ghost = function() {
+  this.color = ['white', 'yellow', 'red', 'purple'][Math.floor(Math.random() * 4)]
+};
