@@ -3211,3 +3211,6 @@ function excludingVatPrice(price){
 
 // Freudian translator
  toFreud = string => !string ? "" : string.split(' ').map((word) => 'sex').join(' ');
+
+//  Return Two Highest Values in List
+twoHighest = arr => [...new Set(arr.sort((a,b) => b - a))].slice(0, 2)
