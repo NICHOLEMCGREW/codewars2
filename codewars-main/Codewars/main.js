@@ -3251,7 +3251,8 @@ function yearDays(year) {
     return `${year} has ${days} days`;
   }
 }
-console.log(yearDays(-1000))
+// console.log(yearDays(-1000))
 
   
-  
+// Geometry Basics: Circle Area in 2D
+circleArea = circle => Math.PI * circle.radius ** 2
