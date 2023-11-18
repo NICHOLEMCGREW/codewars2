@@ -3266,3 +3266,9 @@ String.prototype.toJadenCase = function () {
   .map(word => word[0].toUpperCase() + word.slice(1))
   .join(' ');
 };
+
+
+// Geometry Basics: Distance between points in 2D
+function distanceBetweenPoints(a, b) {
+  return ((a.x - b.x) ** 2 + (a.y - b.y) ** 2) ** 0.5
+}
