@@ -3272,3 +3272,5 @@ String.prototype.toJadenCase = function () {
 function distanceBetweenPoints(a, b) {
   return ((a.x - b.x) ** 2 + (a.y - b.y) ** 2) ** 0.5
 }
+
+distanceBetweenPoints = (a, b) => Math.hypot(a.x - b.x, a.y - b.y);
