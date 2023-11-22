@@ -3280,3 +3280,34 @@ distanceBetweenPoints = (a, b) => Math.hypot(a.x - b.x, a.y - b.y);
 function animal(obj){
   return `This ${obj.color} ${obj.name} has ${obj.legs} legs.`;
 }
+
+
+// OOP: Object Oriented Piracy
+
+function Ship(draft, crew) {
+  const CREW_WIEGHT = 1.5
+  const MIN_BOOTY = 20
+
+  this.draft = draft
+  this.crew = crew
+  this.crewWeight = this.crew * CREW_WIEGHT
+
+  this.isWorthIt = () => this.draft - this.crewWeight > MIN_BOOTY
+}
+
+// class Ship {
+//   constructor(draft, crew) {
+//     this.draft = draft
+//     this.crew = crew
+//   }
+  
+//   isWorthIt() {
+//     let crewMinusDraft = ((this.crew * 1.5) - this.draft)
+//     if (crewMinusDraft > 20) {
+//       return true;
+//     }
+//   }  
+// }
+
+// let aWorthyShip = new Ship(100,20);
+// console.log(aWorthyShip.isWorthIt)
