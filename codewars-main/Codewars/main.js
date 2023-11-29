@@ -3295,19 +3295,14 @@ function Ship(draft, crew) {
   this.isWorthIt = () => this.draft - this.crewWeight > MIN_BOOTY
 }
 
-// class Ship {
-//   constructor(draft, crew) {
-//     this.draft = draft
-//     this.crew = crew
-//   }
+class Ship {
+  constructor(draft, crew) {
+    this.draft = draft
+    this.crew = crew
+  }
   
-//   isWorthIt() {
-//     let crewMinusDraft = ((this.crew * 1.5) - this.draft)
-//     if (crewMinusDraft > 20) {
-//       return true;
-//     }
-//   }  
-// }
+  isWorthIt() {
+    return this.draft - 1.5 * this.crew > 20;
+  }  
+}
 
-// let aWorthyShip = new Ship(100,20);
-// console.log(aWorthyShip.isWorthIt)
