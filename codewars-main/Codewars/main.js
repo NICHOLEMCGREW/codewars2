@@ -3295,14 +3295,58 @@ function Ship(draft, crew) {
   this.isWorthIt = () => this.draft - this.crewWeight > MIN_BOOTY
 }
 
-class Ship {
-  constructor(draft, crew) {
-    this.draft = draft
-    this.crew = crew
-  }
+// class Ship {
+//   constructor(draft, crew) {
+//     this.draft = draft
+//     this.crew = crew
+//   }
   
-  isWorthIt() {
-    return this.draft - 1.5 * this.crew > 20;
-  }  
+//   isWorthIt() {
+//     return this.draft - 1.5 * this.crew > 20;
+//   }  
+// }
+
+// Find the odd int?
+
+// function findOdd(A) {
+//   let counts = A.reduce(function (obj, item) {
+//     if (!obj[item]) {
+//       obj[item] = 0;
+//     }
+//     obj[item]++;
+//     return obj;
+//   }, {})
+//   return counts
+// }
+// console.log(findOdd([0,1,0,1,0]))
+
+// let arr1 = [0,1,0,1,0];
+// let counts = {};
+
+// for (let i = 0; i < arr1.length; i++) {
+//   if (counts[arr1[i]] % 3 == 0) {
+//    return counts[arr1[i]]++;
+//   } else {
+//     counts[arr1[i]] = 1;
+//   }
+// }
+// console.log(counts);
+
+// const occurrences = [0,1,0,1,0].reduce(function (acc, curr) {
+//   return acc[curr] ? ++acc[curr] : acc[curr] = 1, acc
+// }, {});
+
+// console.log(occurrences) 
+
+// Training JS #21: Methods of String object--trim() and the string template
+
+function fiveLine(s){
+  let string = s.trim()
+  let arr = [string]
+  for (let i = 2; i <= 5; i++) {
+    arr.push(string.repeat(i))
+  }
+  return arr.join('\n')
 }
 
+console.log(fiveLine('a'))
