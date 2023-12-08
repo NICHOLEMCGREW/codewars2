@@ -3503,4 +3503,30 @@ function solution(str){
   }
   return result
 }
-console.log(solution("abcdef"))
+// console.log(solution("abcdef"))
+
+// PREP
+// P-Parameters
+// R-Retuns
+// E-Exmples
+// P-Pseudocode
+
+// Simple Pig Latin
+// Parameters - a string with a varying number of words in it. Words may have puncuation marks seperated by a space. 
+// Result - A string of one or multiple words seperated by spaces with 'ay' appended to the end of each word UNLESS that word is a punctuation mark.
+// Examples -  pigIt('Pig latin is cool'),'igPay atinlay siay oolcay')
+//Pseudocoe - split the string into individual words, then split each word into two parts - the first letter, and the rest of the string. Reverse the order of these parts, and concatinate them back together. Check if a word is actually a puctuation mark and if it is NOT, then add "ay" to the end. Concatenate the individual words back into a single string and return. 
+
+//push, slice, charCodeAt, spilt, join, map, reverse, match
+
+function pigIt(str){
+  let marks = ['.', '!', '?', '"', ',']
+  result = str.split(' ').map(word => word.slice(1) + word[0] + (marks.includes(word) ? '' : 'ay')).join(' ')
+  return result
+}
+// pigIt('Pig latin is cool')
+
+// Moving Zeros To The End
+function moveZeros(arr) {
+  return
+}
