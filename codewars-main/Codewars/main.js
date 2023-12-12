@@ -3363,3 +3363,9 @@ function fiveLine(s){
 // Training JS #17: Methods of String object--indexOf(), lastIndexOf() and search()
 
 const firstToLast = (str,c) => str.indexOf(c) < 0 ? -1 : str.lastIndexOf(c) - str.indexOf(c)
+
+// Find the index of the second occurrence of a letter in a string
+
+function secondSymbol(s, symbol) {
+  return s.indexOf(symbol, s.indexOf(symbol) + 1);
+}
