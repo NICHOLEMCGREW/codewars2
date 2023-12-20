@@ -3575,3 +3575,35 @@ function sumTwoSmallestNumbers(numbers) {
   let arr = numbers.sort((a, b) => a - b)
   return arr[0] + arr[1]
 }
+
+//PARAMETERS: a triangle of consecutive odd numbers with n rows, where n starts at 1, input is the row number
+
+//RESULTS: sum of the numbers in row n
+
+//EXAMPLES: assert.strictEqual(rowSumOddNumbers(42), 74088);
+
+//PSEUDOCODE: 
+
+// Sum of odd numbers
+
+function rowSumOddNumbers(n) {
+	return Math.pow(n,3)
+}
+
+//PARAMETERS: 
+
+//RESULTS: 
+
+//EXAMPLES: Test.assertEquals(binaryArrayToNumber([0,0,0,1]), 1);
+  //     Test.assertEquals(binaryArrayToNumber([0,0,1,0]), 2);
+  //     Test.assertEquals(binaryArrayToNumber([1,1,1,1]), 15);
+  //     Test.assertEquals(binaryArrayToNumber([0,1,1,0]), 6);
+  // });
+
+//PSEUDOCODE: 
+
+
+// Ones and Zeros
+const binaryArrayToNumber = arr => {
+  // your code
+};
