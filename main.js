@@ -3674,15 +3674,26 @@ function createPhoneNumber(numbers){
 
 
 // Sum of positive
+
+// function positiveSum(arr) {
+//   let posNums = [];
+//   let posTotal = 0;
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] > 0) {
+//       posNums.push(arr[i]) 
+//       posTotal = posNums.reduce((acc, curr) => acc + curr, 0)
+//     }
+//   }
+//   return posTotal
+// }
+
 function positiveSum(arr) {
-  let posNums = [];
-  let posTotal = 0;
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i] > 0) {
-      posNums.push(arr[i]) 
-      posTotal = posNums.reduce((acc, curr) => acc + curr, 0)
-    }
-  }
-  return posTotal
+  
 }
-console.log(positiveSum([1,-2,3,4,5]))
+// console.log(positiveSum([1,-2,3,4,5]))
+
+function arrayDiff(a, b) {
+  return a.filter(val => !b.includes(val))
+}
+
+console.log(arrayDiff([1,2,2], [2]))
