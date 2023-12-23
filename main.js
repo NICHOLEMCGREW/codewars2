@@ -3779,5 +3779,13 @@ function twoSum(numbers, target) {
     }
   }
 }
-console.log(twoSum([1, 2, 3], 4))
+// console.log(twoSum([1, 2, 3], 4))
 
+// Which are in?
+function inArray(a1,a2){
+  return a1
+    .filter(a1 => a2.find(a2 => a2.match(a1)))
+    .sort()
+}
+
+console.log(inArray(['arp','live','strong'], ["lively", "alive", "harp", "sharp", "armstrong"]))
