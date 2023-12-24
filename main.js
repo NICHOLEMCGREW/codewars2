@@ -3765,6 +3765,19 @@ function removeSmallest(numbers) {
   return copy;
 }
 
-console.log(removeSmallest([1, 1, 2, 3, 4, 5]))
+// console.log(removeSmallest([1, 1, 2, 3, 4, 5]))
 
+// Two Sum
+
+function twoSum(numbers, target) {
+  let num1;
+  let num2;
+  for (let i = 0; i < numbers.length; i++) {
+    for (let j = i+1; j < numbers.length; j++) {
+      let res = numbers[i] + numbers[j]
+      if (res == target) return [i,j]
+    }
+  }
+}
+console.log(twoSum([1, 2, 3], 4))
 
