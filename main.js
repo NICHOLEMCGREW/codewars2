@@ -3788,4 +3788,18 @@ function inArray(a1,a2){
     .sort()
 }
 
-console.log(inArray(['arp','live','strong'], ["lively", "alive", "harp", "sharp", "armstrong"]))
+// console.log(inArray(['arp','live','strong'], ["lively", "alive", "harp", "sharp", "armstrong"]))
+
+// Create Phone Number
+function createPhoneNumber(numbers){
+ return '(' + numbers.splice(0, 3).join('') + ') '
+   + numbers.splice(0, 3).join('') + '-'
+    + numbers.splice(0, 4).join('')
+}
+console.log(createPhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]))
+
+// function createPhoneNumber(numbers){
+//   numbers.splice(3, 0, ") ")
+//   numbers.splice(7, 0, "-")
+//   return '(' + numbers.join('')
+// }
