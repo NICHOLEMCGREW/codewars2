@@ -3796,10 +3796,22 @@ function createPhoneNumber(numbers){
    + numbers.splice(0, 3).join('') + '-'
     + numbers.splice(0, 4).join('')
 }
-console.log(createPhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]))
+// console.log(createPhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]))
 
 // function createPhoneNumber(numbers){
 //   numbers.splice(3, 0, ") ")
 //   numbers.splice(7, 0, "-")
 //   return '(' + numbers.join('')
 // }
+
+// Sum of positive
+function positiveSum(arr) {
+  let sum = 0 
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > 0) {
+      sum += arr[i];
+    }
+  }
+  return sum;
+}
+console.log(positiveSum([1,-2,3,4,5]))
