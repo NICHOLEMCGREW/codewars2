@@ -3814,4 +3814,11 @@ function positiveSum(arr) {
   }
   return sum;
 }
-console.log(positiveSum([1,-2,3,4,5]))
+// console.log(positiveSum([1,-2,3,4,5]))
+
+// Array.diff
+function arrayDiff(a, b) {
+  return a.filter(e => !b.includes(e))
+}
+
+console.log(arrayDiff([1,2], [1]))
