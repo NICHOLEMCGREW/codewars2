@@ -3821,4 +3821,12 @@ function arrayDiff(a, b) {
   return a.filter(e => !b.includes(e))
 }
 
-console.log(arrayDiff([1,2], [1]))
+// console.log(arrayDiff([1,2], [1]))
+
+// Square(n) Sum
+
+function squareSum(numbers){
+ return numbers.map((num) => num**2).reduce((a, c) => a + c, 0)
+}
+
+console.log(squareSum([1,2]))
