@@ -3829,4 +3829,17 @@ function squareSum(numbers){
  return numbers.map((num) => num**2).reduce((a, c) => a + c, 0)
 }
 
-console.log(squareSum([1,2]))
+// console.log(squareSum([1,2]))
+
+// Duplicate Encoder
+// function duplicateEncode(word){
+//   chars=[...word];
+//   return chars.map((char, i, chars) => chars.indexOf(char)===i? "(":"")").join('');
+// }
+
+// Sum of two lowest positive integers
+function sumTwoSmallestNumbers(numbers) {  
+  numbers.sort((a, b) => a - b)
+  return numbers[0] + numbers[1];
+}
+console.log(sumTwoSmallestNumbers([5, 8, 12, 19, 22]))
