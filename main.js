@@ -3842,4 +3842,22 @@ function sumTwoSmallestNumbers(numbers) {
   numbers.sort((a, b) => a - b)
   return numbers[0] + numbers[1];
 }
-console.log(sumTwoSmallestNumbers([5, 8, 12, 19, 22]))
+// console.log(sumTwoSmallestNumbers([5, 8, 12, 19, 22]))
+
+
+// Who likes it?
+function likes(names) {
+  if (names.length == 0) {
+    return 'no one likes this';
+  } else if (names.length == 1) {
+    return names + ' likes this';
+  } else if (names.length <= 2) {
+    return names.join(' and ') + ' like this';
+} else if (names.length > 3) {
+  return `${names[0]}, ${names[1]} and ${names.length - 2} others like this`;
+} 
+else {
+    return names.slice(0, -1).join(', ') + ' and ' + names[names.length-1] + ' like this';
+}
+}
+console.log(likes(['Alex', 'Jacob', 'Mark', 'Max']))
