@@ -3860,4 +3860,29 @@ else {
     return names.slice(0, -1).join(', ') + ' and ' + names[names.length-1] + ' like this';
 }
 }
-console.log(likes(['Alex', 'Jacob', 'Mark', 'Max']))
+// console.log(likes(['Alex', 'Jacob', 'Mark', 'Max']))
+
+// Stop gninnipS My sdroW!
+function spinWords(string){
+  let words = string.split(' ');
+  for (let i = 0; i < words.length; i++) {
+    if(words[i].length > 5) {
+      words[i] = words[i].split(' ').reverse().join('');
+    }
+    let result = words.join(' ');
+    return result;
+  }
+}
+// console.log(spinWords("Hey fellow warriors"))
+
+function reverse(string) {
+  let words = string.split(' ');
+  for (let i = 0; i < words.length; i++) {
+    if (words[i].length >= 5) {
+      words[i] = words[i].split('').reverse().join('');
+    }
+  }
+  let resultStr = words.join(' ');
+  return resultStr;
+}
+console.log(reverse("Hey fellow warriors"))
