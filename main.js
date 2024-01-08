@@ -3885,4 +3885,23 @@ function reverse(string) {
   let resultStr = words.join(' ');
   return resultStr;
 }
-console.log(reverse("Hey fellow warriors"))
+// console.log(reverse("Hey fellow warriors"))
+
+
+// Counting Duplicates
+function duplicateCount(text){
+  let charFreq = {};
+  let dups = 0;
+
+  for (let char of text) {
+    char = char.toLowerCase();
+    charFreq[char] = (charFreq[char] || 0) + 1;
+
+    if (charFreq[char] === 2) {
+      dups++;
+    }
+  }
+
+  return dups;
+}
+console.log(duplicateCount("aabbcde"))
