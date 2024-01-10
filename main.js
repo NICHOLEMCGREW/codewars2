@@ -3904,11 +3904,4 @@ function duplicateCount(text){
 
   return dups;
 }
-// console.log(duplicateCount("aabbcde"))
-
-
-// String ends with?
-
-function solution(str, ending){
-  return str.endsWith(ending);
-}
+console.log(duplicateCount("aabbcde"))
