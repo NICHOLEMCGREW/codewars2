@@ -3922,4 +3922,16 @@ function reverseWords(str) {
   }
   return str.join(' ')
 }
-console.log(reverseWords('The quick brown fox jumps over the lazy dog.'))
+// console.log(reverseWords('The quick brown fox jumps over the lazy dog.'))
+const vowels = ["a", "e", "i", "o", "u"]
+
+function vowelsCounter(text) {
+  let counter = 0;
+  for (let letter of text.toLowerCase()) {
+    if (vowels.includes(letter)) {
+      return count ++
+    }
+  }
+}
+
+console.log(vowelsCounter("abracadabra"));
