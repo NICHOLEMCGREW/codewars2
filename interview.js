@@ -10,3 +10,12 @@ function vowelsCounter(text) {
 }
 
 console.log(vowelsCounter("abracadabra"));
+
+// cap 
+function capSentence(text) {
+    return text.toLowerCase().split(' ').map(x => x[0].toUpperCase() + x.slice(1)).join(' ')
+  }
+  
+  console.log(capSentence('i must confess, this is so much fun.'))
+
+  
