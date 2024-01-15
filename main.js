@@ -3940,4 +3940,16 @@ function capSentence(text) {
   return text.toLowerCase().split(' ').map(x => x[0].toUpperCase() + x.slice(1)).join(' ')
 }
 
-console.log(capSentence('i must confess, this is so much fun.'))
+// console.log(capSentence('i must confess, this is so much fun.'))
+
+function chunkArray(array, size) {
+  array = array.concat(size)
+  let result = [];
+  for (let num of array) {
+    if (!result.includes(num)) {
+      result.push(num)
+    }
+  }
+  return result
+}
+console.log(chunkArray([1,2,3,3,3], [1,4,5,2]))
