@@ -44,3 +44,14 @@ function chunkArray(array, size) {
   }
   console.log(chunkArray([1,2,3,3,3], [1,4,5,2]))
 
+/*
+Write a function that returns the factorial of 
+the provided integer(n). E.g
+    factorial(5) // should return 120
+*/
+
+function factorial(n) {
+ return (n != 1) ? n * factorial(n - 1) : 1;
+}
+
+console.log(factorial(5))

@@ -3952,4 +3952,10 @@ function chunkArray(array, size) {
   }
   return result
 }
-console.log(chunkArray([1,2,3,3,3], [1,4,5,2]))
+// console.log(chunkArray([1,2,3,3,3], [1,4,5,2]))
+
+function factorial(n) {
+  return (n != 1) ? n * factorial(n - 1) : 1;
+ }
+ 
+ console.log(factorial(5))
