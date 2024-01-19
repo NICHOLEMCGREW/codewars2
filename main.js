@@ -3958,4 +3958,11 @@ function factorial(n) {
   return (n != 1) ? n * factorial(n - 1) : 1;
  }
  
- console.log(factorial(5))
+//  console.log(factorial(5))
+
+
+function falsyBouncer(array) {
+ return array.filter(Boolean)
+}
+
+console.log(falsyBouncer([1, 0, null, '', 5]))
