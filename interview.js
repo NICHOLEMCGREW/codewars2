@@ -67,3 +67,11 @@ function falsyBouncer(array) {
    }
    
    console.log(falsyBouncer([1, 0, null, '', 5]))
+
+   /*
+Write a function to return the nth element in Fibonacci sequence,
+where the sequence is:
+    [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, …]
+*/
+
+
