@@ -4074,3 +4074,29 @@ function whereIBelong(arr, num) {
 }
 
 console.log(whereIBelong([1,2,3,4], 3))
+
+// arr of nums, target num, return indices of nums that add up to target
+// [1,2,3,4,5] target 9 => return indices 3,4
+
+//arr of nums - not empty, always nums, whole, positive, at least 2 nums
+// return indices of the nums that add up to target -> []
+
+// [1,2,3,4,5] target 9 => return indices [3,4]
+// [5,6,9] target 11 => return indices [0,1]
+// [22, 7, 100, 5], 12 => [1,3]
+
+function findIndices(arr, target) {
+  //grab a num
+  for (let i = 0; i < arr.length; i++){
+    //comparing outisde num to internal nums
+    for(let k = 0; k < arr.length; k++) {
+      if(arr[i] + arr[k] === target && i !== k) {
+        return [i,k]
+      }
+    }
+  }  
+}
+
+console.log(findIndices([1,2,3,4,5], 9), '[3,4]')
+console.log(findIndices([5,6,9], 11), '[0,1]')
+console.log(findIndices([22, 7, 100, 5], 12), '[1,3]')
