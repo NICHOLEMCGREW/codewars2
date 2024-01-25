@@ -4225,4 +4225,16 @@ var lengthOfLastWord = function (s) {
 	return s[s.length - 1].length;
 };
 
-console.log(lengthOfLastWord("   fly me   to   the moon  "));
+// console.log(lengthOfLastWord("   fly me   to   the moon  "));
+
+
+var plusOne = function(digits) {
+  digits = digits.sort((a, b) => a - b).slice(-1)[0] 
+  return digits + 1
+};
+var plustwo = function(digits) {
+  digits = digits.sort((a, b) => a - b)
+  return digits[digits.length - 1] + 1
+ };
+console.log(plusOne([1,2,4,3]))
+console.log(plustwo([1,2,4,3]))
