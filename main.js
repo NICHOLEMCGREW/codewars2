@@ -4229,12 +4229,9 @@ var lengthOfLastWord = function (s) {
 
 
 var plusOne = function(digits) {
-  digits = digits.sort((a, b) => a - b).slice(-1)[0] 
-  return digits + 1
-};
-var plustwo = function(digits) {
-  digits = digits.sort((a, b) => a - b)
-  return digits[digits.length - 1] + 1
+    let last = digits[digits.length - 1] + 1
+    digits.pop()
+    digits.push(last)
+    return digits  
  };
 console.log(plusOne([1,2,4,3]))
-console.log(plustwo([1,2,4,3]))
