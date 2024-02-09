@@ -4232,6 +4232,9 @@ var plusOne = function(digits) {
     let last = digits[digits.length - 1] + 1
     digits.pop()
     digits.push(last)
+    if (digits > 9) {
+      digits = [1,0]
+    }
     return digits  
  };
-console.log(plusOne([1,2,4,3]))
+console.log(plusOne([9]))
