@@ -4229,12 +4229,27 @@ var lengthOfLastWord = function (s) {
 
 
 var plusOne = function(digits) {
-    let last = digits[digits.length - 1] + 1
-    digits.pop()
-    digits.push(last)
-    if (digits > 9) {
-      digits = [1,0]
-    }
-    return digits  
+  const n = digits.length;
+
+  // Start from the rightmost digit
+  for (let i = n - 1; i >= 0; i--) {
+      // Increment the current digit
+      digits[i]++;
+
+      // If there is no carry, we're done
+      if (digits[i] < 10) {
+          break;
+      } else {
+          // There is a carry, set the current digit to 0
+          digits[i] = 0;
+      }
+  }
+
+  // If there is still a carry after processing all digits, insert a new digit at the beginning
+  if (digits[0] === 0) {
+      digits.unshift(1);
+  }
+
+  return digits;  
  };
 console.log(plusOne([9]))
