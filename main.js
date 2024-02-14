@@ -4252,4 +4252,15 @@ var plusOne = function(digits) {
 
   return digits;  
  };
-console.log(plusOne([9]))
+// console.log(plusOne([9]))
+
+// Summing function for a sorted, contiguous array of integers that starts with the number 1
+
+const sumContiguousArray = function(ary){
+  // get the last item 
+  const lastItem = ary[ary.length - 1]
+  // Gauss's trick 
+  return lastItem * (lastItem + 1) / 2
+}
+const numss = [1,2,3,4,5]
+const sumOfArray = sumContiguousArray(numss)
