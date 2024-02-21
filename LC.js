@@ -64,3 +64,14 @@ function twoSum(nums, target) {
     //Examples: Input: nums = [3,2,4], target = 6 Output: [1,2]
 
     //Pseudocode: use nested loops to compare each value in the array to all other values to see if they add up to the target, then when they do, return the index of both values. Complexity will be 0(n)^2
+
+    function twoSums(nums, target) {
+        let numObject = {}
+            for (let i = 0; i < nums.length; i++) {
+                let otherNum = target - nums[i]
+                if (numObject[otherNum] !== undefined) {
+                    return [numObject[otherNum], i]
+                }
+                numObject[nums[i]] = i
+            }
+    }
