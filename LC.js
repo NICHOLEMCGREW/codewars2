@@ -8,21 +8,28 @@ const createHelloWorld = function() {
 };
 
 // 2620. Counter
-function createCounter(){
-    let value = 0;
+/**
+ * @param {number} n
+ * @return {Function} counter
+ */
+var createCounter = function(n) {
+    
+    return function() {
+       return n++; 
+    };
+}; 
 
-    function increment() {
-        return ++value;
+class Counter { 
+    constructor(n) {
+        this.n = n;
     }
 
-    return {
-        increment: increment
+    increment() {
+        return ++this.n;
     }
 }
 
-const counter1 = createCounter();
-const counter2 = createCounter();
-
-console.log(counter1.increment())
-console.log(counter1.increment())
-console.log(counter2.increment())
+const counter = Counter(10)
+counter.increment()
+counter.increment()
+counter.increment()
