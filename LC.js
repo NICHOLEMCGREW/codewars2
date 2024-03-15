@@ -29,7 +29,7 @@ class Counter {
     }
 }
 
-const counter = Counter(10);
+// const counter = Counter(10);
 // counter.increment()
 // counter.increment()
 // counter.increment()
@@ -75,3 +75,18 @@ function twoSum(nums, target) {
                 numObject[nums[i]] = i
             }
     }
+
+
+    //word -> palidrome
+    //str -> letter, all lowercase, no spec, no funny biz
+    //return true or false
+
+    function isPallidrome(word){
+        //split, reverse, join
+        let reverseWord = word.split('').reverse().join('')
+        //rev === word
+        return reverseWord === word
+    }
+
+    console.log(isPallidrome('racecar'), 'true')
+    console.log(isPallidrome('spongebob'), 'false')

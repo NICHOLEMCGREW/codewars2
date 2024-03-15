@@ -4256,11 +4256,32 @@ var plusOne = function(digits) {
 
 // Summing function for a sorted, contiguous array of integers that starts with the number 1
 
-const sumContiguousArray = function(ary){
+const sumContiguousArray2 = function(arr){
+	//get the last function(ary){
   // get the last item 
   const lastItem = ary[ary.length - 1]
   // Gauss's trick 
   return lastItem * (lastItem + 1) / 2
 }
 const numss = [1,2,3,4,5]
-const sumOfArray = sumContiguousArray(numss)
+const sumOfArray = sumContiguousArray2(n function(arr){
+	//get the last mss)
+
+
+
+    //word -> palidrome
+    //str -> letter, all lowercase, no spec, no funny biz
+    //return true or false
+
+    function isPallidrome(word){
+        //split, reverse, join
+        let reverseWord = word.split('').reverse().join('')
+        //rev === word
+        return reverseWord === word
+    }
+
+    // console.log(isPallidrome('racecar'), 'true')
+    // console.log(isPallidrome('spongebob'), 'false')
+
+	const sumContiguousArray2 = function(arr){
+		//get the last  
