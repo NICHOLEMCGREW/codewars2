@@ -4284,4 +4284,10 @@ const sumOfArray = sumContiguousArray2(n function(arr){
     // console.log(isPallidrome('spongebob'), 'false')
 
 	const sumContiguousArray2 = function(arr){
-		//get the last  
+		//get the last item
+		const lastItem = arr[arr.length - 1]
+		//Gauss's trick
+		return lastItem * (lastItem + 1) /2
+	}
+	const nums = [1,2,3,4,5]
+	const sumOfArray2 = sumContiguousArray2(nums)
