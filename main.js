@@ -4264,7 +4264,7 @@ const sumContiguousArray2 = function(arr){
   return lastItem * (lastItem + 1) / 2
 }
 const numss = [1,2,3,4,5]
-const sumOfArray = sumContiguousArray2(n function(arr){
+// const sumOfArray = sumContiguousArray2(n function(arr){
 	//get the last mss)
 
 
@@ -4283,13 +4283,13 @@ const sumOfArray = sumContiguousArray2(n function(arr){
     // console.log(isPallidrome('racecar'), 'true')
     // console.log(isPallidrome('spongebob'), 'false')
 
-	const sumContiguousArray2 = function(arr){
+	const sumContiguousArray3 = function(arr){
 		//get the last item
 		const lastItem = arr[arr.length - 1]
 		//Gauss's trick
 		return lastItem * (lastItem + 1) /2
 	}
-	const nums = [1,2,3,4,5]
+	const nums3 = [1,2,3,4,5]
 	const sumOfArray2 = sumContiguousArray2(nums)
 
 
@@ -4306,7 +4306,7 @@ var rotate = function(nums, k) {
 	reverse(nums, 0, k - 1)
 };
 
-let reverse = function(nums, start, end) {
+let reversed = function(nums, start, end) {
 	while  (start < end) {
 		let temp = nums[start]
 		nums[start] = nums[end]

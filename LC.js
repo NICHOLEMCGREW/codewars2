@@ -88,5 +88,5 @@ function twoSum(nums, target) {
         return reverseWord === word
     }
 
-    console.log(isPallidrome('racecar'), 'true')
-    console.log(isPallidrome('spongebob'), 'false')
+    // console.log(isPallidrome('racecar'), 'true')
+    // console.log(isPallidrome('spongebob'), 'false')
