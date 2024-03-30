@@ -31,7 +31,7 @@ function flickSwitch(arr) {
 	}
 	return newArr;
 }
-console.log(flickSwitch(["codewars", "flick", "code", "wars"]));
+// console.log(flickSwitch(["codewars", "flick", "code", "wars"]));
 
 function flickSwitch2(arr) {
  let mySwitch = true
@@ -71,3 +71,14 @@ function numberToString(num) {
 function opposite(number) {
     return number * -1
   }
+
+//   Return Negative
+function makeNegative(num) {
+    if (num >= 0) {
+        return num * -1
+    } else {
+        return num
+    }
+  }
+
+console.log(makeNegative(9))
