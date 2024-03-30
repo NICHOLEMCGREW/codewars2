@@ -54,3 +54,10 @@ function evenOrOdd(number) {
     return 'Odd'
   }
 }
+
+// Reversed Strings
+function solution(str){
+  let newStr = str.split('').reverse().join('')
+  return newStr
+}
+
