@@ -61,3 +61,13 @@ function solution(str){
   return newStr
 }
 
+// Convert a Number to a String!
+function numberToString(num) {
+    return num.toString()
+  }
+
+  
+// Opposite number
+function opposite(number) {
+    return number * -1
+  }
