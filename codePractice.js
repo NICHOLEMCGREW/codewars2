@@ -81,4 +81,13 @@ function makeNegative(num) {
     }
   }
 
-console.log(makeNegative(9))
+// console.log(makeNegative(9))
+
+function makeNegative2(num) {
+    return num < 0 ? num : -num;
+}
+
+// Convert boolean values to strings 'Yes' or 'No'.
+function boolToWord( bool ){
+    return bool === true ? 'Yes' : 'No'
+  }
