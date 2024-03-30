@@ -37,3 +37,11 @@ function flickSwitch2(arr) {
  let mySwitch = true
  return arr.map(element => element === 'flick' ? mySwitch = !mySwitch : mySwitch)
 }
+
+//Multiply
+
+function multiply(a, b){
+   let result = (a * b)
+   return result
+  }
+  
