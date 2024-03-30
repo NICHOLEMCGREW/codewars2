@@ -32,3 +32,8 @@ function flickSwitch(arr) {
 	return newArr;
 }
 console.log(flickSwitch(["codewars", "flick", "code", "wars"]));
+
+function flickSwitch2(arr) {
+ let mySwitch = true
+ return arr.map(element => element === 'flick' ? mySwitch = !mySwitch : mySwitch)
+}
