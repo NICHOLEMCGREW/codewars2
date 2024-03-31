@@ -114,3 +114,10 @@ function removeChar(str){
     const stringToNumber = function(str){
         return +str
       }
+
+    //   Function 1 - hello world
+    function greet() {
+        return  "hello world" 
+    }
+
+    const greet1 = () => "hello world!"
