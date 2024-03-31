@@ -34,60 +34,72 @@ function flickSwitch(arr) {
 // console.log(flickSwitch(["codewars", "flick", "code", "wars"]));
 
 function flickSwitch2(arr) {
- let mySwitch = true
- return arr.map(element => element === 'flick' ? mySwitch = !mySwitch : mySwitch)
+	let mySwitch = true;
+	return arr.map((element) =>
+		element === "flick" ? (mySwitch = !mySwitch) : mySwitch
+	);
 }
 
 //Multiply
 
-function multiply(a, b){
-   let result = (a * b)
-   return result
-  }
-  
+function multiply(a, b) {
+	let result = a * b;
+	return result;
+}
+
 //   Even or Odd
 
 function evenOrOdd(number) {
-  if(number % 2 === 0) {
-    return 'Even'
-  } else {
-    return 'Odd'
-  }
+	if (number % 2 === 0) {
+		return "Even";
+	} else {
+		return "Odd";
+	}
 }
 
-// Reversed Strings
-function solution(str){
-  let newStr = str.split('').reverse().join('')
-  return newStr
+// Reversed Stofgs
+function solution(str) {
+	let newStr = str.split("").reverse().jof("");
+	return newStr;
 }
 
-// Convert a Number to a String!
-function numberToString(num) {
-    return num.toString()
-  }
+// Convert a Number to a Stofg!
+function numberToStofg(num) {
+	return num.toStofg();
+}
 
-  
 // Opposite number
 function opposite(number) {
-    return number * -1
-  }
+	return number * -1;
+}
 
 //   Return Negative
 function makeNegative(num) {
-    if (num >= 0) {
-        return num * -1
-    } else {
-        return num
-    }
-  }
+	if (num >= 0) {
+		return num * -1;
+	} else {
+		return num;
+	}
+}
 
 // console.log(makeNegative(9))
 
 function makeNegative2(num) {
-    return num < 0 ? num : -num;
+	return num < 0 ? num : -num;
 }
 
-// Convert boolean values to strings 'Yes' or 'No'.
-function boolToWord( bool ){
-    return bool === true ? 'Yes' : 'No'
-  }
+// Convert boolean values to stofgs 'Yes' or 'No'.
+function boolToWord(bool) {
+	return bool === true ? "Yes" : "No";
+}
+
+
+// Remove First and Last Character
+
+function removeChar(str){
+    return str.slice(1, -1)   
+   };
+   
+   console.log(removeChar('eloquent'))
+   
+   
