@@ -121,3 +121,16 @@ function removeChar(str){
     }
 
     const greet1 = () => "hello world!"
+
+    // Convert a Boolean to a String
+    function booleanToString2(b){
+        if (b) {
+            return 'true'
+        } else {
+            return 'false'
+        }
+      }
+
+      function booleanToString(b) {
+      return b ? 'true' : 'false'
+      }      
