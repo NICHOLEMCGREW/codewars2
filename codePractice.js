@@ -108,4 +108,9 @@ function removeChar(str){
       args.sort((a, b) => a - b)
       return args[0]
     }
-    console.log(findSmallestInt([78,56,232,12,8]))
+    // console.log(findSmallestInt([78,56,232,12,8]))
+
+    // Convert a String to a Number!
+    const stringToNumber = function(str){
+        return +str
+      }
