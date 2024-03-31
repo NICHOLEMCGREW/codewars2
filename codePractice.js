@@ -100,6 +100,12 @@ function removeChar(str){
     return str.slice(1, -1)   
    };
    
-   console.log(removeChar('eloquent'))
-   
-   
+//    console.log(removeChar('eloquent'))
+
+
+// Find the smallest integer in the array
+   function findSmallestInt(args) {
+      args.sort((a, b) => a - b)
+      return args[0]
+    }
+    console.log(findSmallestInt([78,56,232,12,8]))
