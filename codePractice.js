@@ -167,4 +167,17 @@ sum = numbers.reduce((a, c) => a + c, 0)
 return sum
 }
 
-console.log(squareSum([1,2]))
+// console.log(squareSum([1,2]))
+
+
+// Grasshopper - Summation
+var summation = function (num) {
+    let sum = 0;
+    for (let i = 1; i <= num; i++) {
+        sum += i
+    }
+    return sum
+  }
+
+//   console.log(summation(8))
+
