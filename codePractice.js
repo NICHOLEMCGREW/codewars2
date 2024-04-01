@@ -157,4 +157,14 @@ function removeChar(str){
         return newStr
       }
 
-      console.log(repeatStr(3, "*"))
+    //   console.log(repeatStr(3, "*"))
+
+    
+// Square(n) Sum
+function squareSum(numbers){
+numbers = numbers.map(num => num * num)
+sum = numbers.reduce((a, c) => a + c, 0)
+return sum
+}
+
+console.log(squareSum([1,2]))
