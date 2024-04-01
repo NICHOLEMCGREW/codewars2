@@ -146,4 +146,15 @@ function removeChar(str){
         return sum
     }
 
-    console.log(positiveSum([-1,2,3,4,5]))
+    // console.log(positiveSum([-1,2,3,4,5]))
+
+    // String repeat
+    function repeatStr (n, s) {
+        let newStr = '';
+        for( let i = 1; i <= n; i++){
+            newStr += s
+        }
+        return newStr
+      }
+
+      console.log(repeatStr(3, "*"))
