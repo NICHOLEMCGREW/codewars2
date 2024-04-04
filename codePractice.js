@@ -181,3 +181,9 @@ var summation = function (num) {
 
 //   console.log(summation(8))
 
+// Remove String Spaces
+function noSpace(x){
+let newStr = x.split(' ').join('')
+return newStr
+}
+console.log(noSpace('8 j 8   mBliB8g  imjB8B8  jl  B'))
