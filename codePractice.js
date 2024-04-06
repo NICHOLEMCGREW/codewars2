@@ -193,3 +193,8 @@ function doubleInteger(i) {
   i = i + i
   return i;
 }
+
+// Returning Strings
+function greet(name){
+  return `Hello, ${name} how are you doing today?`
+}
