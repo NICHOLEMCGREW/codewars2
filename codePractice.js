@@ -186,4 +186,10 @@ function noSpace(x){
 let newStr = x.split(' ').join('')
 return newStr
 }
-console.log(noSpace('8 j 8   mBliB8g  imjB8B8  jl  B'))
+// console.log(noSpace('8 j 8   mBliB8g  imjB8B8  jl  B'))
+
+// You Can't Code Under Pressure #1
+function doubleInteger(i) {
+  i = i + i
+  return i;
+}
