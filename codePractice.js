@@ -232,4 +232,9 @@ function litres(time) {
   return Math.floor(time/2)
 }
 
-console.log(litres(2))
+// console.log(litres(2))
+
+// Beginner - Lost Without a Map
+function maps(x){
+return x.map(x => x * 2)
+}
