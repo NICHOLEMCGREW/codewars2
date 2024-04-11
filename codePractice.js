@@ -275,4 +275,9 @@ function lovefunc(flower1, flower2){
   return flower1 % 2 !== flower2 % 2;
 }
 
-// Convert number to reversed array of digits
+
+// Sum Numbers
+function sum (numbers) {
+  return numbers.reduce((acc, cur) => acc + cur, 0)
+};
+console.log(sum([1, 5.2, 4, 0, -1]))
