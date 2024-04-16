@@ -290,3 +290,9 @@ function simpleMultiplication(number) {
     return number * 9
   }
 }
+
+
+// MakeUpperCase
+function makeUpperCase(str) {
+  return str.toUpperCase()
+}
