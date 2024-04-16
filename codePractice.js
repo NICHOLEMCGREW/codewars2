@@ -280,4 +280,13 @@ function lovefunc(flower1, flower2){
 function sum (numbers) {
   return numbers.reduce((acc, cur) => acc + cur, 0)
 };
-console.log(sum([1, 5.2, 4, 0, -1]))
+// console.log(sum([1, 5.2, 4, 0, -1]))
+
+// Simple multiplication
+function simpleMultiplication(number) {
+  if (number % 2 === 0) {
+    return number * 8
+  } else {
+    return number * 9
+  }
+}
