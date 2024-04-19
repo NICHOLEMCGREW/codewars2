@@ -320,3 +320,13 @@ function findNeedle(haystack) {
 function findNeedle(haystack) {
   return `found the needle at position ${haystack.indexOf('needle')}`;
 }
+
+// Calculate average
+function findAverage(array) {
+  if (array != 0) {
+    return array.reduce((a, c) => a + c, 0) / array.length
+  } else {
+    return 0
+  }
+}
+console.log(findAverage([1,2,3]))
