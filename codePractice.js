@@ -329,4 +329,12 @@ function findAverage(array) {
     return 0
   }
 }
-console.log(findAverage([1,2,3]))
+
+
+// Invert values
+function invert(array) {
+  const newArr = array.map((x) => x * -1)
+  return newArr
+}
+
+// console.log(invert([1,2,3,4,5]))
