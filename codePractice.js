@@ -338,3 +338,11 @@ function invert(array) {
 }
 
 // console.log(invert([1,2,3,4,5]))
+
+// Beginner - Reduce but Grow
+function grow(x){
+for (let i = 0; i < x.length; i++) {
+ return x.reduce((acc, curr) => acc * curr)
+}
+}
+console.log(grow([1, 2, 3]))
