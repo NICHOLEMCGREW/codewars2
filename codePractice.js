@@ -364,4 +364,13 @@ function isDivisible(n, x, y) {
 function stringToArray(string){
 return string.split(' ').map((x) => x)
 }
-console.log(stringToArray("Robin Singh"))
+// console.log(stringToArray("Robin Singh"))
+
+// Grasshopper - Personalized Message
+function greet (name, owner) {
+  if (name === owner) {
+    return 'Hello boss'
+  } else {
+    return 'Hello guest'
+  }
+}
