@@ -358,4 +358,10 @@ function isDivisible(n, x, y) {
     return false
   }
 }
-console.log(isDivisible(3,3,9))
+// console.log(isDivisible(3,3,9))
+
+// Convert a string to an array
+function stringToArray(string){
+return string.split(' ').map((x) => x)
+}
+console.log(stringToArray("Robin Singh"))
