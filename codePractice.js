@@ -345,4 +345,17 @@ for (let i = 0; i < x.length; i++) {
  return x.reduce((acc, curr) => acc * curr)
 }
 }
-console.log(grow([1, 2, 3]))
+// console.log(grow([1, 2, 3]))
+
+
+// console.log(countPositivesSumNegatives([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15]))
+
+// Is n divisible by x and y?
+function isDivisible(n, x, y) {
+  if (n % y == 0 && n % x == 0) {
+    return true
+  } else {
+    return false
+  }
+}
+console.log(isDivisible(3,3,9))
