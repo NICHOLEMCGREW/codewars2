@@ -416,8 +416,8 @@ var max = function(list){
   return list[0];
 }
 
-const min = (list) => Math.min(...list)
-const max = (list) => Math.max(...list)
+// const min = (list) => Math.min(...list)
+// const max = (list) => Math.max(...list)
 
 // How good are you really?
 function betterThanAverage(classPoints, yourPoints) {
@@ -448,3 +448,9 @@ function getGrade (s1, s2, s3) {
  if (avg < 70 && avg >= 60) return 'D'
  if (avg < 60) return 'F'
 }
+
+// Reversed Words
+function reverseWords(str){
+  return str.split(' ').reverse().join(' ')
+}
+console.log(reverseWords("yoda doesn't speak like this" ))
