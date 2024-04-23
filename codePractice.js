@@ -387,3 +387,9 @@ const quarterOf = (month) => {
     return 4
   }
 }
+
+// Sentence Smash
+function smash (words) {
+  return String(words).split(',').join(' ')
+};
+console.log(smash(["hello", "world"]))
