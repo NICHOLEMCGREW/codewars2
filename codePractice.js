@@ -415,3 +415,16 @@ var max = function(list){
   list.sort((a, b) => b - a) 
   return list[0];
 }
+
+const min = (list) => Math.min(...list)
+const max = (list) => Math.max(...list)
+
+// How good are you really?
+function betterThanAverage(classPoints, yourPoints) {
+  let avg = classPoints.reduce((a,c) => a + c) / classPoints.length
+  if (avg < yourPoints) {
+    return true
+  } else {
+    return false
+  }
+}
