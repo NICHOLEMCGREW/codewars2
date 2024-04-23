@@ -403,4 +403,15 @@ function bmi(weight, height) {
   if (bmi <= 30.0) return 'Overweight'
   if (bmi > 30) return 'Obese'
 }
-console.log(bmi(80, 1.80))
+// console.log(bmi(80, 1.80))
+
+// Find Maximum and Minimum Values of a List
+var min = function(list){
+   list.sort((a, b) => a - b) 
+  return list[0];
+}
+
+var max = function(list){
+  list.sort((a, b) => b - a) 
+  return list[0];
+}
