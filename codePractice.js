@@ -453,4 +453,12 @@ function getGrade (s1, s2, s3) {
 function reverseWords(str){
   return str.split(' ').reverse().join(' ')
 }
-console.log(reverseWords("yoda doesn't speak like this" ))
+// console.log(reverseWords("yoda doesn't speak like this" ))
+
+// Get the mean of an array
+
+function getAverage(marks){
+  let mean = marks.reduce((a, c) => a + c) / marks.length
+  return Math.floor(mean)
+}
+console.log(getAverage([2,2,2,2]))
