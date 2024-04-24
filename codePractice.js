@@ -461,4 +461,15 @@ function getAverage(marks){
   let mean = marks.reduce((a, c) => a + c) / marks.length
   return Math.floor(mean)
 }
-console.log(getAverage([2,2,2,2]))
+// console.log(getAverage([2,2,2,2]))
+
+// Rock Paper Scissors!
+const rps = (p1, p2) => {
+  if (p1 === 'scissors' && p2 === 'paper' || p1 === 'rock' && p2 === 'scissors' || p1 === 'paper' && p2 === 'rock') {
+    return "Player 1 won!"
+  } else if (p2 === 'scissors' && p1 === 'paper' || p2 === 'rock' && p1 === 'scissors' || p2 === 'paper' && p1 === 'rock') {
+    return "Player 2 won!"
+  } else if (p1 === p2) {
+    return 'Draw!'
+  }
+};
