@@ -473,3 +473,10 @@ const rps = (p1, p2) => {
     return 'Draw!'
   }
 };
+
+// Array plus array
+function arrayPlusArray(arr1, arr2) {
+  arr1 = arr1.reduce((a, c) => a + c)
+  arr2 = arr2.reduce((a, c) => a + c)
+  return arr1 + arr2; 
+}
