@@ -482,11 +482,7 @@ function arrayPlusArray(arr1, arr2) {
 }
 
 
-// Abbreviate a Two Word Name
-function abbrevName(name){
 
-}
-console.log(abbrevName("Sam Harris"))
 
 // Beginner Series #2 Clock
 
@@ -496,3 +492,26 @@ m = m * 60
 let milli = (h + m + s) * 1000
 return milli
 }
+
+function milli (h, m, s) {
+  return ((h*3600) +(m*60) +s)*1000
+}
+
+// Is he gonna survive?
+function hero(bullets, dragons){
+  if (bullets === 0 || bullets < dragons * 2) {
+    return false
+  }  else return true
+  } 
+  // console.log(hero(0, 5))
+
+  function hero(bullets, dragons) {
+    return bullets >= dragons * 2
+  }
+
+
+// Abbreviate a Two Word Name
+function abbrevName(name){
+
+}
+console.log(abbrevName("Sam Harris"))
