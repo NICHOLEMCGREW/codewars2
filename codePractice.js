@@ -480,3 +480,19 @@ function arrayPlusArray(arr1, arr2) {
   arr2 = arr2.reduce((a, c) => a + c)
   return arr1 + arr2; 
 }
+
+
+// Abbreviate a Two Word Name
+function abbrevName(name){
+
+}
+console.log(abbrevName("Sam Harris"))
+
+// Beginner Series #2 Clock
+
+function past(h, m, s){
+h = h * 3600
+m = m * 60
+let milli = (h + m + s) * 1000
+return milli
+}
