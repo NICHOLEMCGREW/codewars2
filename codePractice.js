@@ -512,6 +512,7 @@ function hero(bullets, dragons){
 
 // Abbreviate a Two Word Name
 function abbrevName(name){
-
+let [first, last] = name.split(' ')
+return (first[0] + '.' + last[0]).toUpperCase()
 }
 console.log(abbrevName("Sam Harris"))
