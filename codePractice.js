@@ -515,4 +515,27 @@ function abbrevName(name){
 let [first, last] = name.split(' ')
 return (first[0] + '.' + last[0]).toUpperCase()
 }
-console.log(abbrevName("Sam Harris"))
+// console.log(abbrevName("Sam Harris"))
+
+// Fake Binary
+function fakeBin(x){
+
+}
+// console.log(fakeBin('45385593107843568'))
+
+// shorter concat [reverse longer]
+function shorterReverseLonger(a,b){
+  let short = ''
+  let long = ''
+  if (a.length < b.length) {
+    return a + b.split('').reverse().join('') + a
+  } else {
+    return b + a.split('').reverse().join('') + b
+  }
+}
+// console.log(shorterReverseLonger("first", "abcde"))
+
+function shorter_reverse_longer(a,b){
+  return a.length >= b.length ? b + a.split('').reverse().join('') + b : 
+  a + b.split('').reverse().join('') + a;
+}
