@@ -517,11 +517,7 @@ return (first[0] + '.' + last[0]).toUpperCase()
 }
 // console.log(abbrevName("Sam Harris"))
 
-// Fake Binary
-function fakeBin(x){
 
-}
-// console.log(fakeBin('45385593107843568'))
 
 // shorter concat [reverse longer]
 function shorterReverseLonger(a,b){
@@ -539,3 +535,38 @@ function shorter_reverse_longer(a,b){
   return a.length >= b.length ? b + a.split('').reverse().join('') + b : 
   a + b.split('').reverse().join('') + a;
 }
+
+// You only need one - Beginner
+function check(a, x) {
+}
+// console.log(check(['t', 'e', 's', 't'], 'e'))
+
+// Fake Binary
+function fakeBin(x){
+
+}
+// console.log(fakeBin('45385593107843568'))
+
+// Count by X
+function countBy(x, n) {
+  let z = [];
+
+  return z;
+}
+// console.log(countBy(1,10))
+
+// Reversed sequence
+const reverseSeq = n => {
+  let reversed = []
+  for (let i = n; i > 0; i--) {
+    reversed.push(i)
+  }
+  return reversed
+};
+// console.log(reverseSeq(5))
+
+// Return the first M multiples of N
+function multiples(m, n){
+ 
+}
+// console.log(multiples(3, 5))
