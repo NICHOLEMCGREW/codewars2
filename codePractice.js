@@ -540,7 +540,7 @@ function shorter_reverse_longer(a,b){
 function check(a, x) {
 return a.includes(x)
 }
-console.log(check(['t', 'e', 's', 't'], 'e'))
+// console.log(check(['t', 'e', 's', 't'], 'e'))
 
 // Fake Binary
 function fakeBin(x){
@@ -558,11 +558,13 @@ return newStr
 
 // Count by X
 function countBy(x, n) {
-  let z = [];
-
-  return z;
-}
-// console.log(countBy(1,10))
+  let result = [];
+  for (let i = 1; i <= n; i++) {
+    result.push(x*i)
+  }
+  return result;
+  }
+// console.log(countBy(2,5))
 
 // Reversed sequence
 const reverseSeq = n => {
