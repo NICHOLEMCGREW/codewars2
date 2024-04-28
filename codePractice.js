@@ -543,9 +543,17 @@ function check(a, x) {
 
 // Fake Binary
 function fakeBin(x){
-
+  let newStr = ''
+  for (let i = 0; i < x.length; i++) {
+    if (x[i] < 5) {
+      newStr += 0
+    } else {
+      newStr += 1
+    }
+  }
+return newStr
 }
-// console.log(fakeBin('45385593107843568'))
+console.log(fakeBin('45385593107843568'))
 
 // Count by X
 function countBy(x, n) {
@@ -569,4 +577,4 @@ const reverseSeq = n => {
 function multiples(m, n){
  
 }
-// console.log(multiples(3, 5))
+console.log(multiples(3, 5))
