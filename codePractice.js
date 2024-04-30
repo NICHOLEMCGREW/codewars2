@@ -581,3 +581,21 @@ function multiples(m, n){
  
 }
 // console.log(multiples(3, 5))
+
+// Convert string to camel case
+function toCamelCase(str){
+  
+    
+}
+// console.log(toCamelCase("the_stealth_warrior"))
+
+
+// Area or Perimeter
+const areaOrPerimeter = function(l , w) {
+  if (l === w) {
+    return l * w
+  } else {
+    return (l*2) + (w*2)
+  }
+};
+console.log(areaOrPerimeter(3,  3))
