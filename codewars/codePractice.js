@@ -649,4 +649,20 @@ function createArray(number){
   
   return newArray;
 }
-console.log(createArray(2))
+// console.log(createArray(2))
+
+// Capitalization and Mutability
+function capitalizeWord(word) {
+
+}
+console.log(capitalizeWord('word'))
+
+// Grasshopper - If/else syntax debug
+function checkAlive (health) {
+  if () {
+    health < 0
+    return false
+  } else () {
+    return true
+  }
+}
