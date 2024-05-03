@@ -584,7 +584,7 @@ function multiples(m, n){
 
 // Convert string to camel case
 function toCamelCase(str){
-  
+  str.split('')
     
 }
 // console.log(toCamelCase("the_stealth_warrior"))
@@ -598,4 +598,38 @@ const areaOrPerimeter = function(l , w) {
     return (l*2) + (w*2)
   }
 };
-console.log(areaOrPerimeter(3,  3))
+// console.log(areaOrPerimeter(3,  3))
+
+
+// Get Planet Name By ID
+function getPlanetName(id){
+  var name;
+  switch(id){
+    case 1:
+      name = 'Mercury';
+      break;
+    case 2:
+      name = 'Venus';
+      break;
+    case 3:
+      name = 'Earth';
+      break;
+    case 4:
+      name = 'Mars';
+      break;
+    case 5:
+      name = 'Jupiter';
+      break;
+    case 6:
+      name = 'Saturn';
+      break;
+    case 7:
+      name = 'Uranus';
+      break;
+    case 8:
+      name = 'Neptune';break;
+  }
+  
+  return name;
+}
+console.log(getPlanetName(2))
