@@ -638,3 +638,15 @@ function getPlanetName(id){
 var a = "code";
 var b = "wa.rs";
 var name = a + b;
+
+// Unfinished Loop - Bug Fixing #1
+function createArray(number){
+  let newArray = [];
+  
+  for(let counter = 1; counter <= number; counter++){
+    newArray.push(counter);
+  }
+  
+  return newArray;
+}
+console.log(createArray(2))
