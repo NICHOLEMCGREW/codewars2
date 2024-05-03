@@ -632,4 +632,9 @@ function getPlanetName(id){
   
   return name;
 }
-console.log(getPlanetName(2))
+// console.log(getPlanetName(2))
+
+// Basic variable assignment
+var a = "code";
+var b = "wa.rs";
+var name = a + b;
