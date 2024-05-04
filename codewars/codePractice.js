@@ -658,11 +658,41 @@ function capitalizeWord(word) {
 console.log(capitalizeWord('word'))
 
 // Grasshopper - If/else syntax debug
-function checkAlive (health) {
-  if () {
-    health < 0
-    return false
-  } else () {
-    return true
-  }
+// function checkAlive (health) {
+//   if () {
+//     health < 0
+//     return false
+//   } else () {
+//     return true
+//   }
+// }
+
+// Total amount of points
+function points(games) {
+  return games
+  .map(game => {
+    const [x, y] = game.split(":").map(s => parseInt(s))
+    if (x > y) return 3
+    if (x < y) return 0
+  })
+.reduce((total, currentValue) => total + currentValue)
 }
+
+const points1 = games =>
+  games.reduce((prev, curr) => prev += curr[0] > curr[2] ? 3 : 
+  prev += curr[0] < curr[2] ? 0 : 1 ,0)
+
+  
+// Is this my tail?
+function correctTail(body, tail) {
+  sub = body.substr(body.length-(tail.length))
+  if (sub == tail) {
+    return true
+
+  } else {
+    return false
+  }
+  }
+  console.log(correctTail("Fox", "x"))
+  
+  

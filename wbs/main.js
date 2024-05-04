@@ -52,23 +52,38 @@
 
 // func(10, variable => console.log(variable))
 
-function doStuff(a, b, name) {
-    print(sum(a, b))
-    print(sayHi(name))
-  }
+// function doStuff(a, b, name) {
+//     print(sum(a, b))
+//     print(sayHi(name))
+//   }
   
-  function print(variable) {
-    console.log(variable)
-  }
+//   function print(variable) {
+//     console.log(variable)
+//   }
   
-  function sum(a, b) {
-    alkdjfadslk
-    return a + b
-  }
+//   function sum(a, b) {
+//     return a + b
+//   }
   
-  function sayHi(name) {
-    return "Hi " + name
-  }
+//   function sayHi(name) {
+//     return "Hi " + name
+//   }
 
-  doStuff(1, 2, "Nichole")
+//   doStuff(1, 2, "Nichole")
   
+
+// function sum(a, b) {
+//     return a + b
+// }
+
+// let sumArrow = (a, b) => {
+//     return a + b
+// }
+// console.log(sumArrow(1, 2))
+
+function sayHi(name) {
+    let result = "Hi " + name
+    console.log(result)
+}
+let name = "Kyle"
+sayHi(name)
