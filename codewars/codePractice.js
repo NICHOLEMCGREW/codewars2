@@ -655,7 +655,7 @@ function createArray(number){
 function capitalizeWord(word) {
 
 }
-console.log(capitalizeWord('word'))
+// console.log(capitalizeWord('word'))
 
 // Grasshopper - If/else syntax debug
 // function checkAlive (health) {
@@ -693,6 +693,14 @@ function correctTail(body, tail) {
     return false
   }
   }
-  console.log(correctTail("Fox", "x"))
-  
-  
+  // console.log(correctTail("Fox", "x"))
+
+  // Will you make it?
+  const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+    if (mpg * fuelLeft >= distanceToPump) {
+      return true
+    } else {
+      return false
+    }
+  };
+console.log(zeroFuel(50, 25, 2))
