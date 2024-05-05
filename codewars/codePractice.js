@@ -703,4 +703,18 @@ function correctTail(body, tail) {
       return false
     }
   };
-console.log(zeroFuel(50, 25, 2))
+// console.log(zeroFuel(50, 25, 2))
+
+// const zeroFuel1 = (distanceToPump, mpg, fuelLeft) => mpg * fuelLeft >= distanceToPump
+
+
+// If you can't sleep, just count sheep!!
+
+var countSheep = function (num){
+  let text = '';
+  for (let i = 1; i <= num; i++){
+     text += i + ' sheep...'
+  }
+  return text
+}
+console.log(countSheep(2))
