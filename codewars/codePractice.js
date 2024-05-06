@@ -717,4 +717,11 @@ var countSheep = function (num){
   }
   return text
 }
-console.log(countSheep(2))
+// console.log(countSheep(2))
+
+
+// Remove exclamation marks
+function removeExclamationMarks(s) {
+  return s.replace(/!/gi, '');
+}
+console.log(removeExclamationMarks("Hello World!"))
