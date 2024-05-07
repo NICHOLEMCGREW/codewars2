@@ -116,3 +116,5 @@ const a = [
 // console.log(a[0][3])
 // console.log(a[1][2])
 // console.log(a[2][0])
+
+

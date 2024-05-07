@@ -801,4 +801,13 @@ function otherAngle(a, b) {
 function sumMix(x){
 return x.map(Number).reduce((acc, cur) => acc + cur,0)
 }
-console.log(sumMix([9, 3, '7', '3']))
+// console.log(sumMix([9, 3, '7', '3']))
+
+// Fix your code before the garden dies!
+function rainAmount(mm){
+  if (mm >= 40) {
+       return "Your plant has had more than enough water for today!"
+  } else {
+       return "You need to give your plant " + (40 - mm) + "mm of water"
+  };
+}
