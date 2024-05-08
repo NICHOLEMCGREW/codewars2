@@ -724,4 +724,16 @@ var countSheep = function (num){
 function removeExclamationMarks(s) {
   return s.replace(/!/gi, '');
 }
-console.log(removeExclamationMarks("Hello World!"))
+// console.log(removeExclamationMarks("Hello World!"))
+
+// Transportation on vacation
+function rentalCarCost(d) {
+  let cost = d * 40;
+  if (d >= 7) {
+    cost = cost - 50;
+  } else if (d >= 3 && d < 7) {
+    cost = cost - 20
+  }
+  return cost
+}
+console.log(rentalCarCost(2))
