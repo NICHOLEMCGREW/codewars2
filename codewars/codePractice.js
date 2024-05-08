@@ -740,6 +740,18 @@ function rentalCarCost(d) {
 
 // FIXME: Replace all dots
 var replaceDots = function(str) {
-  return str.replace(/['.']/g, '-');
+  return str.replace(/\./g, '-');
 }
 // console.log(replaceDots("one.two.three"))
+
+// Grasshopper - Debug
+function weatherInfo (temp) {
+  let celsius = (5/9) *(temp - 32).toFixed(0)
+  if (celsius > 0)
+    return (celsius + " is above freezing temperature")
+  else
+    return (celsius + " is freezing temperature")
+}
+
+
+console.log(weatherInfo(50))
