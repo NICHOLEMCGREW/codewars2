@@ -736,4 +736,10 @@ function rentalCarCost(d) {
   }
   return cost
 }
-console.log(rentalCarCost(2))
+// console.log(rentalCarCost(2))
+
+// FIXME: Replace all dots
+var replaceDots = function(str) {
+  return str.replace(/['.']/g, '-');
+}
+// console.log(replaceDots("one.two.three"))
