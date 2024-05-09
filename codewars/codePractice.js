@@ -766,3 +766,20 @@ function updateLight(current) {
     return 'green'
   }
 }
+
+// 101 Dalmatians - squash the bugs, not the dogs!\
+function howManyDalmations(number) {
+  if (number <= 10) {
+    return "Hardly any"
+  } else if (number <= 50) {
+    return "More than a handful!"
+  } else if (number <= 100) {
+    return "Woah that's a lot of dogs!"
+  } else {
+    return "101 DALMATIONS!!!"
+  }
+}
+  
+  
+  
+
