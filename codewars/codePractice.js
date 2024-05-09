@@ -784,3 +784,9 @@ function howManyDalmations(number) {
 const solve = (x, y) => x / y
   
 
+// Volume of a Cuboid
+class Kata {
+  static getVolumeOfCuboid(length, width, height) {
+    return length * width * height
+  }
+}
