@@ -1,10 +1,16 @@
-const express = require('express')
-const path = require('path')
+import express from 'express'
+import path from 'path';
+import posts from './routes/posts.js';
 
-const app = express()
+const port = process.env.PORT || 8000;
+
+const app = express();
 
 // setup static folder
-app.use(express.static(path.join(__dirname, 'public')))
+// app.use(express.static(path.join(__dirname, 'public')))
+
+//Routes
+app.use('/api/posts', posts)
 
 
-app.listen(8001, () => console.log(`Server running on port 8001`))
+app.listen(port, () => console.log(`Server running on port ${port}`));
