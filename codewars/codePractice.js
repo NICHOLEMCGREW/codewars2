@@ -811,3 +811,53 @@ function rainAmount(mm){
        return "You need to give your plant " + (40 - mm) + "mm of water"
   };
 }
+
+// Create the base - Dungeon crawler #1
+class Game {
+  constructor(name, level) {
+    this.player = new Player(name);
+    this.level = parseInt(level) || 0;
+    this.floors = [];
+  }
+
+  incrementLevel() {
+    this.level++;
+  }
+}
+
+class Player {
+  constructor(name) {
+    this.name = name && typeof name === 'string' && name.trim() !== '' ? name : 'Player';
+    this.health = 100.00;
+    this.position = { x: 0, y: 0 };
+    this.damage = 10.00;
+    this.luck = 1.00;
+  }
+}
+
+class Monster {
+  constructor(level) {
+    this.level = parseInt(level) || 0;
+  }
+}
+
+class Map {
+  constructor(level) {
+    this.level = parseInt(level) || 0;
+  }
+}
+
+// 2525. Categorize Box According to Criteria
+var categorizeBox = function(length, width, height, mass) {
+  volume = length * width * height;
+  let bulky = (length >= 10**4 || width >= 10**4 || height >= 10**4 || volume >= 10**9) 
+  let heavy = (mass >= 100)
+  if (bulky) {
+    return 'Bulky';
+  } else if (heavy) {
+    return "Heavy";
+  } else if (bulky && heavy) {
+    return 'Both'
+  }
+  return "Neither";
+};
