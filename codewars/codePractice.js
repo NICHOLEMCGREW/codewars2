@@ -780,6 +780,7 @@ function howManyDalmations(number) {
   }
 }
   
-  
+// Incorrect division method
+const solve = (x, y) => x / y
   
 
