@@ -795,3 +795,10 @@ class Kata {
 function otherAngle(a, b) {
   return 180 - (a + b) 
 }
+
+
+// Sum Mixed Array
+function sumMix(x){
+return x.map(Number).reduce((acc, cur) => acc + cur,0)
+}
+console.log(sumMix([9, 3, '7', '3']))
