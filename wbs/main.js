@@ -104,65 +104,93 @@
 // a.push(11)
 // console.log(a)
 
-let alpha = ["a", "b", "c", "d", "e"];
-// console.log(alpha[2])
+// let alpha = ["a", "b", "c", "d", "e"];
+// // console.log(alpha[2])
 
-const a = [
-	[1, 2, 3, 4, 5],
-	[6, 7, 8, 9, 10],
-	[11, 12, 13, 14, 15],
-];
+// const a = [
+// 	[1, 2, 3, 4, 5],
+// 	[6, 7, 8, 9, 10],
+// 	[11, 12, 13, 14, 15],
+// ];
 
-// console.log(a[0][3])
-// console.log(a[1][2])
-// console.log(a[2][0])
+// // console.log(a[0][3])
+// // console.log(a[1][2])
+// // console.log(a[2][0])
 
-let name = "Kyle";
-const age = 25;
-const favNum = 3;
+// let name = "Kyle";
+// const age = 25;
+// const favNum = 3;
 
-let person = {
-	name: "Kyle",
-    hobbies: ["Weight Lifting", "Programming"],
-    address: {
-        street: '12345 Main St',
-        city: "Somewhere"
-    },
-	age: 25,
-	favNum: 3,
-	sayHi2() {
-		// console.log("Hi");
-	},
-    property: "value"
-};
+// let person = {
+// 	name: "Kyle",
+//     hobbies: ["Weight Lifting", "Programming"],
+//     address: {
+//         street: '12345 Main St',
+//         city: "Somewhere"
+//     },
+// 	age: 25,
+// 	favNum: 3,
+// 	sayHi2() {
+// 		// console.log("Hi");
+// 	},
+//     property: "value"
+// };
 
-person.sayHi2();
+// person.sayHi2();
 
-let car = {
-    make: "Nissan",
-    model: "Rougue",
-    isUsed: true,
-    makeNoise() {
-        // console.log('Vroom')
-    }
+// let car = {
+//     make: "Nissan",
+//     model: "Rougue",
+//     isUsed: true,
+//     makeNoise() {
+//         // console.log('Vroom')
+//     }
+// }
+
+// car.makeNoise()
+// const property = "make"
+// // console.log(car.make)
+
+// // console.log(person.address.city)
+
+
+// let book = {
+//     title: 'Young Forever',
+//     author: {
+// name: "Joe Joe",
+// age: 34
+//     } 
+// }
+
+// book.title = 'New Title'
+// book.author.name = "Benny"
+// console.log(book.title)
+// console.log(book.author)
+
+// let a = 10
+// let b = "Hi"
+// c = [1, 2]
+// let d = c
+// d = [3,4,5]
+// d.push(3)
+
+// console.log(a, b, c, d)
+
+const a = [1, 2] // 0x01
+const elementToAdd = 3 //3
+
+add(a, elementToAdd) // 0x01, 3
+
+console.log(a)
+console.log(elementToAdd)
+
+function add(array, element) {
+    element = element + 1 //4
+    array.push(element) // 0x01
 }
 
-car.makeNoise()
-const property = "make"
-// console.log(car.make)
+const array = a
+array.push(4)
 
-// console.log(person.address.city)
+console.log(a === b)
 
-
-let book = {
-    title: 'Young Forever',
-    author: {
-name: "Joe Joe",
-age: 34
-    } 
-}
-
-book.title = 'New Title'
-book.author.name = "Benny"
-console.log(book.title)
-console.log(book.author)
