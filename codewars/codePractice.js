@@ -861,3 +861,14 @@ var categorizeBox = function(length, width, height, mass) {
   }
   return "Neither";
 };
+
+
+// Sum without highest and lowest number
+function sumArray(array) {
+  if(array && array.length > 1) {
+    const sorted = array.sort((a,b) => a-b).slice(1, -1)
+    return sorted.reduce((a, c) => a + c, 0)
+  }
+    return 0
+}
+console.log(sumArray([ 6, 2, 1, 8, 10 ]))
