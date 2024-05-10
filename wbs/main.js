@@ -153,13 +153,12 @@
 
 // // console.log(person.address.city)
 
-
 // let book = {
 //     title: 'Young Forever',
 //     author: {
 // name: "Joe Joe",
 // age: 34
-//     } 
+//     }
 // }
 
 // book.title = 'New Title'
@@ -176,21 +175,52 @@
 
 // console.log(a, b, c, d)
 
-const a = [1, 2] // 0x01
-const elementToAdd = 3 //3
+// const a = [1, 2] // 0x01
+// const elementToAdd = 3 //3
 
-add(a, elementToAdd) // 0x01, 3
+// add(a, elementToAdd) // 0x01, 3
 
-console.log(a)
-console.log(elementToAdd)
+// console.log(a)
+// console.log(elementToAdd)
 
-function add(array, element) {
-    element = element + 1 //4
-    array.push(element) // 0x01
-}
+// function add(array, element) {
+//     element = element + 1 //4
+//     array.push(element) // 0x01
+// }
 
-const array = a
-array.push(4)
+// const array = a
+// array.push(4)
 
-console.log(a === b)
+// console.log(a === b)
 
+// console.log("hello")
+
+// function createUser(name, age) {
+//     return { name: name, age: age, human: true}
+// }
+
+// function User(name, age) {
+//     this.name = name
+//     this.age = age
+//     this.human = true
+// }
+
+// class User {
+//     constructor(name, age) {
+//         this.name = name
+//         this.age = age
+//         this.human = true
+//     }
+
+//     printName() {
+//         console.log(this.name)
+//     }
+// }
+// const user = new User('nichole', 25)
+// const user2 = new User('Kyle', 25)
+// // const userFunc = createUser('Kyle', 33)
+// user.printName()
+// user2.printName()
+// console.log(user)
+
+// new Date()
