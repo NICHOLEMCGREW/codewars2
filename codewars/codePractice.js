@@ -871,4 +871,10 @@ function sumArray(array) {
   }
     return 0
 }
-console.log(sumArray([ 6, 2, 1, 8, 10 ]))
+// console.log(sumArray([ 6, 2, 1, 8, 10 ]))
+
+
+// Grasshopper - Messi goals function
+function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
+  return laLigaGoals + copaDelReyGoals + championsLeagueGoals
+}
