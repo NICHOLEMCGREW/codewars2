@@ -878,3 +878,16 @@ function sumArray(array) {
 function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
   return laLigaGoals + copaDelReyGoals + championsLeagueGoals
 }
+
+// Beginner Series #4 Cockroach
+function cockroachSpeed(s) {
+  let cm = 27.777778
+  return Math.floor(s * cm)
+}
+
+
+// Double Char
+function doubleChar(str) {
+  
+}
+console.log(doubleChar("Adidas"))
