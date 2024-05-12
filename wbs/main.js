@@ -224,3 +224,8 @@
 // console.log(user)
 
 // new Date()
+
+// console.log(window)
+const element = document.createElement('span')
+element.innerText = "Hello World"
+document.body.appendChild(element)
