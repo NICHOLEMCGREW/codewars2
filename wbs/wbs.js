@@ -226,6 +226,32 @@
 // new Date()
 
 // console.log(window)
-const element = document.createElement('span')
-element.innerText = "Hello World"
-document.body.appendChild(element)
+// const element = document.createElement('span')
+// element.innerText = "Hello World"
+// document.body.appendChild(element)
+
+// const divWithId = document.getElementById("div-id")
+
+// const divWithClass = document.getElementsByClassName('div-class')
+
+// divWithId.style.color = 'red'
+
+
+// const divsWithClassArray = Array.from(divWithClass)
+
+// divsWithClassArray.forEach(div => (div.style.color = 'green'))
+
+// divWithClass[0].style.color ="pink"
+// console.log(divWithClass)
+
+const dataAttribute = document.querySelector('[data-test]')
+
+const input = document.querySelector('input')
+dataAttribute.style.color = 'green'
+
+
+const divsWithClasses = document.querySelectorAll('.div-class')
+ 
+divsWithClasses.forEach(div => div.style.color = 'red')
+
+console.log(input)
