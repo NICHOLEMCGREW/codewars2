@@ -894,7 +894,7 @@ function doubleChar(str) {
   }
   return newStr
 }
-console.log(doubleChar("Adidas"))
+// console.log(doubleChar("Adidas"))
 
 
 // Grasshopper - Check for factor
@@ -904,4 +904,15 @@ function checkForFactor (base, factor) {
   } else {
     return false
   }
+}
+
+// Capitalization and Mutability
+function capitalizeWord(word) {
+
+}
+console.log(capitalizeWord('word'))
+
+// String Templates - Bug Fixing #5
+function buildString(...template){
+  return `I like ${template.join(',')}!`;
 }
