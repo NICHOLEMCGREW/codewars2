@@ -244,14 +244,37 @@
 // divWithClass[0].style.color ="pink"
 // console.log(divWithClass)
 
-const dataAttribute = document.querySelector('[data-test]')
+// const dataAttribute = document.querySelector('[data-test]')
 
-const input = document.querySelector('input')
-dataAttribute.style.color = 'green'
+// const input = document.querySelector('input')
+// dataAttribute.style.color = 'green'
 
 
-const divsWithClasses = document.querySelectorAll('.div-class')
+// const divsWithClasses = document.querySelectorAll('.div-class')
  
-divsWithClasses.forEach(div => div.style.color = 'red')
+// divsWithClasses.forEach(div => div.style.color = 'red')
 
-console.log(input)
+// console.log(input)
+
+// const btn = document.querySelector('[data-btn]')
+// const input = document.querySelector('[data-input-text]')
+const form = document.querySelector('[data-form]')
+
+form.addEventListener('submit', e => {
+    console.log('submitted form')
+})
+
+// input.addEventListener('input', e => {
+//     console.log(e.target.value === '')
+// })
+
+// function printClick() {
+//     console.log('clicked')
+// }
+
+// btn.addEventListener('click', e => {
+//     console.log(e)
+// })
+
+
+// btn.removeEventListener('click', printClick)
