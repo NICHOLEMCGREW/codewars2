@@ -916,3 +916,10 @@ console.log(capitalizeWord('word'))
 function buildString(...template){
   return `I like ${template.join(',')}!`;
 }
+
+
+// Function 2 - squaring an argument
+
+function square(num) {
+  return num**num
+}
