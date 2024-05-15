@@ -985,6 +985,22 @@ function finalGrade (exam, projects) {
 }
 // console.log(finalGrade(100, 12))
 
+// A bugs trilogy: Episode 1 - "Let Math.Random(); decide your future"
+function yourFutureCareer() {
+  let career = Math.random() * 100;
+  if (career <= 32) {
+    return 'FrontEnd Developer';
+  } else if (career <= 65) {
+    return 'BackEnd Developer';
+  } else {
+    return 'Full-Stack Developer';
+  }
+}
+
+
+
+
+
 // Flick Switch
 function flickSwitch(arr){
 
