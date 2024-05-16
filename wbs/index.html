@@ -7,9 +7,28 @@
     <script defer src="wbs.js"></script>
 </head>
 <body>
-    <form data-form action="">
         
-        <button>click me</button>
-    </form>
+        <!-- <button data-clicks="0">1</button>
+        <button data-clicks="0">2</button>
+        <button data-clicks="0">3</button> -->
+<style>
+    div {
+        color: black;
+    }
+    div > div {
+        margin-left: .5rem;
+        padding-left: .25rem;
+        border-left: 1px solid #777;
+    }
+</style>
+        <div class="grand-parent">
+            Grand Parent
+            <div>
+                Parent 1
+                <div id="child-one">Child 1</div>
+                <div>Child 2</div>
+            </div>
+            <div>Parent 2</div>
+        </div>
     </body>
 </html>

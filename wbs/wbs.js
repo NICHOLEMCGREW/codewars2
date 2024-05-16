@@ -287,16 +287,47 @@
 
 // btn.removeEventListener('click', printClick)
 
-const button = document.querySelector('button')
+// const button = document.querySelector('button')
 
-button.addEventListener('click', e => {
-console.log("Arrow this")
-console.log(this)
-e.preventDefault()
-})
+// button.addEventListener('click', e => {
+// console.log("Arrow this")
+// console.log(this)
+// e.preventDefault()
+// })
 
-button.addEventListener('click', function (e) {
-    console.log("Function this")
-    console.log(this)
-    e.preventDefault()
-})
+// button.addEventListener('click', function (e) {
+//     console.log("Function this")
+//     console.log(this)
+//     e.preventDefault()
+// })
+
+// const test = document.querySelector('[data-test]')
+
+// test.dataset.test = '5555'
+// console.log(test.dataset)
+
+// const buttons = document.querySelectorAll('button')
+
+// buttons.forEach(button => {
+//     button.addEventListener('click', () => {
+//         const currentClicks = parseInt(button.dataset.clicks)
+//         button.dataset.clicks = currentClicks + 1
+//     })
+// })
+
+// const grandParent = document.querySelector('#grand-parent')
+
+// grandParent.style.color = 'red'
+
+// const parentOne = grandParent.children[0]
+// const parentTwo = parentOne.nextElementSibling
+// const childOne = parentOne.children[0]
+// const childTwo = parentOne.children[1]
+
+
+const childOne = document.querySelector('#child-one')
+
+const parentOne = childOne.parentElement
+const grandParent = document.querySelector('.grand-parent')
+
+grandParent.style.color = 'red'
