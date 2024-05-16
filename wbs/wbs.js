@@ -258,11 +258,19 @@
 
 // const btn = document.querySelector('[data-btn]')
 // const input = document.querySelector('[data-input-text]')
-const form = document.querySelector('[data-form]')
+// const form = document.querySelector('[data-form]')
 
-form.addEventListener('submit', e => {
-    console.log('submitted form')
-})
+// form.addEventListener('submit', e => {
+//     e.preventDefault()
+//     console.log('submitted form')
+// })
+
+// const link = document.querySelector('a')
+
+// link.addEventListener('click', e => {
+//     e.preventDefault()
+//     console.log('something here')
+// })
 
 // input.addEventListener('input', e => {
 //     console.log(e.target.value === '')
@@ -278,3 +286,17 @@ form.addEventListener('submit', e => {
 
 
 // btn.removeEventListener('click', printClick)
+
+const button = document.querySelector('button')
+
+button.addEventListener('click', e => {
+console.log("Arrow this")
+console.log(this)
+e.preventDefault()
+})
+
+button.addEventListener('click', function (e) {
+    console.log("Function this")
+    console.log(this)
+    e.preventDefault()
+})

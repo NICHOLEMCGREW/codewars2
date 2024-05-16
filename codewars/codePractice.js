@@ -910,7 +910,7 @@ function checkForFactor (base, factor) {
 function capitalizeWord(word) {
 
 }
-console.log(capitalizeWord('word'))
+// console.log(capitalizeWord('word'))
 
 // String Templates - Bug Fixing #5
 function buildString(...template){
@@ -997,11 +997,34 @@ function yourFutureCareer() {
   }
 }
 
+// Vowel Count
+function getCount(str) {
+  
+}
+// console.log(getCount("abracadabra"))
 
 
 
 
 // Flick Switch
 function flickSwitch(arr){
+ 
+}
+
+// Disemvowel Trolls
+function disemvowel(str) {
 
 }
+// console.log(disemvowel("This website is for losers LOL!"))
+
+// Descending Order
+function descendingOrder(n){
+
+}
+// console.log(descendingOrder(15))
+
+// Exes and Ohs
+function XO(str) {
+
+}
+// console.log(XO("xxOo"))
