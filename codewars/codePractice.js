@@ -1028,3 +1028,9 @@ function XO(str) {
 
 }
 // console.log(XO("xxOo"))
+
+// DNA to RNA Conversion
+function DNAtoRNA(dna) {
+  let result = dna.replace(/T/g, "U")
+  return result
+  }
