@@ -333,26 +333,45 @@
 // grandParent.style.color = 'red'
 
 //1. Select all elements
-const form = document.querySelector('#new-item-form')
-const list = document.querySelector('#list')
-const input = document.querySelector('#item-input')
+// const form = document.querySelector('#new-item-form')
+// const list = document.querySelector('#list')
+// const input = document.querySelector('#item-input')
 
-//2. When I submit the form add a new element
-form.addEventListener('submit', e => {
-    e.preventDefault()
+// //2. When I submit the form add a new element
+// form.addEventListener('submit', e => {
+//     e.preventDefault()
 
-    // 1. Create new item
-    const item = document.createElement('div')
-    item.innerText = input.value
-    item.classList.add('list-item')
+//     // 1. Create new item
+//     const item = document.createElement('div')
+//     item.innerText = input.value
+//     item.classList.add('list-item')
 
-    // 2. Add item to list
-    list.appendChild(item)
+//     // 2. Add item to list
+//     list.appendChild(item)
 
-    // 3. Clear input
-    input.value = ''
-    // 4. Setup event listener to delete itema when clicked
-    item.addEventListener('click', () => {
-       item.remove()
-    })
-})
+//     // 3. Clear input
+//     input.value = ''
+//     // 4. Setup event listener to delete itema when clicked
+//     item.addEventListener('click', () => {
+//        item.remove()
+//     })
+// })
+
+const modal = document.querySelector('#modal')
+const openModalButton = document.querySelector('#open-modal-btn')
+const closeModalButton = document.querySelector('#close-modal-btn')
+const overlay = document.querySelector('#overlay')
+
+openModalButton.addEventListener('click', () => {
+    modal.classList.add("open")
+    overlay.classList.add("open")
+}) 
+
+closeModalButton.addEventListener('click', closeModal)
+
+overlay.addEventListener('click', closeModal)
+
+function closeModal() {
+    modal.classList.remove('open')
+    overlay.classList.remove('open')
+}
