@@ -4,31 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script defer src="wbs.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="wbs.js" defer></script>
 </head>
 <body>
-        
-        <!-- <button data-clicks="0">1</button>
-        <button data-clicks="0">2</button>
-        <button data-clicks="0">3</button> -->
-<style>
-    div {
-        color: black;
-    }
-    div > div {
-        margin-left: .5rem;
-        padding-left: .25rem;
-        border-left: 1px solid #777;
-    }
-</style>
-        <div class="grand-parent">
-            Grand Parent
-            <div>
-                Parent 1
-                <div id="child-one">Child 1</div>
-                <div>Child 2</div>
-            </div>
-            <div>Parent 2</div>
+        <div id="list">
         </div>
+
+        <form action="" id="new-item-form">
+            <label for="item-input">New Item</label>
+            <input type="text" id="item-input">
+            <button type="submit">Add Item</button>
+        </form>
+        
     </body>
 </html>
