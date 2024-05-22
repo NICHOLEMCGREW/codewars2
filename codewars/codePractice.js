@@ -997,6 +997,19 @@ function yourFutureCareer() {
   }
 }
 
+// L1: Set Alarm
+function setAlarm(employed, vacation){
+if (employed && vacation) {
+  return false
+} else if (employed && !vacation) {
+  return true
+} else if (!employed && vacation) {
+  return false
+} else if (!employed && !vacation) {
+  return false
+}
+}
+
 // Vowel Count
 function getCount(str) {
   
