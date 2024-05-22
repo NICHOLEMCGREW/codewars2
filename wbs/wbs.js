@@ -357,21 +357,40 @@
 //     })
 // })
 
-const modal = document.querySelector('#modal')
-const openModalButton = document.querySelector('#open-modal-btn')
-const closeModalButton = document.querySelector('#close-modal-btn')
-const overlay = document.querySelector('#overlay')
+// const modal = document.querySelector('#modal')
+// const openModalButton = document.querySelector('#open-modal-btn')
+// const closeModalButton = document.querySelector('#close-modal-btn')
+// const overlay = document.querySelector('#overlay')
 
-openModalButton.addEventListener('click', () => {
-    modal.classList.add("open")
-    overlay.classList.add("open")
-}) 
+// openModalButton.addEventListener('click', () => {
+//     modal.classList.add("open")
+//     overlay.classList.add("open")
+// }) 
 
-closeModalButton.addEventListener('click', closeModal)
+// closeModalButton.addEventListener('click', closeModal)
 
-overlay.addEventListener('click', closeModal)
+// overlay.addEventListener('click', closeModal)
 
-function closeModal() {
-    modal.classList.remove('open')
-    overlay.classList.remove('open')
-}
+// function closeModal() {
+//     modal.classList.remove('open')
+//     overlay.classList.remove('open')
+// }
+
+// const userIsLoggedIn = false
+// if (userIsLoggedIn) {
+//     console.log("User logged in")
+// } else {
+//     console.log("Please login")
+// }
+
+let arr = [1,2,3,4,5]
+
+    if (arr.length === 0) {
+        console.log('empty')
+    } else if (arr.length < 5) {
+        console.log('small')
+    } else if (arr.length < 10) {
+        console.log('medium')
+    } else {
+        console.log('large')
+    }
