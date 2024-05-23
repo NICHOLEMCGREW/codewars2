@@ -1014,7 +1014,7 @@ if (employed && vacation) {
 function getCount(str) {
   
 }
-// console.log(getCount("abracadabra"))
+console.log(getCount("pear tree"))
 
 
 
@@ -1026,9 +1026,9 @@ function flickSwitch(arr){
 
 // Disemvowel Trolls
 function disemvowel(str) {
-
+return str.replace(/[aeiou]/ig, '')
 }
-// console.log(disemvowel("This website is for losers LOL!"))
+console.log(disemvowel("This website is for losers LOL!"))
 
 // Descending Order
 function descendingOrder(n){
@@ -1047,3 +1047,10 @@ function DNAtoRNA(dna) {
   let result = dna.replace(/T/g, "U")
   return result
   }
+
+  // Multiples of 3 or 5
+  function solution(number){
+ 
+  }
+  console.log(solution(10))
+
