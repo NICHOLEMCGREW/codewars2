@@ -236,7 +236,6 @@
 
 // divWithId.style.color = 'red'
 
-
 // const divsWithClassArray = Array.from(divWithClass)
 
 // divsWithClassArray.forEach(div => (div.style.color = 'green'))
@@ -249,9 +248,8 @@
 // const input = document.querySelector('input')
 // dataAttribute.style.color = 'green'
 
-
 // const divsWithClasses = document.querySelectorAll('.div-class')
- 
+
 // divsWithClasses.forEach(div => div.style.color = 'red')
 
 // console.log(input)
@@ -283,7 +281,6 @@
 // btn.addEventListener('click', e => {
 //     console.log(e)
 // })
-
 
 // btn.removeEventListener('click', printClick)
 
@@ -323,7 +320,6 @@
 // const parentTwo = parentOne.nextElementSibling
 // const childOne = parentOne.children[0]
 // const childTwo = parentOne.children[1]
-
 
 // const childOne = document.querySelector('#child-one')
 
@@ -365,7 +361,7 @@
 // openModalButton.addEventListener('click', () => {
 //     modal.classList.add("open")
 //     overlay.classList.add("open")
-// }) 
+// })
 
 // closeModalButton.addEventListener('click', closeModal)
 
@@ -383,14 +379,70 @@
 //     console.log("Please login")
 // }
 
-let arr = [1,2,3,4,5]
+// let arr = [1,2,3,4,5]
 
-    if (arr.length === 0) {
-        console.log('empty')
-    } else if (arr.length < 5) {
+//     if (arr.length === 0) {
+//         console.log('empty')
+//     } else if (arr.length < 5) {
+//         console.log('small')
+//     } else if (arr.length < 10) {
+//         console.log('medium')
+//     } else {
+//         console.log('large')
+//     }
+
+// const isUserLoggedIn = true
+
+// const welcomeMessage = isUserLoggedIn ? "welcome" : "please log in"
+
+// isUserLoggedIn ? console.log('user is logged in') : console.log('not logged in')
+
+const favoriteAnimal = "cat"
+
+// if (favoriteAnimal === "cat") {
+// 	console.log("cats are awesome")
+// } else if (favoriteAnimal === "dog") {
+// 	console.log("they are loud")
+// } else if (favoriteAnimal === "shark") {
+// 	console.log("thats interesting")
+// } else {
+// 	console.log("nice!")
+// }
+
+switch (favoriteAnimal) {
+	case "cat":
+		console.log("cats are awesome")
+        break
+	case "dog":
+		console.log("they are loud")
+        break
+    case "shark":
+        console.log("thats interesting")
+        break
+    default:
+        console.log("nice!")
+        break
+}
+
+
+const number = 1
+
+switch (number) {
+    case 0:
+        console.log('zero')
+        break
+    case 1:
+    case 2:
         console.log('small')
-    } else if (arr.length < 10) {
+        break
+    case 3:
+    case 4:
         console.log('medium')
-    } else {
+        break
+    case 5:
         console.log('large')
-    }
+        break
+    default:
+        console.log('try again')
+        break
+}
