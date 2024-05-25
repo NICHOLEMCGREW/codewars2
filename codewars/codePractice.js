@@ -1028,7 +1028,7 @@ function flickSwitch(arr){
 function disemvowel(str) {
 return str.replace(/[aeiou]/ig, '')
 }
-console.log(disemvowel("This website is for losers LOL!"))
+// console.log(disemvowel("This website is for losers LOL!"))
 
 // Descending Order
 function descendingOrder(n){
@@ -1053,10 +1053,17 @@ function DNAtoRNA(dna) {
     let sum = 0;
     for (let i = 1; i < number; i++) {
       if (i % 3 === 0 || i % 5 === 0 || i % 6 === 0 || i % 9 === 0) {
-        sum += i;
+        sum += i
       }
     }
     return sum
   }
-  console.log(solution(10))
+  // console.log(solution(10))
 
+  // Square Every Digit
+  function squareDigits(num){
+    num = num.toString().split('')
+    let newNums = num.map((x) => x * x).join('')
+   return +newNums
+  }
+  console.log(squareDigits(2112))
