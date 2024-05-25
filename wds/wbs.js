@@ -409,40 +409,80 @@ const favoriteAnimal = "cat"
 // 	console.log("nice!")
 // }
 
-switch (favoriteAnimal) {
-	case "cat":
-		console.log("cats are awesome")
-        break
-	case "dog":
-		console.log("they are loud")
-        break
-    case "shark":
-        console.log("thats interesting")
-        break
-    default:
-        console.log("nice!")
-        break
-}
+// switch (favoriteAnimal) {
+// 	case "cat":
+// 		console.log("cats are awesome")
+//         break
+// 	case "dog":
+// 		console.log("they are loud")
+//         break
+//     case "shark":
+//         console.log("thats interesting")
+//         break
+//     default:
+//         console.log("nice!")
+//         break
+// }
 
+// const number = 1
 
-const number = 1
+// switch (number) {
+//     case 0:
+//         console.log('zero')
+//         break
+//     case 1:
+//     case 2:
+//         console.log('small')
+//         break
+//     case 3:
+//     case 4:
+//         console.log('medium')
+//         break
+//     case 5:
+//         console.log('large')
+//         break
+//     default:
+//         console.log('try again')
+//         break
+// }
 
-switch (number) {
-    case 0:
-        console.log('zero')
-        break
-    case 1:
-    case 2:
-        console.log('small')
-        break
-    case 3:
-    case 4:
-        console.log('medium')
-        break
-    case 5:
-        console.log('large')
-        break
-    default:
-        console.log('try again')
-        break
-}
+// const a = ['a','b','c']
+
+// for (let i = 0; i < a.length; i++) {
+//     const element = a[i]
+//     console.log(element)
+// }
+
+// for (let i = 0; i < 5; i++) {
+//     console.log('start ' + i)
+//     if (i > 2) continue
+//     console.log('end ' + i)
+// }
+
+// for (let i = 0; i <= 10; i++) {
+//     console.log(i)
+//     if (i === 5) break
+// }
+
+// let i = 0
+// while (i < 5) {
+// 	console.log(i)
+// 	i++
+// }\
+
+// const person = {
+// 	name: "Kyle",
+// 	friend: {
+// 		name: "Joe",
+// 		friend: {
+// 			name: "Sally",
+// 		},
+// 	},
+// }
+
+// let currentPerson = person
+// while (currentPerson != null) {
+// 	if (currentPerson.name === "joe") break
+// 	console.log(currentPerson.name)
+// 	currentPerson = currentPerson.friend
+// }
