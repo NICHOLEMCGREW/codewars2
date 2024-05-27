@@ -511,15 +511,15 @@ const favoriteAnimal = "cat"
 
 // printNumber(1)
 
-const person = {
-    name: "Kyle",
-    friend: {
-        name: "Joe",
-        friend: {
-            name: "Sally"
-        }
-    }
-}
+// const person = {
+//     name: "Kyle",
+//     friend: {
+//         name: "Joe",
+//         friend: {
+//             name: "Sally"
+//         }
+//     }
+// }
 
 // let currentPerson = person
 // while (currentPerson != null) {
@@ -527,10 +527,29 @@ const person = {
 //     currentPerson = currentPerson.friend
 // }
 
-function printNames(currentPerson) {
-    if (currentPerson == null) return
-    console.log(currentPerson.name)
-printNames(currentPerson.friend)
-}
+// function printNames(currentPerson) {
+//     if (currentPerson == null) return
+//     console.log(currentPerson.name)
+// printNames(currentPerson.friend)
+// }
 
-printNames(person)
+// printNames(person)
+
+// printTrue() || printFalse()
+
+// function printTrue() {
+//     console.log('true')
+//     return true
+// }
+// function printFalse() {
+//     console.log('false')
+//     return false
+// }
+
+// function printName(name) {
+//     name = name || "Default"
+//     console.log(name)
+// }
+
+// printName()
+
