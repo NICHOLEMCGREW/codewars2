@@ -1012,7 +1012,14 @@ if (employed && vacation) {
 
 // Vowel Count
 function getCount(str) {
-  
+  let vowels = 'aeiou';
+  let count = 0;
+  for (let char of str) {
+    if (vowels.includes(char)) {
+      count++
+    }
+  }
+  return count
 }
 console.log(getCount("pear tree"))
 
@@ -1093,4 +1100,4 @@ function DNAtoRNA(dna) {
     return result;
   }
 
-  console.log(evalObject({a:1,b:1,operation:'+'}))
+  // console.log(evalObject({a:1,b:1,operation:'+'}))
