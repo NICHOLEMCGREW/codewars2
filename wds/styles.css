@@ -1,4 +1,4 @@
-*, *::before, *::after {
+/* *, *::before, *::after {
     box-sizing: border-box;
   }
   
@@ -40,4 +40,4 @@
   
   .black.active {
     background-color: #333;
-  }
+  } */
