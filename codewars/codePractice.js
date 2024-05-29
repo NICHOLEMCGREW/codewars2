@@ -1021,10 +1021,28 @@ function getCount(str) {
   }
   return count
 }
-console.log(getCount("pear tree"))
+// console.log(getCount("pear tree"))
 
+// Create Phone Number
 
+function createPhoneNumber(numbers){
+ 
+}
+// console.log(createPhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]))
 
+// String ends with?
+function solution2(str, ending){
+  let endLen = ending.length
+  for (let i = 0; i < str.length; i++) {
+    let compare = str.slice(-endLen)
+    if (compare == ending || ending.length == 0) {
+      return true
+    } else {
+      return false
+    }
+  }
+}
+console.log(solution2('samurai', 'ai'))
 
 // Flick Switch
 function flickSwitch(arr){

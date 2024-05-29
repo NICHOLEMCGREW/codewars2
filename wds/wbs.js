@@ -633,15 +633,76 @@ const favoriteAnimal = "cat"
 
 
 
-const promise = Promise.resolve('here')
+// const promise = Promise.resolve('here')
 
-promise
-.then(message => {
-    console.log(message)
-})
-.catch(error => {
-    console.log(error)
-})
-.finally(() => {
-    console.log('finally')
-})
+// promise
+// .then(message => {
+//     console.log(message)
+// })
+// .catch(error => {
+//     console.log(error)
+// })
+// .finally(() => {
+//     console.log('finally')
+// })
+
+function getValueWithDelay(value, delay) {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve(value)
+         }, delay)
+    })
+}
+function getValueWithDelayError(value, delay) {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            reject("error")
+         }, delay)
+    })
+}
+
+// async function doStuff() {
+//     try {
+//         const message = await getValueWithDelay('kyele', 250)
+//         console.log(message)
+//         const message2 = await getValueWithDelay('hi', 250)
+//         console.log(message2)
+//         const message3 = await getValueWithDelayError("hi", 250)
+//         console.log(message3)
+//     } catch (error) {
+//         console.error(error)
+//     } finally {
+//         console.log("finally")
+//     }
+// }
+
+// doStuff()
+
+// setTimeoutPromise(250).then(() => {
+//     console.log('1')
+//     return setTimeoutPromise(250)
+// })
+// .then(() => {
+//     console.log('2')
+// })
+
+// async function doStuff() {
+//     try {
+//         console.log('before error')
+//         const message = await setTimeoutPromise(250)
+//         console.log(message)
+//          console.log('1')
+//         const message2 = await setTimeoutPromise(900)
+//          console.log('2')
+//          console.log(message2)
+//     } catch (error) {
+//         console.log('here')
+//         console.error(error)
+//     }
+// }
+
+// doStuff()
+
+// getValueWithDelay('kyle', 250).then(message => console.log(message))
+// getValueWithDelay('cook', 250).then(message => console.log(message))
+// getValueWithDelay('hi', 250).then(message => console.log(message))
