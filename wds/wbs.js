@@ -606,7 +606,6 @@ const favoriteAnimal = "cat"
 // }
 // const button = document.querySelector('button')
 
-
 // function addEventListenerPromise(element, method) {
 //     return new Promise((resolve, reject) => {
 //         element.addEventListener(method, resolve)
@@ -617,7 +616,6 @@ const favoriteAnimal = "cat"
 //     console.log('clicked')
 //     console.log(e)
 // })
-
 
 // Promise.allSettled([
 // Promise.reject('error on 1'),
@@ -630,8 +628,6 @@ const favoriteAnimal = "cat"
 // });
 
 // Promise.resolve('value').then(message => console.log('resoled'))
-
-
 
 // const promise = Promise.resolve('here')
 
@@ -647,18 +643,18 @@ const favoriteAnimal = "cat"
 // })
 
 function getValueWithDelay(value, delay) {
-    return new Promise((resolve, reject) => {
-        setTimeout(() => {
-            resolve(value)
-         }, delay)
-    })
+	return new Promise((resolve, reject) => {
+		setTimeout(() => {
+			resolve(value)
+		}, delay)
+	})
 }
 function getValueWithDelayError(value, delay) {
-    return new Promise((resolve, reject) => {
-        setTimeout(() => {
-            reject("error")
-         }, delay)
-    })
+	return new Promise((resolve, reject) => {
+		setTimeout(() => {
+			reject("error")
+		}, delay)
+	})
 }
 
 // async function doStuff() {
@@ -706,3 +702,123 @@ function getValueWithDelayError(value, delay) {
 // getValueWithDelay('kyle', 250).then(message => console.log(message))
 // getValueWithDelay('cook', 250).then(message => console.log(message))
 // getValueWithDelay('hi', 250).then(message => console.log(message))
+
+// document.addEventListener('click', () => {
+//     console.log('Clicked Doc')
+// })
+
+// document.body.addEventListener('click', () => {
+//     console.log('Clicked Body')
+// })
+
+// buttons.forEach(button => {
+//     button.addEventListener("click", () => {
+//         console.log('clicked button')
+//     })
+// })
+
+// buttons.forEach(button => {
+//     button.addEventListener('click', () => {
+//         console.log('Clicked Button')
+//     })
+// })
+// const buttons = document.querySelectorAll("button")
+
+// document.addEventListener('click', e => {
+//     if (e.target.matches('button')) {
+//         console.log("Clicked Button")
+
+//     }
+// })
+
+// const newButton = document.createElement("button")
+// newButton.innerText = "Button 5"
+// document.body.append(newButton)
+
+// Local Storage | Cookies | Session Storage
+
+// localStorage.setItem("Name", "Nichole")
+// sessionStorage.setItem("Age", "25")
+
+// localStorage.setItem("Name", "Sally")
+// sessionStorage.setItem("Age", "35")
+
+// console.log(sessionStorage.getItem('Age'))
+// const data = new Date(2024, 0, 1).toUTCString()
+// document.cookie = 'name=Kyle; expires='
+
+
+
+
+
+// fetch('https://jsonplaceholder.typicode.com/users').then(response => {
+//     return response.json()
+// }).then(data => {
+// console.log(data.map(user => user.name))
+//     console.log(data)
+// })
+
+const URL = "https://jsonplaceholder.typicode.com/posts"
+const commentURL = "https://jsonplaceholder.typicode.com/comments?postId=1"
+const button = document.querySelector("button")
+
+async function doStuff() {
+	try {
+		const response = await fetch(URL)
+		if (response.ok) {
+			const user = await response.json()
+			console.log(user)
+		} else {
+			console.log("Unable to load")
+		}
+	} catch (e) {
+		console.error(e)
+	}
+}
+// doStuff()
+
+// button.addEventListener('click', doStuff)
+
+async function doMoreStuff() {
+	const response = await fetch(URL, {
+		method: "POST",
+		headers: {
+			"Content-Type": "application/json",
+		},
+		body: JSON.stringify({
+			title: "New Post",
+		}),
+	})
+	const post = await response.json()
+	// console.log(post)
+}
+
+doMoreStuff()
+
+// promise based fetch
+async function getComments() {
+	const response = await fetch(commentURL)
+	const comment = await response.json()
+	console.log(comment)
+}
+
+// getComments()
+
+// fetch API
+fetch(commentURL)
+	.then((res) => res.json())
+	.then((comments) => {
+		// console.log(comments)
+	})
+
+// function test() {
+// console.log('hi 1')
+// console.log('hi2')
+// new Promise((resolve, reject) => resolve("hi promise")).then(message => console.log(message))
+// setTimeout(() => console.log('hi 3'), 10)
+// setTimeout(() => console.log('hi 4'), 0)
+// console.log('hi 5')
+// }
+// test()
+
+// console.log('hi 6')

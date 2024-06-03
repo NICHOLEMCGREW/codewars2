@@ -1029,7 +1029,7 @@ function createPhoneNumber(numbers){
   return numbers.reduce((nums, arr) => nums.replace('x', arr), '(xxx) xxx-xxxx' )
 }
 
-console.log(createPhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]))
+// console.log(createPhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]))
 
 // String ends with?
 function solution2(str, ending){
