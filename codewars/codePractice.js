@@ -1136,4 +1136,16 @@ function DNAtoRNA(dna) {
       return `${names[0]}, ${names[1]} and ${names.length - 2} others like this`
     }
   }
-  console.log(likes(['Jacob', 'Alex']))
+  // console.log(likes(['Jacob', 'Alex']))
+
+  
+// Check same case
+function sameCase(a, b){
+  if (!(/[a-zA-Z]/).test(a) || !(/[a-zA-Z]/).test(b)){
+    return -1
+  } else if (a === a.toLowerCase() && b === b.toLowerCase() || a === a.toUpperCase() && b === b.toUpperCase()) {
+    return 1
+  } else {
+    return 0
+  }
+}
