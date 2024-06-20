@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "date-fns": "^3.6.0"
+  },
+  "name": "wds",
+  "version": "1.0.0",
+  "main": "wbs.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
