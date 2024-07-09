@@ -1187,3 +1187,32 @@ function evens(a) {
 function evenMore(a) {
   return a % 2 === 0;
 }
+
+function vowelCount(str) {
+  let vowels = ['a', 'e', 'i', 'o', 'u']
+  let count = 0
+  for (let i = 0; i < str.length; i++) {
+    if (vowels.includes(str[i].toLowerCase())) {
+      count++
+    }
+  }
+  return count
+}
+// console.log(vowelCount('hello'))
+
+
+// Count Consonants
+
+function consonats(str) {
+  let vowels = ['a', 'e', 'i', 'o', 'u']
+  let count = 0
+  for (let i = 0; i < str.length; i++) {
+    let char = str[i].toLowerCase()
+    if (char >= 'a' && char <= 'z' && !vowels.includes(char)) {
+      count++
+    }
+  }
+  return count
+}
+
+console.log(consonats('hello'))
