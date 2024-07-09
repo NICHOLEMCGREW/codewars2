@@ -1162,4 +1162,11 @@ if (s1[i] === s2[i]) {
     }
     return result
 }
-console.log(neutralise("--++--", "++--++"))
+// console.log(neutralise("--++--", "++--++"))
+
+// Maximum of Two Numbers
+
+function max(a, b) {
+ return a > b ? a : b
+}
+// console.log(max(3,4))
