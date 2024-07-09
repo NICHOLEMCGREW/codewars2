@@ -1170,3 +1170,20 @@ function max(a, b) {
  return a > b ? a : b
 }
 // console.log(max(3,4))
+
+// evens
+function even(a) {
+  if (a % 2 === 0) {
+    return true
+  } else {
+    return false
+  }
+}
+
+function evens(a) {
+  return a % 2 === 0 ? true : false
+}
+
+function evenMore(a) {
+  return a % 2 === 0;
+}
