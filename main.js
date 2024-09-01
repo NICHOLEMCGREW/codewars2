@@ -3904,4 +3904,16 @@ function duplicateCount(text){
 
   return dups;
 }
-console.log(duplicateCount("aabbcde"))
+// console.log(duplicateCount("aabbcde"))
+
+function duplicateCount(text){
+  return (text.toLowerCase().split('').sort().join('').match(/([^])\1+/g) || []).length;
+}
+
+// String ends with?
+
+function solution(str, ending){
+  return str.indexOf(ending, str.length - ending.length) !== -1;
+  }
+
+console.log(solution('samurai', 'ai'))
